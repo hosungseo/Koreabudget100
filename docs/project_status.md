@@ -9,7 +9,7 @@
 
 ## 1. 완료 결과
 
-열린재정 `ExpenditureBudgetAdd2`를 정본으로 삼아 1,401개 세부사업의 계층과 금액을 만들고, 부처 사업설명 PDF와 지방재정365 QWGJK 결과를 보강 정보로 붙였다. 최종 주 화면은 업무 순서가 아니라 중앙 확정재원·내역·세목·채널에서 지방 예산현액·재원구성·지출까지 연결한 **예산체계도**다.
+열린재정 `ExpenditureBudgetAdd2`를 정본으로 삼아 1,401개 세부사업의 계층과 금액을 만들고, 부처 사업설명 PDF와 지방재정365 QWGJK 결과를 보강 정보로 붙였다. 최종 주 화면은 `지역사회 자생적 창조역량 강화` 한 사업을 기준으로, 중앙 확정예산의 **PDF 내용별 분해**와 **Add2 회계별 분해**를 평행 비교하고 지방 예산 관측은 확정 흐름과 분리한 **예산체계도**다.
 
 | 항목 | 최종 결과 |
 |---|---:|
@@ -33,10 +33,13 @@
 | 세부사업 예산체계도 | 1,401 |
 | API 목·세목 원 단위 대사 완료 | 1,401 |
 | PDF 내역사업 추출 / 총액 대사 완료 | 45 / 37 |
+| 기준 사례 수작업 전액 대사 | 237.53억원 / 차이 0원 |
+| 기준 사례 LOFIN 시계열 | 7개 조회일 / 최신 27행 |
 
 최종 화면:
 
-- `artifacts/budget_flow_map.html` — 주 화면
+- `artifacts/reference_budget_flow_map.html` — **주 화면: 단일 세부사업 예산체계도**
+- `artifacts/budget_flow_map.html` — 1,401개 세부사업 탐색기
 - `artifacts/budget_flow_map_2026.html`
 - `artifacts/detail_business_structure.html`
 - `artifacts/detail_business_structure_2026.html`
@@ -50,6 +53,7 @@
 - `data/normalized/canonical_business_2026_pilots_summary.json`
 - `data/normalized/business_workflows_2026_pilots.json`
 - `data/normalized/budget_flow_maps_2026_pilots.json`
+- `data/normalized/reference_lofin_timeline_2026.json`
 - `artifacts/integration_status.json`
 - `artifacts/business_workflows_2026_pilots_summary.json`
 - `artifacts/budget_flow_maps_2026_pilots_summary.json`
@@ -138,13 +142,17 @@ Open Fiscal ExpenditureBudgetAdd2
 - 양수 후보가 발견된 중앙사업 64개
 - 정규화·중복 제거 후보 행 2,294개
 
-각 행에는 `central_business_key`, 중앙사업명, 사용 키워드와 생성 전략, 중앙 지자체 이전액, 지역·지자체·지방사업 코드, 예산현액, 국비·시도비·시군구비·기타, 지출액, 편성액, `match_scope`, `match_status=keyword_candidate`를 저장한다. 기본 예시는 PDF 내역사업 `사회연대경제 활성화`를 키워드 `사회연대경제`로 검색해 양수 국비 후보 23건을 연결한다. 같은 키워드를 공유하는 중앙사업과 광역·기초 중복이 있을 수 있으므로 행 수·관측합·집행률은 확정 교부처·중앙 순지출 총액이 아니다.
+각 행에는 `central_business_key`, 중앙사업명, 사용 키워드와 생성 전략, 중앙 지자체 이전액, 지역·지자체·지방사업 코드, 예산현액, 국비·시도비·시군구비·기타, 지출액, 편성액, `match_scope`, `match_status=keyword_candidate`를 저장한다. 범용 탐색기의 기준일은 `2026-06-30`이며 2,294행을 유지한다.
+
+단일 기준 사례는 PDF 내역사업 `사회연대경제 활성화`를 키워드 `사회연대경제`로 7개 조회일에 반복 조회한다. 최신 `2026-07-18`의 국비 양수 27행은 PDF 핵심 표현과 맞는 A 강한 후보 9행, 포괄 제목인 B 유사 후보 3행, PDF에 없는 `청년 일경험` 계열인 C 별도 사업 가능성 15행으로 나눈다. 같은 키워드를 공유하는 중앙사업과 광역·기초 중복이 있을 수 있으므로 행 수·관측합·관측 비율은 확정 교부처·중앙 순지출 총액이 아니다.
 
 관련 파일:
 
 - `code/fetch_lofin_local_transfer_candidates.py`
+- `code/fetch_reference_lofin_timeline.py`
 - `data/normalized/lofin_local_transfer_candidates_2026.json`
 - `data/normalized/lofin_local_transfer_candidates_2026_summary.json`
+- `data/normalized/reference_lofin_timeline_2026.json`
 
 ## 6. 산업통상부 PDF 커버리지
 
@@ -156,7 +164,21 @@ Open Fiscal ExpenditureBudgetAdd2
 
 ## 7. 구조도 HTML
 
-### 7.1 세부사업별 예산체계도 — 주 화면
+### 7.1 단일 세부사업 예산체계도 — 주 화면
+
+`reference_budget_flow_map.html`은 `지역사회 자생적 창조역량 강화` 237.53억원을 한 화면에서 깊게 파고든다. PDF 내역사업과 Add2 세목은 순차 집행단계가 아니라 같은 총액을 보는 두 분류이므로 평행 레저로 놓았다.
+
+- PDF 내역사업 5개 합계 237.53억원
+- Add2 회계버킷 5개 합계 237.53억원
+- PDF 산출내용과 금액을 수작업 검토한 전액 교차 대사 237.53억원, 차이 0원
+- `사회연대경제 활성화` 118.39억원을 지자체보조 103.50억원, 일반용역 11.00억원, 사업관리 3.89억원으로 정확히 분리
+- LOFIN 후보는 중앙 확정축과 물리적으로 분리하고 A/B/C 근거 등급과 7개 조회일 변화를 함께 표시
+- 변화한 행 수·예산현액·지출액은 스냅샷 관측치이며 교부·송금 이력이 아님을 화면에 명시
+- PDF 원문의 산식 불일치 2건을 경고로 보존
+
+전액 교차 대사는 실제 거래원장이 아니라 **PDF 내용·금액과 Add2 세목의 검토 결과**다. A 강한 후보도 최신 관측상 국비 100%로 표시되어 PDF 보조율 50%와 맞지 않으므로 확정 수혜지로 승격하지 않았다.
+
+### 7.2 전체 세부사업 예산체계도 — 탐색기
 
 `budget_flow_map.html`은 1,401개 사업 중 하나를 선택해 다음 돈의 구조를 한 장에 표시한다.
 
@@ -172,11 +194,11 @@ Open Fiscal ExpenditureBudgetAdd2
 - LOFIN 2,294행은 비가산 후보로 표시하고, 선택 사업에서는 권역·지자체·지방사업·예산현액·재원구성·지출액·관측 집행률을 펼쳐 표시
 - 사업 검색, 노드 연결 강조, 근거 페이지, 대사표, 모바일 세로 보기, A3 인쇄 지원
 
-기본 예시는 `지역사회 자생적 창조역량 강화` 237.53억원이다. PDF 내역사업 5개와 Add2 세목 8개가 각각 총액과 차이 0원으로 맞고, 자치단체경상보조 119.5억원은 보조율 50%가 명시된 16억원과 103.5억원의 합과 일치한다. `17개 광역시도`는 3억원 조사의 대상이지 보조 수령기관으로 만들지 않았다. 별도로 `사회연대경제 활성화` 내역은 QWGJK의 23개 지역 편성·지출 후보에 점선으로 연결하며, 이 관측합은 중앙 103.5억원과 대사하지 않는다.
+탐색기의 기본 예시도 같은 사업이지만, 수작업 전액 대사·후보 등급·시계열은 위의 전용 주 화면에서 다룬다.
 
 세부 원칙은 `docs/budget_flow_methodology.md`에 기록했다.
 
-### 7.2 전체 예산 계층 탐색기
+### 7.3 전체 예산 계층 탐색기
 
 `detail_business_structure.html`은 canonical tree를 입력으로 사용한다.
 
@@ -187,7 +209,7 @@ Open Fiscal ExpenditureBudgetAdd2
 - 내장 JSON의 `</script>` 종료 문자열 이스케이프
 - 잘못된 구 출처명 `TotalExpenditure1`과 금액 필드 표기 제거
 
-### 7.3 세부사업별 업무 절차 보조 화면
+### 7.4 세부사업별 업무 절차 보조 화면
 
 `detailed_business_workflows.html`은 1,401개 세부사업 중 하나를 선택해 **단계 행 × 수행주체 열**의 스윔레인으로 보여 준다. 단계 `G0~G6`은 서로 다른 사업을 같은 화면 문법으로 비교하기 위한 표현 분류이며, 원문이 주장한 법정 절차 단계가 아니다.
 
@@ -215,6 +237,7 @@ bash code/run_pipeline.sh
 bash code/run_pipeline.sh --extract          # Kordoc 전체 재추출
 bash code/run_pipeline.sh --refresh-lofin    # LOFIN API 새로 조회
 bash code/run_pipeline.sh --lofin-cache-only # 중앙사업 140개 + PDF 내역 1개 캐시로 LOFIN 재생성
+python3 code/fetch_reference_lofin_timeline.py --refresh # 기준 사례 7개 조회일 갱신
 ```
 
 최종 검증 결과:
@@ -241,6 +264,7 @@ PIPELINE_OK
 - 행안부·국토부 명시 절차 표본, LOFIN 후보 표본, 산업통상부 472개 API-only 회귀검사
 - 상세 HTML 내장 데이터, 검색·탭·노드 선택·근거 패널의 브라우저 실행 검사
 - 예산체계도 1,401개 목·세목·채널 합계, 기본 예시 5개 내역·8개 세목·4개 채널 회귀검사
+- 단일 기준 사례 237.53억원 전액 교차 대사, LOFIN 7개 조회일, 최신 A/B/C 9/3/15행 회귀검사
 - 예산체계도 검색 전환, 연결선, 모바일 390px, 데스크톱 1,600px, 브라우저 콘솔 오류 검사
 
 ## 9. 완료 경계와 후속 확장
@@ -256,4 +280,4 @@ PIPELINE_OK
 
 ## 10. 한 줄 현황
 
-> **3부처 2026 파일럿 완료: 1,401개 세부사업의 중앙 확정재원·내역사업·목세목·집행채널과 지방 예산현액·재원구성·지출을 예산체계도로 연결하고, Add2 133.55조원·PDF 790카드·LOFIN 후보 2,294행을 추적 가능하게 통합했다.**
+> **3부처 2026 파일럿을 통합하고, 한 세부사업 237.53억원을 PDF 내용별·Add2 회계별로 전액 교차 대사한 뒤 LOFIN 7개 스냅샷을 후보 등급별로 분리한 단일사업 예산체계도를 주 화면으로 제공한다.**

@@ -100,10 +100,11 @@ printf '%s\n' '[7/9] Build workflow and budget-flow models'
 /usr/bin/env python3 "$CODE/build_business_workflows.py"
 /usr/bin/env python3 "$CODE/build_budget_flow_maps.py"
 
-printf '%s\n' '[8/9] Build three standalone HTML views'
+printf '%s\n' '[8/9] Build four standalone HTML views'
 /usr/bin/env python3 "$CODE/build_structure_html.py"
 /usr/bin/env python3 "$CODE/build_workflow_html.py"
 /usr/bin/env python3 "$CODE/build_budget_flow_html.py"
+/usr/bin/env python3 "$CODE/build_reference_budget_flow_html.py"
 
 printf '%s\n' '[9/9] Offline integrated-output verification'
 VERIFY_ARGS=()

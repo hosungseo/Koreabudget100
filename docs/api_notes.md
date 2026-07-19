@@ -45,7 +45,7 @@
 - Required:
   - `fyr` 회계연도 (예: 2026)
   - `exe_ymd` 집행일자 `YYYYMMDD` (**필수**, 없으면 ERROR-300)
-    - 스냅샷 시점으로 보이며 `20260101`, `20260630` 등 여러 값 가능
+    - 개별 거래일이 아니라 해당 날짜까지의 예산·지출 조회 기준일로 사용
 - Optional:
   - `dbiz_nm` 세부사업명 **키워드**
   - `laf_cd` 자치단체코드
@@ -75,6 +75,7 @@ curl "https://www.lofin365.go.kr/lf/hub/QWGJK?Key=<키>&Type=json&pIndex=1&pSize
   - `code/fetch_lofin.py` (초기 probe/region pilot)
   - `code/fetch_lofin_keyword.py` (수동 키워드 진단)
   - `code/fetch_lofin_local_transfer_candidates.py` (**Add2 지자체 이전 양수사업 선택 수집 본선**)
+  - `code/fetch_reference_lofin_timeline.py` (**단일 기준 사례 7개 조회일 시계열**)
 
 ### Catalog source
 - API catalog reference: `https://github.com/yangheeseok1/lofin-api-mcp` (146 APIs; local mirror is not published in this repository)
@@ -93,15 +94,22 @@ curl "https://www.lofin365.go.kr/lf/hub/QWGJK?Key=<키>&Type=json&pIndex=1&pSize
 - Each candidate row adds local budget amount, national/provincial/basic-local funding composition, compilation amount, expenditure and snapshot date. It remains a name-based observation rather than a confirmed central grant ledger.
 
 
-### Verified keyword pilots (2026-07-19, exe_ymd=20260630)
-- `사회연대경제`: 24 rows, national reflection sum ≈ 132.3억
-  - 광역본청 17 / 기초 7 (인천강화군, 대전중구, 경기광명시, 강원평창군 등)
-- The production budget map retains the 23 rows with `bdg_ntep > 0` and links them to the PDF subproject `사회연대경제 활성화` under the central business `지역사회 자생적 창조역량 강화`.
+### Verified keyword pilots and reference timeline
+- Portfolio explorer snapshot (`exe_ymd=20260630`): `사회연대경제` 검색 결과 중 `bdg_ntep > 0` 23행. This remains part of the 2,294-row general candidate dataset.
+- Dedicated reference timeline: `20260131`, `20260228`, `20260331`, `20260430`, `20260531`, `20260630`, `20260718`.
+- Latest (`20260718`): 27 positive-national rows across 20 local governments; 19 wide-area / 8 basic-local rows.
+  - A strong-title candidates (`혁신모델`): 9 rows, budget/national 40.00억, spend 20.41015억
+  - B broad-title candidates: 3 rows, budget 38.091억, national 28.87억, local 9.221억, spend 18.831억
+  - C likely separate `청년 일경험` programs: 15 rows, budget 110.39729억, national 86.49956억, spend 41.5271152억
+- The latest 27-row national sum is 155.36956억, 51.86956억 above the central subproject's 103.50억 local-government subsidy. It therefore cannot be treated as a confirmed allocation table.
+- A-candidate rows also show 100% national funding while the ministry PDF states a 50% subsidy rate. Even tier A remains a name-based candidate.
+- Row-count and amount changes across the seven dates are snapshot-state changes, not central grant transfers or transaction history.
 - `주거급여`: 297 rows, national reflection sum ≈ 6.26조
   - 광역본청 18 / 기초 279
 - 두 합계 모두 광역·기초 단계 중복을 포함할 수 있어 재정 총액이 아님
 - Outputs:
   - `data/normalized/lofin_qwgjk_keyword_matches.json`
+  - `data/normalized/reference_lofin_timeline_2026.json`
   - `data/lofin_keyword_fetch_summary.json`
   - `code/fetch_lofin_keyword.py`
 
@@ -147,5 +155,6 @@ Artifacts:
 - PDF reconcile: matched 712 / ambiguous 21 / unmatched 57
 - Canonical businesses with PDF enrichment: 710
 - Positive Add2 local-transfer businesses: 163
-- LOFIN: 160 queryable central businesses / 141 unique keywords (including 1 documented PDF subproject query) / 64 businesses with positive candidates / 2,294 rows
+- LOFIN portfolio: 160 queryable central businesses / 141 unique keywords (including 1 documented PDF subproject query) / 64 businesses with positive candidates / 2,294 rows at `20260630`
+- LOFIN reference timeline: 7 snapshot dates / latest 27 rows split into A/B/C = 9/3/15
 - Canonical build and offline verification: `bash code/run_pipeline.sh` → `PIPELINE_OK`

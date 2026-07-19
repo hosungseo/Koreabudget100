@@ -17,6 +17,8 @@ DATA = ROOT / "data" / "normalized" / "budget_flow_maps_2026_pilots.json"
 SUMMARY = ROOT / "artifacts" / "budget_flow_maps_2026_pilots_summary.json"
 HTML = ROOT / "artifacts" / "budget_flow_map.html"
 HTML_YEAR = ROOT / "artifacts" / "budget_flow_map_2026.html"
+REFERENCE_HTML = ROOT / "artifacts" / "reference_budget_flow_map.html"
+REFERENCE_TIMELINE = ROOT / "data" / "normalized" / "reference_lofin_timeline_2026.json"
 
 EXPECTED_COUNT = 1_401
 EXPECTED_TOTAL = 133_546_671_000_000
@@ -249,15 +251,80 @@ def verify_html(payload: dict[str, Any]) -> None:
     assert len(embedded.get("maps") or []) == EXPECTED_COUNT, "embedded map count differs"
 
 
+def verify_reference_html(timeline: dict[str, Any]) -> None:
+    try:
+        html = REFERENCE_HTML.read_text(encoding="utf-8")
+    except FileNotFoundError as exc:
+        raise AssertionError(f"missing reference HTML: {exc.filename}") from exc
+    required = [
+        "지역사회 자생적 창조역량 강화 · 예산체계도",
+        "같은 237.53억원을 두 장부로 분해",
+        "내용·금액 교차대사",
+        "지방재정 API는 한 시점보다 시간축에서 더 유용",
+        "A · PDF 문구 근접 후보",
+        "C · 별도 확인 필요",
+        "PDF 원문 산식 점검",
+        'id="count-chart"',
+        'id="money-chart"',
+    ]
+    for value in required:
+        assert value in html, f"reference HTML missing {value!r}"
+    match = re.search(
+        r'<script id="reference-data" type="application/json">(.*?)</script>',
+        html,
+        flags=re.DOTALL,
+    )
+    assert match, "embedded reference JSON missing"
+    embedded = json.loads(match.group(1))
+    assert embedded.get("timeline") == timeline, "embedded timeline differs"
+    budget_map = embedded.get("map") or {}
+    assert budget_map.get("id") == REFERENCE_ID
+    local_summary = budget_map.get("local_summary") or {}
+    assert amount(local_summary.get("candidate_count")) == 27
+    assert amount(budget_map.get("local_candidate_total_count")) == 27
+    assert len(budget_map.get("local_candidates") or []) == 27
+    assert local_summary.get("snapshot_date") == "20260718"
+    assert "local_groups" not in budget_map
+    assert "crosswalks" not in budget_map
+    tier_summary = budget_map.get("candidate_tier_summary") or {}
+    assert [
+        amount((tier_summary.get(tier) or {}).get("row_count"))
+        for tier in ("strong", "broad", "verify")
+    ] == [9, 3, 15]
+    detailed = budget_map.get("detailed_reconciliation") or {}
+    assert amount(detailed.get("amount_won")) == REFERENCE_TOTAL
+    assert amount(detailed.get("difference_won")) == 0
+    assert detailed.get("transaction_flow") is False
+    comparison = budget_map.get("comparison_warning") or {}
+    assert amount(comparison.get("central_subsidy_won")) == 10_350_000_000
+    assert amount(comparison.get("observed_national_won")) == 15_536_956_000
+    assert amount(comparison.get("difference_won")) == 5_186_956_000
+    assert "LOFIN 23건을" not in html
+    assert "대사 금지: 23건" not in html
+    snapshots = timeline.get("snapshots") or []
+    assert len(snapshots) == 7
+    assert [str(row.get("exe_ymd")) for row in snapshots] == [
+        "20260131",
+        "20260228",
+        "20260331",
+        "20260430",
+        "20260531",
+        "20260630",
+        "20260718",
+    ]
+
+
 def main() -> int:
     try:
         payload = load_json(DATA)
         summary = load_json(SUMMARY)
-        assert isinstance(payload, dict) and isinstance(summary, dict)
+        timeline = load_json(REFERENCE_TIMELINE)
+        assert isinstance(payload, dict) and isinstance(summary, dict) and isinstance(timeline, dict)
         checked = verify_all_maps(payload)
         verify_reference(checked["maps"])
         verify_summary(summary, checked)
         verify_html(payload)
+        verify_reference_html(timeline)
     except AssertionError as exc:
         print(f"BUDGET_FLOW_VERIFY_FAILED: {exc}", file=sys.stderr)
         return 1
