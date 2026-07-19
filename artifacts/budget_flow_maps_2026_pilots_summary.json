@@ -15,8 +15,10 @@
     "procurement": 672257721000
   },
   "default_business_id": "kb-ace0474d507615f7",
-  "lofin_candidate_business_count": 63,
-  "lofin_role": "non-additive keyword_candidate only",
+  "lofin_candidate_business_count": 64,
+  "lofin_candidate_row_count": 2294,
+  "lofin_role": "local budget composition and expenditure snapshot; non-additive keyword_candidate linkage",
+  "lofin_subproject_linked_business_count": 1,
   "map_count": 1401,
   "pdf_role": "documented allocation, implementer, subsidy rate and beneficiary context",
   "pdf_subproject_count": 45,

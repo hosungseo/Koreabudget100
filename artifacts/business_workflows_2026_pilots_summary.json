@@ -10,10 +10,10 @@
   "pdf_context_business_count": 710,
   "explicit_procedure_business_count": 292,
   "api_only_business_count": 691,
-  "node_count": 11853,
-  "edge_count": 7585,
+  "node_count": 11865,
+  "edge_count": 7597,
   "evidence_section_count": 4248,
-  "lofin_candidate_row_count": 2271,
+  "lofin_candidate_row_count": 2294,
   "phase_model": "G0-G6 presentation taxonomy; not a source assertion",
   "default_business_id": "kb-33f7c48956c96891",
   "sources": {

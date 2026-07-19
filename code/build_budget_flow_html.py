@@ -51,7 +51,7 @@ HTML_TEMPLATE = r'''<!doctype html>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <meta name="description" content="2026년 세부사업의 확정재원, 내역사업, 목·세목, 집행채널, 기관·지역과 수혜 근거를 연결한 예산체계도" />
+  <meta name="description" content="2026년 중앙 세부사업의 확정재원부터 지방자치단체의 예산현액·재원구성·지출 스냅샷까지 연결한 예산체계도" />
   <title>Koreabudget100 · __YEAR__ 예산체계도</title>
   <style>
     :root {
@@ -455,6 +455,10 @@ HTML_TEMPLATE = r'''<!doctype html>
     .mini-segment:nth-child(2) { background: var(--brand); }
     .mini-segment:nth-child(3) { background: var(--amber); }
     .mini-segment:nth-child(4) { background: var(--violet); }
+    .mini-segment.fund-national { background: var(--blue); }
+    .mini-segment.fund-sido { background: var(--brand); }
+    .mini-segment.fund-sigungu { background: var(--amber); }
+    .mini-segment.fund-other { background: var(--violet); }
     .edge-layer { position: absolute; z-index: 3; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
     .edge { fill: none; stroke-width: 1.8; opacity: .82; transition: opacity .15s ease, stroke-width .15s ease; }
     .edge-flow { stroke: var(--edge-flow); marker-end: url(#arrow-flow); }
@@ -481,6 +485,7 @@ HTML_TEMPLATE = r'''<!doctype html>
       margin-top: 18px;
     }
     .analysis-panel {
+      min-width: 0;
       padding: 15px;
       border: 1px solid var(--line);
       border-radius: 11px;
@@ -507,6 +512,24 @@ HTML_TEMPLATE = r'''<!doctype html>
     th { color: var(--muted); font-weight: 700; }
     td.amount { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700; text-align: right; white-space: nowrap; }
     .candidate-note { margin-top: 10px; color: var(--muted); font-size: 10px; }
+    .local-overview {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 7px;
+      margin-top: 13px;
+    }
+    .local-stat { padding: 8px 9px; border-left: 3px solid var(--blue); background: var(--blue-soft); }
+    .local-stat span { display: block; color: var(--muted); font-size: 10px; }
+    .local-stat strong { display: block; margin-top: 2px; font-size: 12px; }
+    .funding-cell { min-width: 165px; }
+    .funding-track { display: flex; overflow: hidden; height: 7px; margin-bottom: 4px; border-radius: 5px; background: var(--surface-strong); }
+    .funding-track span { min-width: 1px; }
+    .funding-national { background: var(--blue); }
+    .funding-sido { background: var(--brand); }
+    .funding-sigungu { background: var(--amber); }
+    .funding-other { background: var(--violet); }
+    .funding-text { color: var(--muted); font-size: 10px; white-space: nowrap; }
+    .match-text { color: var(--muted); font-size: 10px; }
     footer { max-width: 1740px; margin: 0 auto; padding: 0 24px 28px; color: var(--muted); font-size: 10px; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
     @media (prefers-reduced-motion: reduce) {
@@ -549,6 +572,7 @@ HTML_TEMPLATE = r'''<!doctype html>
         font-weight: 700;
       }
       .reconcile-list { grid-template-columns: 1fr; }
+      .local-overview { grid-template-columns: 1fr; }
     }
     @media print {
       @page { size: A3 landscape; margin: 8mm; }
@@ -611,7 +635,7 @@ HTML_TEMPLATE = r'''<!doctype html>
       <div class="section-heading">
         <div>
           <h2 id="map-heading">확정재원이 갈라지고 닿는 구조</h2>
-          <div class="section-kicker">재원·회계 → 내역사업 → 목·세목 → 집행채널 → 기관·지역·수혜</div>
+          <div class="section-kicker">중앙 확정재원 → 내역사업 → 목·세목·집행채널 → 지방 편성·재원구성 → 지출·수혜·검증</div>
         </div>
         <div class="map-counts" id="map-counts"></div>
       </div>
@@ -630,7 +654,7 @@ HTML_TEMPLATE = r'''<!doctype html>
             <div class="lane-title"><strong>세부사업·내역</strong><span>사업 총액 · PDF 산출근거</span></div>
             <div class="lane-title"><strong>목·세목</strong><span>Add2 국회확정액 정본</span></div>
             <div class="lane-title"><strong>집행채널</strong><span>보조·위탁·출연·계약·직접</span></div>
-            <div class="lane-title"><strong>기관·지역·수혜</strong><span>확인된 주체와 미상 구분</span></div>
+            <div class="lane-title"><strong>기관·지역·수혜</strong><span>지방 편성·지출과 수혜 근거</span></div>
           </div>
           <svg class="edge-layer" id="edge-layer" aria-hidden="true"></svg>
           <div class="stages" id="stages"></div>
@@ -650,8 +674,8 @@ HTML_TEMPLATE = r'''<!doctype html>
         <div class="table-wrap" id="item-table-wrap"></div>
       </section>
       <aside class="analysis-panel" aria-labelledby="source-heading">
-        <h2 id="source-heading">근거·자료 공백</h2>
-        <p class="analysis-sub">확정 금액, PDF 페이지, 지역 후보를 분리해 읽습니다.</p>
+        <h2 id="source-heading">지방재정·근거</h2>
+        <p class="analysis-sub">지역 편성·재원구성·지출 스냅샷과 연결 근거를 함께 읽습니다.</p>
         <div class="source-list" id="source-list"></div>
         <ul class="warning-list" id="warning-list" hidden></ul>
         <div id="candidate-table-wrap"></div>
@@ -661,7 +685,7 @@ HTML_TEMPLATE = r'''<!doctype html>
 
   <footer>
     Koreabudget100 · 금액 정본: Open Fiscal ExpenditureBudgetAdd2 / Y_YY_DFN_KCUR_AMT ·
-    PDF: 확정 매칭 설명자료 · LOFIN QWGJK: keyword_candidate, 비가산 · 실제 집행 완료 상태를 뜻하지 않습니다.
+    PDF: 확정 매칭 설명자료 · LOFIN QWGJK: 지역 예산현액·재원구성·지출 스냅샷 · keyword_candidate, 비가산 · 중앙 교부처 확정표가 아닙니다.
   </footer>
 
   <script id="budget-data" type="application/json">__PAYLOAD__</script>
@@ -709,6 +733,24 @@ HTML_TEMPLATE = r'''<!doctype html>
       return total ? `${(number(part) * 100 / number(total)).toLocaleString('ko-KR', { maximumFractionDigits: 1 })}%` : '0%';
     }
 
+    function dateLabel(value) {
+      const raw = text(value).replace(/\D/g, '');
+      return raw.length === 8 ? `${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}` : text(value || '기준일 미상');
+    }
+
+    function rateLabel(value) {
+      return value == null ? '산정 불가' : `${(number(value) * 100).toLocaleString('ko-KR', { maximumFractionDigits: 1 })}%`;
+    }
+
+    function fundingComponents(row) {
+      return [
+        { kind: 'national', label: '국비', amount_won: number(row.national_amt) },
+        { kind: 'sido', label: '시도비', amount_won: number(row.sido_amt) },
+        { kind: 'sigungu', label: '시군구비', amount_won: number(row.sigungu_amt) },
+        { kind: 'other', label: '기타', amount_won: number(row.other_amt) },
+      ].filter(component => component.amount_won > 0);
+    }
+
     function makeNode(spec) {
       const node = {
         id: text(spec.id),
@@ -743,6 +785,7 @@ HTML_TEMPLATE = r'''<!doctype html>
         const bar = el('span', 'mini-bar');
         node.components.forEach(component => {
           const segment = el('span', 'mini-segment');
+          if (component.kind) segment.classList.add(`fund-${component.kind}`);
           segment.style.width = `${Math.max(1, number(component.amount_won) * 100 / node.amount)}%`;
           bar.append(segment);
         });
@@ -789,11 +832,17 @@ HTML_TEMPLATE = r'''<!doctype html>
       const subCount = array(map.subprojects).length;
       const channelCount = array(map.channels).length;
       const basisSummary = object(map.budget_basis_summary);
-      byId('business-summary').textContent = subCount
+      const localSummary = object(map.local_summary);
+      const localCount = number(localSummary.candidate_count);
+      const snapshotDate = array(localSummary.snapshot_dates)[0];
+      const centralSummary = subCount
         ? `사업설명자료 내역 ${subCount}개와 열린재정 목·세목 ${array(map.budget_items).length}개를 따로 대사해 ${channelCount}개 집행채널로 연결합니다.`
         : basisSummary.text
           ? `사업설명자료 산출근거 문맥과 열린재정 목·세목 ${array(map.budget_items).length}개를 함께 읽고 ${channelCount}개 집행채널로 분류했습니다. 내역사업 금액은 임의로 쪼개지 않았습니다.`
           : `열린재정 목·세목 ${array(map.budget_items).length}개를 ${channelCount}개 집행채널로 분류했습니다. PDF 내역사업 자료가 없는 부분은 만들지 않았습니다.`;
+      byId('business-summary').textContent = localCount
+        ? `${centralSummary} LOFIN에서 ${dateLabel(snapshotDate)} 기준 지역 예산 편성·지출 후보 ${localCount}건을 확인했습니다.`
+        : `${centralSummary} LOFIN 키워드 후보가 없는 지역은 추정하지 않았습니다.`;
       byId('business-total').textContent = won(total, true);
       renderBreadcrumb(core);
       renderHeroStatus(map);
@@ -886,18 +935,53 @@ HTML_TEMPLATE = r'''<!doctype html>
         return node;
       });
 
-      if (array(map.local_candidates).length) {
-        const names = [...new Set(array(map.local_candidates).map(row => row.local_gov_name))].slice(0, 5);
-        const candidate = makeNode({
-          id: 'lofin-candidates', type: 'candidate', kicker: 'LF · QWGJK', badge: '후보·비가산',
-          title: `지역사업 후보 ${number(map.local_candidate_total_count)}건`,
-          meta: `${names.join(' · ')}${number(map.local_candidate_total_count) > names.length ? ' 외' : ''}`,
-          amountText: '중앙총액에 가산하지 않음',
-          detail: '사업명 키워드 후보이며 교부·수령의 확정 관계가 아님', source: 'LOFIN QWGJK',
+      const localSummaryNode = makeNode(localCount ? {
+        id: 'lofin-summary', type: 'candidate', kicker: 'LF · QWGJK', badge: '편성·지출 후보',
+        title: `지역 세부사업 ${localCount}건`,
+        meta: `광역 ${number(localSummary.wide_area_row_count)} · 기초 ${number(localSummary.basic_row_count)} · ${number(localSummary.unique_local_gov_count)}개 지자체`,
+        amountText: `${dateLabel(snapshotDate)} 관측 · 비가산`,
+        detail: `PDF 내역 또는 중앙 세부사업명 키워드로 찾은 지방 예산현액·재원구성·지출액 스냅샷. 중앙 교부처 확정 관계가 아니며 관측합은 중복될 수 있음`,
+        source: 'LOFIN QWGJK',
+      } : {
+        id: 'lofin-summary', type: 'unknown', kicker: 'LF · QWGJK', badge: '후보 없음',
+        title: '지역 편성 후보 미확인',
+        meta: '중앙사업·PDF 내역 키워드에서 양수 국비 지역 행을 찾지 못함',
+        amountText: '지역명 추정 안 함',
+        detail: 'LOFIN 조회 결과가 없다는 뜻이며 지방 집행이 없다고 단정하지 않음',
+        source: 'LOFIN QWGJK',
+      });
+      const localChannel = array(map.channels).find(row => row.code === 'local_subsidy');
+      if (localCount && localChannel) addEdge(localChannel.id, localSummaryNode.id, 'candidate', 0, '지자체이전 세목→지역 관측');
+      if (localCount) {
+        array(localSummary.matched_subproject_ids).forEach(subprojectId => {
+          addEdge(`sub-${subprojectId}`, localSummaryNode.id, 'candidate', 0, 'PDF 내역명→LOFIN 검색');
         });
-        const localChannel = array(map.channels).find(row => row.code === 'local_subsidy');
-        if (localChannel) addEdge(localChannel.id, candidate.id, 'candidate', 0, '지역 후보');
-        destinationNodes.push(candidate);
+      }
+
+      const localRegionNodes = array(map.local_groups).map((row, index) => {
+        const execution = row.execution_rate == null ? '집행률 산정 불가' : `관측 집행률 ${rateLabel(row.execution_rate)}`;
+        const node = makeNode({
+          id: row.id || `local-region-${index + 1}`, type: 'candidate',
+          kicker: `L${String(index + 1).padStart(2, '0')} · ${row.region_name || '권역 미상'}`, badge: '지역 관측',
+          title: `${row.region_name || '권역 미상'} · ${number(row.row_count)}개 지방사업`,
+          meta: `지자체 ${number(row.local_gov_count)} · 광역행 ${number(row.wide_area_row_count)} · 기초행 ${number(row.basic_row_count)}`,
+          amount: row.budget_cash_amt,
+          amountText: `예산현액 ${won(row.budget_cash_amt, true)} · 지출 ${won(row.spend_amt, true)}`,
+          detail: `${execution} · 국비 ${won(row.national_amt, true)} · 시도비 ${won(row.sido_amt, true)} · 시군구비 ${won(row.sigungu_amt, true)} · 관측합 중복 가능`,
+          components: fundingComponents(row), source: 'LOFIN QWGJK',
+        });
+        addEdge(localSummaryNode.id, node.id, 'candidate', 0, '권역별 관측');
+        return node;
+      });
+      if (localCount && number(map.local_group_total_count) > localRegionNodes.length) {
+        const omitted = number(map.local_group_total_count) - localRegionNodes.length;
+        const more = makeNode({
+          id: 'local-region-more', type: 'candidate', kicker: 'LF · 나머지', badge: '상세표 참조',
+          title: `그 밖의 ${omitted}개 권역`, meta: '아래 지역재정 표에서 전체 관측행 확인',
+          amountText: '관측합 비가산', detail: '보드에는 국비 관측액 상위 권역만 표시', source: 'LOFIN QWGJK',
+        });
+        addEdge(localSummaryNode.id, more.id, 'candidate', 0, '나머지 권역');
+        localRegionNodes.push(more);
       }
 
       const implementation = object(map.implementation);
@@ -928,16 +1012,30 @@ HTML_TEMPLATE = r'''<!doctype html>
         amountText: reconciliation.subproject_difference_won == null ? '' : `차이 ${number(reconciliation.subproject_difference_won).toLocaleString('ko-KR')}원`,
         detail: 'PDF 예산 산출근거의 내역사업 합계를 국회확정액과 대사', source: 'ministry PDF',
       });
+      const localAudit = makeNode(localCount ? {
+        id: 'reconcile-local', type: 'candidate', kicker: 'V3 · LOFIN 해석', badge: '비가산 검증',
+        title: '지역 예산현액·지출 스냅샷',
+        meta: `${dateLabel(snapshotDate)} · 예산현액 관측합 ${won(localSummary.observed_budget_cash_amt, true)} · 지출 ${won(localSummary.observed_spend_amt, true)}`,
+        amountText: `관측 집행률 ${rateLabel(localSummary.observed_execution_rate)}`,
+        detail: '관측행 내부의 예산현액 대비 지출 비율이며 광역·기초 중복 가능성 때문에 중앙 확정액과 비교하거나 대사하지 않음',
+        source: 'LOFIN QWGJK',
+      } : {
+        id: 'reconcile-local', type: 'unknown', kicker: 'V3 · LOFIN 해석', badge: '자료 없음',
+        title: '지역 스냅샷 미확인', meta: '조회 키워드에서 양수 국비 후보 행 없음',
+        amountText: '중앙예산만 검증', detail: '지역명을 추정하거나 0원 집행으로 간주하지 않음', source: 'LOFIN QWGJK',
+      });
+      if (localCount) addEdge(localSummaryNode.id, localAudit.id, 'context', 0, '편성·지출 해석');
 
       const stages = byId('stages');
       stages.replaceChildren(
-        stage('G0', '확정재원', '회계·분야와 세부사업 총액', { 0: [source], 1: [business] }),
+        stage('G0', '중앙 확정재원', '회계·분야와 세부사업 국회확정액', { 0: [source], 1: [business] }),
         stage('G1', '내역사업', 'PDF 산출근거의 사업별 배분', { 1: subNodes }),
-        stage('G2', '목·세목·채널', 'API 회계 세목과 집행 유형', { 2: itemNodes, 3: channelNodes }),
-        stage('G3', '기관·지역', '확인된 수급 유형과 미상 구분', { 4: destinationNodes }),
-        stage('G4', '수혜·검증', '수혜자 근거와 두 방향 총액 대사', { 1: [pdfRecon], 2: [apiRecon], 4: [beneficiary] }),
+        stage('G2', '목·세목·채널', '열린재정 회계 세목과 집행 유형', { 2: itemNodes, 3: channelNodes }),
+        stage('G3', '중앙 집행대상', '세목·문서로 확인된 수급 유형과 미상 구분', { 4: destinationNodes }),
+        stage('G4', '지방 편성 후보', 'LOFIN 예산현액과 국비·시도비·시군구비', { 3: [localSummaryNode], 4: localRegionNodes }),
+        stage('G5', '지출·수혜·검증', '지역 지출 스냅샷, 수혜자 근거와 총액 대사', { 0: [localAudit], 1: [pdfRecon], 2: [apiRecon], 4: [beneficiary] }),
       );
-      byId('map-counts').textContent = `내역 ${subCount || '자료없음'} · 세목 ${array(map.budget_items).length} · 채널 ${array(map.channels).length} · 직접 대사 ${array(map.crosswalks).length}`;
+      byId('map-counts').textContent = `내역 ${subCount || '자료없음'} · 세목 ${array(map.budget_items).length} · 채널 ${array(map.channels).length} · 지역관측 ${localCount || '없음'} · 직접 대사 ${array(map.crosswalks).length}`;
       renderAnalysis(map);
       requestAnimationFrame(() => {
         drawEdges();
@@ -961,7 +1059,11 @@ HTML_TEMPLATE = r'''<!doctype html>
       target.append(el('span', '', `목·세목 ${array(map.budget_items).length}개`));
       target.append(el('span', '', `집행채널 ${array(map.channels).length}개`));
       target.append(el('span', '', `PDF 내역 ${array(map.subprojects).length || (object(map.budget_basis_summary).text ? '산출근거 문맥' : '자료없음')}`));
-      target.append(el('span', '', `LOFIN ${number(map.local_candidate_total_count) ? `후보 ${number(map.local_candidate_total_count)}건` : '확정 지역 없음'}`));
+      const local = object(map.local_summary);
+      const snapshot = array(local.snapshot_dates)[0];
+      target.append(el('span', '', number(local.candidate_count)
+        ? `LOFIN 지역 편성·지출 ${number(local.candidate_count)}건 · ${dateLabel(snapshot)}`
+        : 'LOFIN 지역 후보 미확인'));
     }
 
     function marker(defs, id, color) {
@@ -1065,11 +1167,15 @@ HTML_TEMPLATE = r'''<!doctype html>
       );
       const insightList = byId('insight-list');
       const insights = array(map.insights);
-      insightList.replaceChildren(...(insights.length ? insights : [
+      const defaults = [
         '목·세목 합계는 국회확정액과 원 단위로 검증합니다.',
         '집행채널은 세목 명칭에 따른 분류이며 실제 수급 기관은 문서가 있을 때만 표시합니다.',
         'PDF 내역사업이 없으면 총액을 임의 배분하지 않습니다.',
-      ]).map(value => el('li', '', value)));
+      ];
+      if (number(object(map.local_summary).candidate_count)) {
+        defaults.push('LOFIN 행은 지방 예산현액의 재원구성과 조회일 지출액을 보여 주되 중앙 확정액과는 대사하지 않습니다.');
+      }
+      insightList.replaceChildren(...(insights.length ? insights : defaults).map(value => el('li', '', value)));
       renderItemTable(map);
       renderSources(map);
       renderCandidates(map);
@@ -1116,46 +1222,110 @@ HTML_TEMPLATE = r'''<!doctype html>
         );
         target.append(source);
       });
+      const local = object(map.local_summary);
+      if (number(local.candidate_count)) {
+        const source = el('div', 'source-row');
+        const scope = number(object(local.match_scopes).pdf_subproject_keyword)
+          ? `PDF 내역사업 키워드 ${number(object(local.match_scopes).pdf_subproject_keyword)}건 포함`
+          : '중앙 세부사업명 키워드';
+        source.append(
+          el('strong', '', 'LOFIN · QWGJK 세부사업별 세출현황'),
+          el('span', '', `${dateLabel(array(local.snapshot_dates)[0])} 기준 · ${scope}`),
+          el('span', '', '예산현액·국비·시도비·시군구비·기타·지출액·편성액'),
+        );
+        target.append(source);
+      }
       const warnings = array(map.warnings);
       const warningList = byId('warning-list');
       warningList.hidden = !warnings.length;
       warningList.replaceChildren(...warnings.map(value => el('li', '', value)));
     }
 
+    function fundingCell(row) {
+      const cell = el('td', 'funding-cell');
+      const components = fundingComponents(row);
+      const total = components.reduce((sum, component) => sum + component.amount_won, 0);
+      const track = el('div', 'funding-track');
+      track.setAttribute('aria-label', components.map(component => `${component.label} ${won(component.amount_won, true)}`).join(', '));
+      components.forEach(component => {
+        const segment = el('span', `funding-${component.kind}`);
+        segment.style.width = `${total ? component.amount_won * 100 / total : 0}%`;
+        track.append(segment);
+      });
+      const labels = components.map(component => `${component.label} ${won(component.amount_won)}`).join(' · ');
+      cell.append(track, el('div', 'funding-text', labels || '재원구성 0원'));
+      return cell;
+    }
+
+    function alignmentLabel(value) {
+      return ({
+        exact_title: '지방사업명 정확일치',
+        title_overlap: '사업명 포함일치',
+        keyword_contained: '검색어 포함',
+        query_result: '검색 결과',
+      })[value] || '검색 결과';
+    }
+
     function renderCandidates(map) {
       const wrap = byId('candidate-table-wrap');
       const rows = array(map.local_candidates);
+      const summary = object(map.local_summary);
       if (!rows.length) {
-        wrap.replaceChildren(el('p', 'candidate-note', '확정 연결할 LOFIN 지역사업이 없습니다. 지역명은 추정하지 않았습니다.'));
+        wrap.replaceChildren(el('p', 'candidate-note', 'LOFIN에서 양수 국비 지역사업 후보를 확인하지 못했습니다. 지역명과 집행액을 추정하지 않았습니다.'));
         return;
       }
+      const overview = el('div', 'local-overview');
+      [
+        ['지역 관측 범위', `${number(summary.candidate_count)}건 · ${number(summary.unique_local_gov_count)}개 지자체`],
+        ['행정 단계', `광역 ${number(summary.wide_area_row_count)} · 기초 ${number(summary.basic_row_count)}`],
+        ['조회·집행', `${dateLabel(array(summary.snapshot_dates)[0])} · 관측 ${rateLabel(summary.observed_execution_rate)}`],
+      ].forEach(([label, value]) => {
+        const stat = el('div', 'local-stat');
+        stat.append(el('span', '', label), el('strong', '', value));
+        overview.append(stat);
+      });
       const tableWrap = el('div', 'table-wrap');
       const table = el('table');
-      const caption = el('caption', '', `LOFIN 지역 키워드 후보 상위 ${rows.length}건 · 비가산`);
+      const caption = el('caption', '', `LOFIN 지역 예산 편성·지출 ${rows.length}/${number(summary.candidate_count)}건 · 국비 관측액순 · 비가산`);
       const head = document.createElement('thead');
       const hr = document.createElement('tr');
-      ['지역', '지방 세부사업', '국비 후보', '상태'].forEach(value => hr.append(el('th', '', value)));
+      ['지역', '지방 세부사업', '재원 구성', '예산현액', '지출액', '집행률', '연결 근거'].forEach(value => hr.append(el('th', '', value)));
       head.append(hr);
       const body = document.createElement('tbody');
       rows.forEach(row => {
         const tr = document.createElement('tr');
+        const basis = row.match_scope === 'pdf_subproject_keyword'
+          ? `PDF 내역 ‘${row.matched_subproject_name || row.keyword}’`
+          : `중앙 사업명 ‘${row.keyword || map.title}’`;
+        const detail = el('td');
+        detail.append(
+          el('strong', '', row.detail_business_name || '지방 세부사업명 미상'),
+          el('div', 'match-text', `${row.account_name || '회계 미상'} · ${row.field_name || '분야 미상'} · ${row.section_name || '부문 미상'}`),
+          el('div', 'match-text', row.detail_business_code || '사업코드 미상'),
+        );
+        const match = el('td');
+        match.append(el('span', '', basis), el('div', 'match-text', `${alignmentLabel(row.name_alignment)} · keyword_candidate`));
         tr.append(
           el('td', '', `${row.local_gov_name}${row.local_level ? ` · ${row.local_level}` : ''}`),
-          el('td', '', row.detail_business_name),
-          el('td', 'amount', won(row.national_amt, true)),
-          el('td', '', 'keyword_candidate'),
+          detail,
+          fundingCell(row),
+          el('td', 'amount', won(row.budget_cash_amt, true)),
+          el('td', 'amount', won(row.spend_amt, true)),
+          el('td', 'amount', rateLabel(row.execution_rate)),
+          match,
         );
         body.append(tr);
       });
       table.append(caption, head, body);
       tableWrap.append(table);
-      const note = el('p', 'candidate-note', '광역·기초 행은 같은 국비를 중복 표현할 수 있고 중앙사업과의 교부 관계가 확정되지 않았습니다. 합산하지 마세요.');
-      wrap.replaceChildren(tableWrap, note);
+      const note = el('p', 'candidate-note', '예산현액·재원구성·지출액은 지방재정365 조회일 스냅샷입니다. 광역·기초 행에 같은 국비가 중복될 수 있고 중앙사업과의 교부 관계는 명칭 기반 후보이므로 관측합을 중앙 확정액과 합산·대사하지 않습니다.');
+      wrap.replaceChildren(overview, tableWrap, note);
     }
 
     function searchTerms(map) {
       const core = object(map.core);
-      return normalize([map.title, core.office_name, core.account_name, core.field_name, core.section_name, core.program_name, core.unit_business_name].join(' '));
+      const localTerms = array(map.local_candidates).flatMap(row => [row.region_name, row.local_gov_name, row.detail_business_name]);
+      return normalize([map.title, core.office_name, core.account_name, core.field_name, core.section_name, core.program_name, core.unit_business_name, ...localTerms].join(' '));
     }
     const SEARCH_INDEX = MAPS.map(map => ({ map, key: searchTerms(map) }));
 
@@ -1179,7 +1349,7 @@ HTML_TEMPLATE = r'''<!doctype html>
         button.setAttribute('aria-selected', 'false');
         button.append(
           el('span', 'result-title', map.title),
-          el('span', 'result-meta', `${core.office_name} · ${core.account_name} · ${core.program_name}`),
+          el('span', 'result-meta', `${core.office_name} · ${core.account_name} · ${core.program_name}${number(map.local_candidate_total_count) ? ` · 지역관측 ${number(map.local_candidate_total_count)}건` : ''}`),
           el('span', 'result-amount', won(core.congress_amt, true)),
         );
         results.append(button);

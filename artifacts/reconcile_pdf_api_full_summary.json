@@ -3073,7 +3073,7 @@
         "보조",
         "직접"
       ],
-      "lofin_hits": 0
+      "lofin_hits": 23
     },
     {
       "pdf": "마을기업육성사업",
@@ -8837,6 +8837,6 @@
     }
   ],
   "api_detail_count": 1401,
-  "lofin_seed_count": 2271,
+  "lofin_seed_count": 2294,
   "tag": "full"
 }

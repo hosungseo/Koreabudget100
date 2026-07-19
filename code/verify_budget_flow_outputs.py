@@ -119,6 +119,27 @@ def verify_all_maps(payload: dict[str, Any]) -> dict[str, Any]:
         for candidate in row.get("local_candidates") or []:
             assert candidate.get("match_status") == "keyword_candidate", f"{map_id}: LOFIN status"
             assert candidate.get("additive") is False, f"{map_id}: LOFIN candidate must be non-additive"
+            assert amount(candidate.get("national_amt")) > 0, f"{map_id}: LOFIN national amount"
+            assert candidate.get("exe_ymd"), f"{map_id}: LOFIN snapshot date"
+            assert candidate.get("local_gov_name"), f"{map_id}: LOFIN local government"
+            assert candidate.get("detail_business_name"), f"{map_id}: LOFIN business name"
+            budget_cash = amount(candidate.get("budget_cash_amt"))
+            spend = amount(candidate.get("spend_amt"))
+            expected_rate = round(spend / budget_cash, 6) if budget_cash else None
+            assert candidate.get("execution_rate") == expected_rate, f"{map_id}: LOFIN execution rate"
+
+        local_summary = row.get("local_summary")
+        assert isinstance(local_summary, dict), f"{map_id}: LOFIN summary missing"
+        assert local_summary.get("non_additive") is True, f"{map_id}: LOFIN summary additive"
+        assert amount(local_summary.get("candidate_count")) == amount(
+            row.get("local_candidate_total_count")
+        ), f"{map_id}: LOFIN candidate count"
+        assert len(row.get("local_candidates") or []) == min(
+            amount(local_summary.get("candidate_count")), 24
+        ), f"{map_id}: LOFIN display row count"
+        assert len(row.get("local_groups") or []) <= amount(
+            row.get("local_group_total_count")
+        ), f"{map_id}: LOFIN group count"
 
     assert total == EXPECTED_TOTAL, f"portfolio total {total} != {EXPECTED_TOTAL}"
     return {"maps": maps, "total": total, "channel_counts": channel_counts}
@@ -172,7 +193,17 @@ def verify_reference(maps: list[dict[str, Any]]) -> None:
     local = next(value for value in row["channels"] if value.get("code") == "local_subsidy")
     assert local.get("support_rate") == "50%"
     assert amount(row.get("reconciliation", {}).get("documented_crosswalk_won")) == 14_421_000_000
-    assert row.get("local_candidates") == []
+    local_summary = row.get("local_summary") or {}
+    assert amount(local_summary.get("candidate_count")) == 23
+    assert local_summary.get("matched_subproject_names") == ["사회연대경제 활성화"]
+    assert local_summary.get("matched_subproject_ids") == ["sub-05"]
+    assert amount(local_summary.get("wide_area_row_count")) == 17
+    assert amount(local_summary.get("basic_row_count")) == 6
+    assert all(
+        value.get("match_scope") == "pdf_subproject_keyword"
+        for value in row.get("local_candidates") or []
+    )
+    assert all(value.get("additive") is False for value in row.get("local_groups") or [])
     assert row.get("implementation", {}).get("beneficiary") == "일반 국민"
     assert any("17개 광역시도" in str(value) for value in row.get("insights") or [])
 
@@ -197,8 +228,9 @@ def verify_html(payload: dict[str, Any]) -> None:
     required = [
         "Koreabudget100 · 2026 예산체계도",
         "확정재원이 갈라지고 닿는 구조",
-        "재원·회계 → 내역사업 → 목·세목 → 집행채널 → 기관·지역·수혜",
+        "중앙 확정재원 → 내역사업 → 목·세목·집행채널 → 지방 편성·재원구성 → 지출·수혜·검증",
         "PDF↔API 직접 대사",
+        "LOFIN 지역 예산 편성·지출",
         "업무 절차 · 보조",
         REFERENCE_TITLE,
         REFERENCE_ID,

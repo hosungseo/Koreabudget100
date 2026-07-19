@@ -15,6 +15,7 @@ import math
 import os
 import re
 import tempfile
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -26,6 +27,8 @@ SUMMARY = ROOT / "artifacts" / "budget_flow_maps_2026_pilots_summary.json"
 
 REFERENCE_TITLE = "지역사회 자생적 창조역량 강화"
 REFERENCE_ID = "kb-ace0474d507615f7"
+MAX_LOCAL_DISPLAY_ROWS = 24
+MAX_LOCAL_GROUPS = 8
 
 CHANNELS = {
     "local_subsidy": {
@@ -361,34 +364,223 @@ def reference_crosswalks(
     return rows
 
 
-def build_local_candidates(workflow: dict[str, Any]) -> list[dict[str, Any]]:
-    rows: list[dict[str, Any]] = []
-    candidates = [row for row in workflow.get("local_reflections") or [] if isinstance(row, dict)]
-    candidates.sort(
-        key=lambda row: (
-            -number(row.get("national_amt")),
-            compact(row.get("local_gov_name")),
-            compact(row.get("detail_business_name")),
-            compact(row.get("detail_business_code")),
-        )
-    )
-    for index, raw in enumerate(candidates[:12]):
-        rows.append(
+def normalized_name(value: Any) -> str:
+    text = unicodedata.normalize("NFKC", str(value or "")).casefold()
+    return re.sub(r"[^0-9a-z가-힣]+", "", text)
+
+
+def local_name_alignment(
+    local_title: str, keyword: str, comparison_titles: list[str]
+) -> str:
+    local_key = normalized_name(local_title)
+    title_keys = [normalized_name(value) for value in comparison_titles if value]
+    if local_key and local_key in title_keys:
+        return "exact_title"
+    if local_key and any(
+        min(len(local_key), len(title_key)) >= 5
+        and (local_key in title_key or title_key in local_key)
+        for title_key in title_keys
+    ):
+        return "title_overlap"
+    keyword_key = normalized_name(keyword)
+    if keyword_key and keyword_key in local_key:
+        return "keyword_contained"
+    return "query_result"
+
+
+def build_local_candidates(
+    workflow: dict[str, Any], subprojects: list[dict[str, Any]]
+) -> tuple[list[dict[str, Any]], dict[str, Any], list[dict[str, Any]]]:
+    """Normalize detailed LOFIN observations and derive non-additive rollups."""
+
+    subproject_by_label = {
+        normalized_name(row.get("label")): row for row in subprojects if row.get("label")
+    }
+    normalized_rows: list[dict[str, Any]] = []
+    for raw in workflow.get("local_reflections") or []:
+        if not isinstance(raw, dict):
+            continue
+        national_amt = number(raw.get("national_amt"))
+        if national_amt <= 0:
+            continue
+        matched_name = compact(raw.get("matched_subproject_name"))
+        matched_subproject = subproject_by_label.get(normalized_name(matched_name))
+        budget_cash_amt = number(raw.get("budget_cash_amt"))
+        spend_amt = number(raw.get("spend_amt"))
+        national_amt = number(raw.get("national_amt"))
+        sido_amt = number(raw.get("sido_amt"))
+        sigungu_amt = number(raw.get("sigungu_amt"))
+        other_amt = number(raw.get("other_amt"))
+        funding_total = national_amt + sido_amt + sigungu_amt + other_amt
+        local_title = compact(raw.get("detail_business_name"))
+        comparison_titles = [
+            str(workflow.get("title") or ""),
+            matched_name,
+        ]
+        normalized_rows.append(
             {
-                "id": f"local-{index + 1:02d}",
-                "local_gov_name": compact(raw.get("local_gov_name")) or "지역명 미상",
-                "local_level": compact(raw.get("local_level")),
-                "detail_business_name": compact(raw.get("detail_business_name")),
-                "national_amt": number(raw.get("national_amt")),
-                "sido_amt": number(raw.get("sido_amt")),
-                "sigungu_amt": number(raw.get("sigungu_amt")),
-                "budget_cash_amt": number(raw.get("budget_cash_amt")),
+                "region_code": compact(raw.get("region_code")),
+                "region_name": compact(raw.get("region_name")) or "권역 미상",
+                "local_gov_code": compact(raw.get("local_gov_code")),
+                "local_gov_name": compact(raw.get("local_gov_name")) or "지자체 미상",
+                "local_level": compact(raw.get("local_level")) or "단계 미상",
+                "account_name": compact(raw.get("account_name")),
+                "field_name": compact(raw.get("field_name")),
+                "section_name": compact(raw.get("section_name")),
+                "detail_business_name": local_title,
+                "detail_business_code": compact(raw.get("detail_business_code")),
+                "budget_cash_amt": budget_cash_amt,
+                "national_amt": national_amt,
+                "sido_amt": sido_amt,
+                "sigungu_amt": sigungu_amt,
+                "other_amt": other_amt,
+                "funding_total_won": funding_total,
+                "funding_gap_won": budget_cash_amt - funding_total,
+                "spend_amt": spend_amt,
+                "compile_amt": number(raw.get("compile_amt")),
+                "execution_rate": (
+                    round(spend_amt / budget_cash_amt, 6) if budget_cash_amt else None
+                ),
+                "exe_ymd": compact(raw.get("exe_ymd")),
+                "keyword": compact(raw.get("keyword")),
+                "keyword_strategy": compact(raw.get("keyword_strategy")),
+                "match_scope": compact(raw.get("match_scope"))
+                or "central_business_keyword",
+                "matched_subproject_id": (
+                    str(matched_subproject.get("id")) if matched_subproject else ""
+                ),
+                "matched_subproject_name": matched_name,
+                "name_alignment": local_name_alignment(
+                    local_title, compact(raw.get("keyword")), comparison_titles
+                ),
+                "shared_keyword_duplicate": bool(raw.get("shared_keyword_duplicate")),
                 "match_status": "keyword_candidate",
                 "additive": False,
                 "source": "lofin_QWGJK",
             }
         )
-    return rows
+
+    normalized_rows.sort(
+        key=lambda row: (
+            -number(row.get("national_amt")),
+            str(row.get("region_name") or ""),
+            str(row.get("local_gov_name") or ""),
+            str(row.get("detail_business_code") or ""),
+            str(row.get("detail_business_name") or ""),
+        )
+    )
+    for index, row in enumerate(normalized_rows):
+        row["id"] = f"local-{index + 1:03d}"
+
+    groups: dict[tuple[str, str], list[dict[str, Any]]] = collections.defaultdict(list)
+    for row in normalized_rows:
+        groups[(str(row["region_code"]), str(row["region_name"]))].append(row)
+    local_groups: list[dict[str, Any]] = []
+    for (region_code, region_name), rows in groups.items():
+        budget_total = sum(number(row.get("budget_cash_amt")) for row in rows)
+        spend_total = sum(number(row.get("spend_amt")) for row in rows)
+        local_groups.append(
+            {
+                "region_code": region_code,
+                "region_name": region_name,
+                "row_count": len(rows),
+                "local_gov_count": len(
+                    {str(row.get("local_gov_code") or row.get("local_gov_name")) for row in rows}
+                ),
+                "wide_area_row_count": sum(
+                    row.get("local_level") == "광역본청" for row in rows
+                ),
+                "basic_row_count": sum(row.get("local_level") == "기초" for row in rows),
+                "budget_cash_amt": budget_total,
+                "national_amt": sum(number(row.get("national_amt")) for row in rows),
+                "sido_amt": sum(number(row.get("sido_amt")) for row in rows),
+                "sigungu_amt": sum(number(row.get("sigungu_amt")) for row in rows),
+                "other_amt": sum(number(row.get("other_amt")) for row in rows),
+                "spend_amt": spend_total,
+                "compile_amt": sum(number(row.get("compile_amt")) for row in rows),
+                "execution_rate": round(spend_total / budget_total, 6)
+                if budget_total
+                else None,
+                "additive": False,
+            }
+        )
+    local_groups.sort(
+        key=lambda row: (
+            -number(row.get("national_amt")),
+            str(row.get("region_name") or ""),
+        )
+    )
+    for index, row in enumerate(local_groups):
+        row["id"] = f"local-region-{index + 1:02d}"
+
+    budget_total = sum(number(row.get("budget_cash_amt")) for row in normalized_rows)
+    spend_total = sum(number(row.get("spend_amt")) for row in normalized_rows)
+    summary = {
+        "candidate_count": len(normalized_rows),
+        "display_count": min(len(normalized_rows), MAX_LOCAL_DISPLAY_ROWS),
+        "unique_local_gov_count": len(
+            {
+                str(row.get("local_gov_code") or row.get("local_gov_name"))
+                for row in normalized_rows
+            }
+        ),
+        "region_count": len(local_groups),
+        "wide_area_row_count": sum(
+            row.get("local_level") == "광역본청" for row in normalized_rows
+        ),
+        "basic_row_count": sum(
+            row.get("local_level") == "기초" for row in normalized_rows
+        ),
+        "exact_title_count": sum(
+            row.get("name_alignment") == "exact_title" for row in normalized_rows
+        ),
+        "keyword_contained_count": sum(
+            row.get("name_alignment") in {"exact_title", "title_overlap", "keyword_contained"}
+            for row in normalized_rows
+        ),
+        "shared_keyword_duplicate_count": sum(
+            bool(row.get("shared_keyword_duplicate")) for row in normalized_rows
+        ),
+        "snapshot_dates": sorted(
+            {str(row.get("exe_ymd")) for row in normalized_rows if row.get("exe_ymd")}
+        ),
+        "match_scopes": dict(
+            sorted(
+                collections.Counter(
+                    str(row.get("match_scope") or "central_business_keyword")
+                    for row in normalized_rows
+                ).items()
+            )
+        ),
+        "matched_subproject_ids": sorted(
+            {str(row.get("matched_subproject_id")) for row in normalized_rows if row.get("matched_subproject_id")}
+        ),
+        "matched_subproject_names": sorted(
+            {str(row.get("matched_subproject_name")) for row in normalized_rows if row.get("matched_subproject_name")}
+        ),
+        "observed_budget_cash_amt": budget_total,
+        "observed_national_amt": sum(
+            number(row.get("national_amt")) for row in normalized_rows
+        ),
+        "observed_sido_amt": sum(number(row.get("sido_amt")) for row in normalized_rows),
+        "observed_sigungu_amt": sum(
+            number(row.get("sigungu_amt")) for row in normalized_rows
+        ),
+        "observed_other_amt": sum(number(row.get("other_amt")) for row in normalized_rows),
+        "observed_spend_amt": spend_total,
+        "observed_compile_amt": sum(
+            number(row.get("compile_amt")) for row in normalized_rows
+        ),
+        "observed_execution_rate": round(spend_total / budget_total, 6)
+        if budget_total
+        else None,
+        "non_additive": True,
+    }
+    return (
+        normalized_rows[:MAX_LOCAL_DISPLAY_ROWS],
+        summary,
+        local_groups[:MAX_LOCAL_GROUPS],
+    )
 
 
 def reference_subproject_details(subprojects: list[dict[str, Any]]) -> None:
@@ -478,7 +670,9 @@ def build_map(workflow: dict[str, Any]) -> dict[str, Any]:
         reference_subproject_details(subprojects)
         reference_channel_details(channels)
     crosswalks = reference_crosswalks(subprojects, channels) if is_reference else []
-    local_candidates = build_local_candidates(workflow)
+    local_candidates, local_summary, local_groups = build_local_candidates(
+        workflow, subprojects
+    )
 
     item_total = sum(number(row.get("amount_won")) for row in items)
     subproject_total = sum(number(row.get("amount_won")) for row in subprojects)
@@ -494,8 +688,10 @@ def build_map(workflow: dict[str, Any]) -> dict[str, Any]:
         warnings.append(f"API 세목 합계와 세부사업 확정액 차이 {item_total - total_won:+,}원")
     if subprojects and subproject_total != total_won:
         warnings.append(f"PDF 내역사업 합계와 확정액 차이 {subproject_total - total_won:+,}원")
-    if local_candidates:
-        warnings.append("LOFIN 지역 행은 키워드 후보이며 중앙예산에 가산하지 않음")
+    if local_summary["candidate_count"]:
+        warnings.append(
+            "LOFIN 지역 편성·지출 행은 키워드 후보이며 광역·기초 중복 가능성 때문에 중앙예산에 가산·대사하지 않음"
+        )
     if not beneficiary:
         warnings.append("사업설명자료에서 수혜자를 확인하지 못함")
 
@@ -539,7 +735,10 @@ def build_map(workflow: dict[str, Any]) -> dict[str, Any]:
         "channels": channels,
         "crosswalks": crosswalks,
         "local_candidates": local_candidates,
-        "local_candidate_total_count": len(workflow.get("local_reflections") or []),
+        "local_summary": local_summary,
+        "local_groups": local_groups,
+        "local_group_total_count": local_summary["region_count"],
+        "local_candidate_total_count": local_summary["candidate_count"],
         "evidence": evidence_refs,
         "reconciliation": {
             "business_total_won": total_won,
@@ -558,7 +757,11 @@ def build_map(workflow: dict[str, Any]) -> dict[str, Any]:
                 "PDF의 5개 내역사업 합계와 열린재정 API의 8개 목·세목 합계가 각각 237.53억원으로 일치합니다.",
                 "자치단체경상보조 119.5억원은 보조율 50%가 명시된 두 항목 16억원과 103.5억원의 합과 정확히 일치합니다.",
                 "17개 광역시도는 3억원 전수조사의 조사 대상이지 보조금 수령기관이라는 근거가 아닙니다.",
-                "LOFIN에서 이 사업의 개별 지방자치단체 수령 내역을 확인하지 못했으므로 지역명은 추정하지 않았습니다.",
+                (
+                    "PDF 내역사업 ‘사회연대경제 활성화’를 LOFIN 키워드 ‘사회연대경제’로 탐색해 "
+                    f"국비가 양수인 지역 편성 후보 {local_summary['candidate_count']}건을 연결했습니다."
+                ),
+                "LOFIN은 지자체별 예산현액·국비·시도비·시군구비·지출액을 보여 주지만 중앙 교부처 확정표가 아니므로 관측합을 직접 대사하지 않습니다.",
                 "내역사업과 API 세목의 직접 연결은 문서·금액으로 확인되는 144.21억원만 실선 대사로 표시합니다.",
             ]
             if is_reference
@@ -599,7 +802,7 @@ def main() -> int:
         "reference_business_title": REFERENCE_TITLE,
         "source_of_truth": "openfiscal_ExpenditureBudgetAdd2.Y_YY_DFN_KCUR_AMT",
         "pdf_role": "documented allocation, implementer, subsidy rate and beneficiary context",
-        "lofin_role": "non-additive keyword_candidate only",
+        "lofin_role": "local budget composition and expenditure snapshot; non-additive keyword_candidate linkage",
         "channel_totals_won": dict(sorted(channel_totals.items())),
     }
     payload = {"meta": meta, "maps": maps}
@@ -613,7 +816,16 @@ def main() -> int:
         "pdf_subproject_reconciled_count": sum(
             1 for row in maps if row["reconciliation"]["subprojects_reconciled"]
         ),
-        "lofin_candidate_business_count": sum(1 for row in maps if row["local_candidates"]),
+        "lofin_candidate_business_count": sum(
+            1 for row in maps if row["local_candidate_total_count"]
+        ),
+        "lofin_candidate_row_count": sum(
+            number(row["local_candidate_total_count"]) for row in maps
+        ),
+        "lofin_subproject_linked_business_count": sum(
+            bool((row.get("local_summary") or {}).get("matched_subproject_ids"))
+            for row in maps
+        ),
     }
     atomic_json(OUT, payload)
     atomic_json(SUMMARY, summary)

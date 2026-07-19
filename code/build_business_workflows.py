@@ -960,7 +960,14 @@ def main() -> int:
         local_nodes = []
         for row in sorted(
             local_rows,
-            key=lambda item: (-float(item.get("national_amt") or 0), str(item.get("local_gov_name") or "")),
+            key=lambda item: (
+                -float(item.get("national_amt") or 0),
+                str(item.get("local_gov_name") or ""),
+                str(item.get("exe_ymd") or ""),
+                str(item.get("local_gov_code") or ""),
+                str(item.get("detail_business_code") or ""),
+                str(item.get("detail_business_name") or ""),
+            ),
         ):
             identity = (
                 str(row.get("exe_ymd") or ""),
@@ -972,11 +979,18 @@ def main() -> int:
                 {
                     "source": "lofin_QWGJK",
                     "match_status": "keyword_candidate",
+                    "match_scope": row.get("match_scope") or "central_business_keyword",
+                    "matched_subproject_name": row.get("matched_subproject_name"),
                     "central_business_key": list(central_key),
+                    "central_local_transfer_amount_won": row.get(
+                        "central_local_transfer_amount_won"
+                    ),
                     "keyword": row.get("keyword"),
                     "keyword_strategy": row.get("keyword_strategy"),
                     "year": int(row.get("year")),
                     "exe_ymd": row.get("exe_ymd"),
+                    "region_code": row.get("region_code"),
+                    "region_name": row.get("region_name"),
                     "local_gov_code": row.get("local_gov_code"),
                     "local_gov_name": row.get("local_gov_name"),
                     "local_level": row.get("local_level"),
@@ -989,6 +1003,7 @@ def main() -> int:
                     "national_amt": row.get("national_amt"),
                     "sido_amt": row.get("sido_amt"),
                     "sigungu_amt": row.get("sigungu_amt"),
+                    "other_amt": row.get("other_amt"),
                     "spend_amt": row.get("spend_amt"),
                     "compile_amt": row.get("compile_amt"),
                     "shared_keyword_duplicate": len(identity_to_keys[identity]) > 1,

@@ -53,7 +53,8 @@
 - 전국 규모: exe_ymd에 따라 **수십만 건** (예: 41만+ 언급/실측)
 - 금액 필드:
   - `bdg_ntep` = **국비** (지자체 예산에 반영된 국비)
-  - 기타: `bdg_cash_amt`, `capep`(시도비), `sggep`(시군구비), `ep_amt` 등
+- `bdg_cash_amt` = 예산현액, `capep` = 시도비, `sggep` = 시군구비, `etc_amt` = 기타
+- `ep_amt` = 조회일 기준 지출액, `cpl_amt` = 편성액
 - 자치단체 구분:
   - `laf_hg_nm`: 서울본청 / 서울종로구 등
   - `laf_cd` 7자리 `AA BBB CC`에서 **BBB(`code[2:5]`)=`000` → 광역 본청**, 아니면 기초
@@ -87,13 +88,15 @@ curl "https://www.lofin365.go.kr/lf/hub/QWGJK?Key=<키>&Type=json&pIndex=1&pSize
 
 ## Architecture implication
 - Central budget tree (열린재정 ExpenditureBudgetAdd2) shows national program/detail structure + amount.
-- Local finance QWGJK keyword search can resolve **where national funds were reflected** across wide-area HQ and basic local governments.
-- Use this to turn “미배분/광역·기초 미상” buckets into concrete `laf_hg_nm` recipients when names can be keyword-linked.
+- Local finance QWGJK keyword search can observe **where similarly named national-fund programs appear in local budgets** across wide-area HQ and basic local governments.
+- The useful unit is not only the broad central detail-business title. A funded subproject title explicitly extracted from the ministry PDF can be a more precise QWGJK discovery key.
+- Each candidate row adds local budget amount, national/provincial/basic-local funding composition, compilation amount, expenditure and snapshot date. It remains a name-based observation rather than a confirmed central grant ledger.
 
 
 ### Verified keyword pilots (2026-07-19, exe_ymd=20260630)
 - `사회연대경제`: 24 rows, national reflection sum ≈ 132.3억
   - 광역본청 17 / 기초 7 (인천강화군, 대전중구, 경기광명시, 강원평창군 등)
+- The production budget map retains the 23 rows with `bdg_ntep > 0` and links them to the PDF subproject `사회연대경제 활성화` under the central business `지역사회 자생적 창조역량 강화`.
 - `주거급여`: 297 rows, national reflection sum ≈ 6.26조
   - 광역본청 18 / 기초 279
 - 두 합계 모두 광역·기초 단계 중복을 포함할 수 있어 재정 총액이 아님
@@ -144,5 +147,5 @@ Artifacts:
 - PDF reconcile: matched 712 / ambiguous 21 / unmatched 57
 - Canonical businesses with PDF enrichment: 710
 - Positive Add2 local-transfer businesses: 163
-- LOFIN: 160 queryable businesses / 140 unique keywords / 63 businesses with positive candidates / 2,271 rows
+- LOFIN: 160 queryable central businesses / 141 unique keywords (including 1 documented PDF subproject query) / 64 businesses with positive candidates / 2,294 rows
 - Canonical build and offline verification: `bash code/run_pipeline.sh` → `PIPELINE_OK`

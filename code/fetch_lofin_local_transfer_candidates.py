@@ -49,6 +49,26 @@ NON_ADDITIVE_WARNING = (
     "해석하지 않는다."
 )
 
+# A central detail-business title is not always the name carried into local
+# budgets.  Where the ministry explainer explicitly names a funded
+# subproject, that documented title is a stronger discovery key than the
+# broader central title.  These queries still produce keyword candidates;
+# they do not promote the central-to-local relationship to a confirmed grant.
+DOCUMENTED_SUBPROJECT_QUERIES = (
+    {
+        "central_business_key": (
+            "2026",
+            "행정안전부",
+            "지역균형발전특별회계",
+            "정부혁신조직",
+            "주민참여 지역문제 해결 확산",
+            "지역사회 자생적 창조역량 강화",
+        ),
+        "matched_subproject_name": "사회연대경제 활성화",
+        "keyword": "사회연대경제",
+    },
+)
+
 # These phrases were checked against QWGJK in the 2026 pilot.  Substring rules
 # intentionally favour precision over recall; every hit remains a candidate.
 KEYWORD_OVERRIDES = (
@@ -191,6 +211,39 @@ def choose_keyword(name) -> tuple[str | None, str | None, str | None]:
         else "normalized_full_title"
     )
     return candidate, strategy, None
+
+
+def expand_queries(candidates: list[dict]) -> list[dict]:
+    """Create central-title and explainer-subproject discovery queries."""
+
+    overrides = {
+        tuple(str(value) for value in row["central_business_key"]): row
+        for row in DOCUMENTED_SUBPROJECT_QUERIES
+    }
+    queries: list[dict] = []
+    for candidate in candidates:
+        central_key = tuple(str(value) for value in candidate["central_business_key"])
+        if candidate.get("keyword"):
+            queries.append(
+                {
+                    **candidate,
+                    "match_scope": "central_business_keyword",
+                    "matched_subproject_name": None,
+                }
+            )
+        override = overrides.get(central_key)
+        if override:
+            queries.append(
+                {
+                    **candidate,
+                    "keyword": override["keyword"],
+                    "keyword_strategy": "documented_pdf_subproject_title",
+                    "keyword_skip_reason": None,
+                    "match_scope": "pdf_subproject_keyword",
+                    "matched_subproject_name": override["matched_subproject_name"],
+                }
+            )
+    return queries
 
 
 def classify_local(laf_cd) -> str:
@@ -337,6 +390,22 @@ def load_or_fetch_keyword(
         cached = load_json(path)
         if cache_is_valid(cached, year=year, exe_ymd=exe_ymd, keyword=keyword):
             return cached["rows"], cached.get("pages") or [], "cache", path
+    # The earlier keyword pilot stored the complete response under a readable
+    # file name.  Reuse it when present so the documented-subproject query can
+    # participate in cache-only rebuilds without another API call.
+    legacy_path = RAW / f"QWGJK_kw_{keyword}_{exe_ymd}.json"
+    if legacy_path.exists() and not refresh:
+        legacy = load_json(legacy_path)
+        params = legacy.get("params") if isinstance(legacy, dict) else None
+        rows = legacy.get("rows") if isinstance(legacy, dict) else None
+        if (
+            isinstance(params, dict)
+            and isinstance(rows, list)
+            and str(params.get("fyr")) == str(year)
+            and str(params.get("exe_ymd")) == exe_ymd
+            and params.get("dbiz_nm") == keyword
+        ):
+            return rows, legacy.get("pages") or [], "legacy_cache", legacy_path
     if cache_only:
         raise RuntimeError(f"valid cache missing for keyword {keyword!r}: {path}")
     if key is None:
@@ -378,6 +447,8 @@ def normalize_row(raw: dict, candidate: dict, year: int, exe_ymd: str) -> dict |
         "source": "lofin_QWGJK",
         "match_status": "keyword_candidate",
         "match_mode": "keyword_dbiz_nm",
+        "match_scope": candidate.get("match_scope") or "central_business_keyword",
+        "matched_subproject_name": candidate.get("matched_subproject_name"),
         "central_business_key": candidate["central_business_key"],
         "central_business_name": candidate["central_business_name"],
         "central_local_transfer_amount_won": candidate[
@@ -401,6 +472,7 @@ def normalize_row(raw: dict, candidate: dict, year: int, exe_ymd: str) -> dict |
         "national_amt": national_amount,
         "sido_amt": as_number(raw.get("capep")),
         "sigungu_amt": as_number(raw.get("sggep")),
+        "other_amt": as_number(raw.get("etc_amt")),
         "spend_amt": as_number(raw.get("ep_amt")),
         "compile_amt": as_number(raw.get("cpl_amt")),
     }
@@ -438,7 +510,9 @@ def dedupe_rows(rows: list[dict]) -> list[dict]:
     return [chosen[key] for key in sorted(chosen)]
 
 
-def make_plan_summary(candidates: list[dict], year: int, exe_ymd: str) -> dict:
+def make_plan_summary(
+    candidates: list[dict], queries: list[dict], year: int, exe_ymd: str
+) -> dict:
     queryable = [item for item in candidates if item.get("keyword")]
     return {
         "schema_version": "1.0",
@@ -451,7 +525,11 @@ def make_plan_summary(candidates: list[dict], year: int, exe_ymd: str) -> dict:
         "candidate_business_count": len(candidates),
         "queryable_business_count": len(queryable),
         "skipped_business_count": len(candidates) - len(queryable),
-        "unique_keyword_count": len({item["keyword"] for item in queryable}),
+        "query_count": len(queries),
+        "documented_subproject_query_count": sum(
+            item.get("match_scope") == "pdf_subproject_keyword" for item in queries
+        ),
+        "unique_keyword_count": len({item["keyword"] for item in queries}),
         "non_additive_warning": NON_ADDITIVE_WARNING,
         "businesses": candidates,
     }
@@ -567,16 +645,16 @@ def main() -> int:
     if not isinstance(details, list) or not isinstance(lines, list):
         raise RuntimeError("--details and --lines must each contain a JSON list")
     candidates = select_candidates(details, lines, args.year)
-    summary = make_plan_summary(candidates, args.year, args.exe_ymd)
+    queries = expand_queries(candidates)
+    summary = make_plan_summary(candidates, queries, args.year, args.exe_ymd)
     if args.plan_only:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return 0
 
     key = None if args.cache_only else load_key()
     by_keyword: dict[str, list[dict]] = defaultdict(list)
-    for candidate in candidates:
-        if candidate.get("keyword"):
-            by_keyword[candidate["keyword"]].append(candidate)
+    for query in queries:
+        by_keyword[query["keyword"]].append(query)
 
     raw_by_keyword: dict[str, list[dict]] = {}
     fetch_reports = []
@@ -614,23 +692,43 @@ def main() -> int:
     normalized = []
     business_reports = []
     for candidate in candidates:
-        keyword = candidate.get("keyword")
+        central_key = tuple(str(value) for value in candidate["central_business_key"])
+        candidate_queries = [
+            query
+            for query in queries
+            if tuple(str(value) for value in query["central_business_key"])
+            == central_key
+        ]
         rows = []
-        if keyword:
-            for raw in raw_by_keyword.get(keyword, []):
-                normalized_row = normalize_row(raw, candidate, args.year, args.exe_ymd)
+        query_reports = []
+        for query in candidate_queries:
+            query_rows = []
+            for raw in raw_by_keyword.get(query["keyword"], []):
+                normalized_row = normalize_row(raw, query, args.year, args.exe_ymd)
                 if normalized_row is not None:
-                    rows.append(normalized_row)
-            normalized.extend(rows)
+                    query_rows.append(normalized_row)
+            rows.extend(query_rows)
+            query_reports.append(
+                {
+                    "keyword": query["keyword"],
+                    "keyword_strategy": query["keyword_strategy"],
+                    "match_scope": query["match_scope"],
+                    "matched_subproject_name": query.get("matched_subproject_name"),
+                    "candidate_row_count": len(dedupe_rows(query_rows)),
+                }
+            )
+        deduped_rows = dedupe_rows(rows)
+        normalized.extend(deduped_rows)
         business_reports.append(
             {
                 **candidate,
-                "candidate_row_count": len(dedupe_rows(rows)),
+                "candidate_row_count": len(deduped_rows),
+                "queries": query_reports,
                 "collection_status": (
                     "skipped_no_conservative_keyword"
-                    if not keyword
+                    if not candidate_queries
                     else "keyword_candidates_found"
-                    if rows
+                    if deduped_rows
                     else "no_positive_national_reflection_rows"
                 ),
             }

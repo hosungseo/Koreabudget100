@@ -20096,7 +20096,130 @@
                             "method": "exact_norm"
                           }
                         ],
-                        "local_summary": null,
+                        "local_summary": {
+                          "match_status": "keyword_candidate",
+                          "attachment_methods": [
+                            "exact_central_business_key"
+                          ],
+                          "row_count": 23,
+                          "national_reflection_sum_won": 13228343000.0,
+                          "sum_warning": "광역·기초 반영액이 같은 재원을 중복 표현할 수 있어 중앙예산과 직접 대사하지 않음",
+                          "by_level": {
+                            "광역본청": {
+                              "row_count": 17,
+                              "national_amount_won": 11065677000.0
+                            },
+                            "기초": {
+                              "row_count": 6,
+                              "national_amount_won": 2162666000.0
+                            }
+                          },
+                          "top_local_govs": [
+                            {
+                              "name": "충북본청",
+                              "row_count": 2,
+                              "national_amount_won": 2227092000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "경북본청",
+                              "row_count": 2,
+                              "national_amount_won": 2087964000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "경기본청",
+                              "row_count": 2,
+                              "national_amount_won": 1474838000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "대구본청",
+                              "row_count": 2,
+                              "national_amount_won": 1468948000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "전북본청",
+                              "row_count": 2,
+                              "national_amount_won": 1320531000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "인천본청",
+                              "row_count": 2,
+                              "national_amount_won": 719910000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "전남본청",
+                              "row_count": 1,
+                              "national_amount_won": 666156000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "인천강화군",
+                              "row_count": 1,
+                              "national_amount_won": 400000000.0,
+                              "level": "기초"
+                            },
+                            {
+                              "name": "대전중구",
+                              "row_count": 1,
+                              "national_amount_won": 400000000.0,
+                              "level": "기초"
+                            },
+                            {
+                              "name": "경기광명시",
+                              "row_count": 1,
+                              "national_amount_won": 400000000.0,
+                              "level": "기초"
+                            },
+                            {
+                              "name": "강원평창군",
+                              "row_count": 1,
+                              "national_amount_won": 400000000.0,
+                              "level": "기초"
+                            },
+                            {
+                              "name": "충북청주시",
+                              "row_count": 1,
+                              "national_amount_won": 400000000.0,
+                              "level": "기초"
+                            },
+                            {
+                              "name": "충남본청",
+                              "row_count": 1,
+                              "national_amount_won": 400000000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "울산본청",
+                              "row_count": 1,
+                              "national_amount_won": 330754000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "제주본청",
+                              "row_count": 1,
+                              "national_amount_won": 309840000.0,
+                              "level": "광역본청"
+                            },
+                            {
+                              "name": "경북포항시",
+                              "row_count": 1,
+                              "national_amount_won": 162666000.0,
+                              "level": "기초"
+                            },
+                            {
+                              "name": "세종본청",
+                              "row_count": 1,
+                              "national_amount_won": 59644000.0,
+                              "level": "광역본청"
+                            }
+                          ],
+                          "central_local_transfer_amount_won": 11950000000.0
+                        },
                         "source_refs": [
                           {
                             "source": "openfiscal_ExpenditureBudgetAdd2",
@@ -20109,6 +20232,10 @@
                             "page_start": 2088,
                             "page_end": 2096,
                             "anchor_chunk_id": "c18633"
+                          },
+                          {
+                            "source": "lofin_QWGJK",
+                            "row_count": 23
                           }
                         ]
                       }

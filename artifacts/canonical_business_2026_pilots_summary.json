@@ -18,8 +18,8 @@
   },
   "pdf_matched_business_count": 710,
   "local_transfer_candidate_count": 163,
-  "lofin_matched_business_count": 63,
-  "lofin_row_count": 2271,
+  "lofin_matched_business_count": 64,
+  "lofin_row_count": 2294,
   "pdf_coverage": {
     "행정안전부": {
       "status": "parsed",
