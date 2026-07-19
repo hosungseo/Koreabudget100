@@ -2,6 +2,8 @@
 
 - 기준일: 2026-07-19
 - 프로젝트 경로: `/Users/seohoseong/Koreabudget100`
+- GitHub: `https://github.com/hosungseo/Koreabudget100`
+- 라이브 페이지: `https://hosungseo.github.io/Koreabudget100/`
 - 완료 범위: **행정안전부·국토교통부·산업통상부 2026년 3부처 파일럿**
 - 상태: **완료**
 
