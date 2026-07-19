@@ -1,0 +1,42 @@
+{
+  "mode": "kordoc_primary",
+  "pdfs": [
+    {
+      "pdf": "/Users/seohoseong/Koreabudget100/data/parser_ab/samples/mois_p798-812.pdf",
+      "ministry": "행정안전부",
+      "extractor": "kordoc_chunks",
+      "cards": 2,
+      "cards_with_code": 2,
+      "cards_with_implementer": 2,
+      "exec_path_counts": {
+        "위탁/출연": 2,
+        "직접": 2
+      },
+      "sample_titles": [
+        "과표양성화를 위한 시가표준액 조사",
+        "지방자주재원 확충을 위한 정책추진"
+      ]
+    },
+    {
+      "pdf": "/Users/seohoseong/Koreabudget100/data/parser_ab/samples/molit_p148-162.pdf",
+      "ministry": "국토교통부",
+      "extractor": "kordoc_chunks",
+      "cards": 3,
+      "cards_with_code": 3,
+      "cards_with_implementer": 2,
+      "exec_path_counts": {
+        "직접": 3
+      },
+      "sample_titles": [
+        "철도특별사법경찰대 인건비",
+        "지방항공청 등 인건비",
+        "본부기본경비(총액)"
+      ]
+    }
+  ],
+  "total_cards": 5,
+  "by_ministry": {
+    "행정안전부": 2,
+    "국토교통부": 3
+  }
+}

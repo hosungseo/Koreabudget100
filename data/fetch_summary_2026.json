@@ -1,0 +1,66 @@
+[
+  {
+    "ministry": "행정안전부",
+    "rows": 0,
+    "congress_sum": 0,
+    "sample_names": [],
+    "pages": [
+      {
+        "page": 1,
+        "meta": {
+          "payload_type": "str",
+          "raw_preview": "{\"RESULT\":{\"CODE\":\"INFO-200\",\"MESSAGE\":\"해당하는 데이터가 없습니다.\"}}"
+        },
+        "n": 0
+      }
+    ]
+  },
+  {
+    "ministry": "국토교통부",
+    "rows": 0,
+    "congress_sum": 0,
+    "sample_names": [],
+    "pages": [
+      {
+        "page": 1,
+        "meta": {
+          "payload_type": "str",
+          "raw_preview": "{\"RESULT\":{\"CODE\":\"INFO-200\",\"MESSAGE\":\"해당하는 데이터가 없습니다.\"}}"
+        },
+        "n": 0
+      }
+    ]
+  },
+  {
+    "ministry": "산업통상부",
+    "rows": 0,
+    "congress_sum": 0,
+    "sample_names": [],
+    "pages": [
+      {
+        "page": 1,
+        "meta": {
+          "payload_type": "str",
+          "raw_preview": "{\"RESULT\":{\"CODE\":\"INFO-200\",\"MESSAGE\":\"해당하는 데이터가 없습니다.\"}}"
+        },
+        "n": 0
+      }
+    ]
+  },
+  {
+    "ministry": "산업통상자원부",
+    "rows": 0,
+    "congress_sum": 0,
+    "sample_names": [],
+    "pages": [
+      {
+        "page": 1,
+        "meta": {
+          "payload_type": "str",
+          "raw_preview": "{\"RESULT\":{\"CODE\":\"INFO-200\",\"MESSAGE\":\"해당하는 데이터가 없습니다.\"}}"
+        },
+        "n": 0
+      }
+    ]
+  }
+]

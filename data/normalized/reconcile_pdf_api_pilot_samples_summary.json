@@ -1,0 +1,76 @@
+{
+  "total_pdf_cards": 5,
+  "status_counts": {
+    "matched": 5
+  },
+  "confidence_counts": {
+    "high": 5
+  },
+  "method_counts": {
+    "exact_norm": 5
+  },
+  "match_rate_matched_only": 1.0,
+  "match_rate_incl_ambiguous": 1.0,
+  "rows_brief": [
+    {
+      "pdf": "과표양성화를 위한 시가표준액 조사",
+      "api": "과표양성화를위한시가표준액조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자주재원 확충을 위한 정책추진",
+      "api": "지방자주재원확충을위한정책추진",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도특별사법경찰대 인건비",
+      "api": "철도특별사법경찰대 인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방항공청 등 인건비",
+      "api": "지방항공청 등 인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "본부기본경비(총액)",
+      "api": "본부 기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    }
+  ],
+  "api_detail_count": 1401,
+  "lofin_seed_count": 321,
+  "tag": "pilot_samples"
+}

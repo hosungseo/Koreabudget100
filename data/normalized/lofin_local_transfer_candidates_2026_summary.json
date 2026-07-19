@@ -1,0 +1,3938 @@
+{
+  "schema_version": "1.0",
+  "service": "QWGJK",
+  "endpoint": "https://www.lofin365.go.kr/lf/hub/QWGJK",
+  "year": 2026,
+  "exe_ymd": "20260630",
+  "selection": "positive ExpenditureBudgetAdd2 local-government transfer channel",
+  "match_status": "keyword_candidate",
+  "candidate_business_count": 163,
+  "queryable_business_count": 160,
+  "skipped_business_count": 3,
+  "unique_keyword_count": 140,
+  "non_additive_warning": "LOFIN bdg_ntep는 지자체 예산에 반영된 국비 후보액이다. 광역·기초 행에 같은 재원이 중복 표현될 수 있으므로 합계를 중앙예산 집행액 또는 대사액으로 해석하지 않는다.",
+  "businesses": [
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "광역철도건설",
+        "광역철도건설지원",
+        "도봉산-옥정복선전철"
+      ],
+      "central_business_name": "도봉산-옥정복선전철",
+      "central_local_transfer_amount_won": 46676000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도봉산-옥정복선전철",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "광역철도건설",
+        "광역철도건설지원",
+        "옥정-포천철도건설사업"
+      ],
+      "central_business_name": "옥정-포천철도건설사업",
+      "central_local_transfer_amount_won": 74224000000,
+      "local_transfer_line_count": 2,
+      "keyword": "옥정-포천철도건설사업",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "대중교통육성",
+        "교통약자이동편의증진",
+        "교통약자 이동편의 증진"
+      ],
+      "central_business_name": "교통약자 이동편의 증진",
+      "central_local_transfer_amount_won": 233707000000,
+      "local_transfer_line_count": 2,
+      "keyword": "교통약자 이동편의 증진",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 16,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "대중교통육성",
+        "대중교통체계구축",
+        "광역버스 공공성 강화 지원"
+      ],
+      "central_business_name": "광역버스 공공성 강화 지원",
+      "central_local_transfer_amount_won": 209605000000,
+      "local_transfer_line_count": 4,
+      "keyword": "광역버스 공공성 강화",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "대중교통육성",
+        "대중교통체계구축",
+        "대중교통비 환급 지원"
+      ],
+      "central_business_name": "대중교통비 환급 지원",
+      "central_local_transfer_amount_won": 555647000000,
+      "local_transfer_line_count": 2,
+      "keyword": "대중교통비 환급",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 104,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "대중교통육성",
+        "대중교통체계구축",
+        "수소 대중교통체계 구축 지원"
+      ],
+      "central_business_name": "수소 대중교통체계 구축 지원",
+      "central_local_transfer_amount_won": 9400000000,
+      "local_transfer_line_count": 2,
+      "keyword": "수소 대중교통체계 구축",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "대중교통육성",
+        "대중교통체계구축",
+        "택시산업지원"
+      ],
+      "central_business_name": "택시산업지원",
+      "central_local_transfer_amount_won": 3643000000,
+      "local_transfer_line_count": 2,
+      "keyword": "택시산업지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도로관리",
+        "첨단도로교통체계",
+        "첨단도로교통체계"
+      ],
+      "central_business_name": "첨단도로교통체계",
+      "central_local_transfer_amount_won": 4500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "첨단도로교통체계",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "경량전철건설지원",
+        "동북선경전철건설"
+      ],
+      "central_business_name": "동북선경전철건설",
+      "central_local_transfer_amount_won": 54800000000,
+      "local_transfer_line_count": 2,
+      "keyword": "동북선경전철건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "광주도시철도2호선건설"
+      ],
+      "central_business_name": "광주도시철도2호선건설",
+      "central_local_transfer_amount_won": 176540000000,
+      "local_transfer_line_count": 2,
+      "keyword": "광주도시철도2호선건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "대구도시철도엑스코선건설"
+      ],
+      "central_business_name": "대구도시철도엑스코선건설",
+      "central_local_transfer_amount_won": 41820000000,
+      "local_transfer_line_count": 2,
+      "keyword": "대구도시철도엑스코선건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "대전도시철도2호선건설"
+      ],
+      "central_business_name": "대전도시철도2호선건설",
+      "central_local_transfer_amount_won": 190000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "대전도시철도2호선건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "도시철도 노후시설 개선지원"
+      ],
+      "central_business_name": "도시철도 노후시설 개선지원",
+      "central_local_transfer_amount_won": 56452000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시철도 노후시설 개선지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "도시철도노후차량개선지원"
+      ],
+      "central_business_name": "도시철도노후차량개선지원",
+      "central_local_transfer_amount_won": 46037000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시철도노후차량개선지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "부산 사상-하단 도시철도 건설"
+      ],
+      "central_business_name": "부산 사상-하단 도시철도 건설",
+      "central_local_transfer_amount_won": 30000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "부산 사상-하단 도시철도 건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "부산도시철도하단-녹산선건설"
+      ],
+      "central_business_name": "부산도시철도하단-녹산선건설",
+      "central_local_transfer_amount_won": 37000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "부산도시철도하단-녹산선건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "서울도시철도 9호선(3단계) 건설"
+      ],
+      "central_business_name": "서울도시철도 9호선(3단계) 건설",
+      "central_local_transfer_amount_won": 5500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "서울도시철도 9호선 건설",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "서울도시철도9호선4단계연장"
+      ],
+      "central_business_name": "서울도시철도9호선4단계연장",
+      "central_local_transfer_amount_won": 46013000000,
+      "local_transfer_line_count": 2,
+      "keyword": "서울도시철도9호선4단계연장",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "서울지하철7호선청라연장"
+      ],
+      "central_business_name": "서울지하철7호선청라연장",
+      "central_local_transfer_amount_won": 140500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "서울지하철7호선청라연장",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "양산도시철도 건설"
+      ],
+      "central_business_name": "양산도시철도 건설",
+      "central_local_transfer_amount_won": 47097000000,
+      "local_transfer_line_count": 2,
+      "keyword": "양산도시철도 건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "우이신설선 연장선"
+      ],
+      "central_business_name": "우이신설선 연장선",
+      "central_local_transfer_amount_won": 7908000000,
+      "local_transfer_line_count": 2,
+      "keyword": "우이신설선 연장선",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "도시철도건설",
+        "지하철건설지원",
+        "울산도시철도(트램) 1호선건설"
+      ],
+      "central_business_name": "울산도시철도(트램) 1호선건설",
+      "central_local_transfer_amount_won": 36000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "울산도시철도 1호선건설",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "민자도로건설및관리",
+        "민자유치사업지원",
+        "민자도로운영지원"
+      ],
+      "central_business_name": "민자도로운영지원",
+      "central_local_transfer_amount_won": 500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "민자도로운영지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "일반공항건설및관리",
+        "신공항건설",
+        "대구경북신공항건설"
+      ],
+      "central_business_name": "대구경북신공항건설",
+      "central_local_transfer_amount_won": 5768000000,
+      "local_transfer_line_count": 2,
+      "keyword": "대구경북신공항건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "지자체도로건설지원",
+        "광역도로",
+        "인천서구거점도-경기김포약암리광역도로"
+      ],
+      "central_business_name": "인천서구거점도-경기김포약암리광역도로",
+      "central_local_transfer_amount_won": 15758000000,
+      "local_transfer_line_count": 2,
+      "keyword": "인천서구거점도-경기김포약암리광역도로",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "철도안전및운영",
+        "철도운영지원(교특)",
+        "김포 도시철도 전동차 증차 한시지원"
+      ],
+      "central_business_name": "김포 도시철도 전동차 증차 한시지원",
+      "central_local_transfer_amount_won": 6120000000,
+      "local_transfer_line_count": 2,
+      "keyword": "김포 도시철도 전동차 증차 한시지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "철도안전및운영",
+        "철도운영지원(교특)",
+        "서울 도시철도 전동차 증차 한시지원"
+      ],
+      "central_business_name": "서울 도시철도 전동차 증차 한시지원",
+      "central_local_transfer_amount_won": 6407000000,
+      "local_transfer_line_count": 2,
+      "keyword": "서울 도시철도 전동차 증차 한시지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "교통시설특별회계",
+        "항공발전지원",
+        "항공산업지원",
+        "도심항공교통산업활성화지원"
+      ],
+      "central_business_name": "도심항공교통산업활성화지원",
+      "central_local_transfer_amount_won": 1000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도심항공교통산업활성화지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "건설정책 및 기술지원",
+        "건설시설안전관리",
+        "건설및지하안전관리"
+      ],
+      "central_business_name": "건설및지하안전관리",
+      "central_local_transfer_amount_won": 4360000000,
+      "local_transfer_line_count": 2,
+      "keyword": "건설및지하안전관리",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "건축정책",
+        "건축서비스산업지원",
+        "건축안전"
+      ],
+      "central_business_name": "건축안전",
+      "central_local_transfer_amount_won": 90761000,
+      "local_transfer_line_count": 2,
+      "keyword": null,
+      "keyword_strategy": null,
+      "keyword_skip_reason": "keyword_shorter_than_5_semantic_characters",
+      "candidate_row_count": 0,
+      "collection_status": "skipped_no_conservative_keyword"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "건축정책",
+        "도시경관및건축문화품격향상",
+        "건축문화진흥"
+      ],
+      "central_business_name": "건축문화진흥",
+      "central_local_transfer_amount_won": 450000000,
+      "local_transfer_line_count": 2,
+      "keyword": "건축문화진흥",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "국토교통정보화",
+        "국토공간정보체계구축및지원(정보화)",
+        "지하시설물 전산화(보조, 정보화)"
+      ],
+      "central_business_name": "지하시설물 전산화(보조, 정보화)",
+      "central_local_transfer_amount_won": 5200000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지하시설물 전산화",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 4,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "국토정보관리",
+        "국토정보제도선진화",
+        "지적관리"
+      ],
+      "central_business_name": "지적관리",
+      "central_local_transfer_amount_won": 3739500000,
+      "local_transfer_line_count": 2,
+      "keyword": null,
+      "keyword_strategy": null,
+      "keyword_skip_reason": "keyword_shorter_than_5_semantic_characters",
+      "candidate_row_count": 0,
+      "collection_status": "skipped_no_conservative_keyword"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "국토정보관리",
+        "국토정보제도선진화",
+        "지적재조사"
+      ],
+      "central_business_name": "지적재조사",
+      "central_local_transfer_amount_won": 38792000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지적재조사",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 227,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "국토정보관리",
+        "부동산공시",
+        "지가조사"
+      ],
+      "central_business_name": "지가조사",
+      "central_local_transfer_amount_won": 11620000000,
+      "local_transfer_line_count": 2,
+      "keyword": null,
+      "keyword_strategy": null,
+      "keyword_skip_reason": "keyword_shorter_than_5_semantic_characters",
+      "candidate_row_count": 0,
+      "collection_status": "skipped_no_conservative_keyword"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "기초주거생활보장",
+        "주택정책지원",
+        "주거급여지원"
+      ],
+      "central_business_name": "주거급여지원",
+      "central_local_transfer_amount_won": 3186731000000,
+      "local_transfer_line_count": 2,
+      "keyword": "주거급여",
+      "keyword_strategy": "verified_override:주거급여",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 269,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "도시정책",
+        "스마트시티 지원",
+        "스마트시티 기반구축"
+      ],
+      "central_business_name": "스마트시티 기반구축",
+      "central_local_transfer_amount_won": 2000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "스마트시티",
+      "keyword_strategy": "verified_override:스마트시티",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 8,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "물류정책",
+        "물류산업지원",
+        "스마트공동물류센터 건립지원"
+      ],
+      "central_business_name": "스마트공동물류센터 건립지원",
+      "central_local_transfer_amount_won": 3560000000,
+      "local_transfer_line_count": 2,
+      "keyword": "스마트공동물류센터 건립지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "자동차및교통정책",
+        "첨단미래형자동차활성화",
+        "자율자동차 상용화"
+      ],
+      "central_business_name": "자율자동차 상용화",
+      "central_local_transfer_amount_won": 3000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "자율자동차 상용화",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "주택시장안정및주거복지향상",
+        "주택가격조사지원",
+        "주택공시가격조사"
+      ],
+      "central_business_name": "주택공시가격조사",
+      "central_local_transfer_amount_won": 21445000000,
+      "local_transfer_line_count": 2,
+      "keyword": "주택공시가격조사",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 4,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "주택시장안정및주거복지향상",
+        "주택정책지원",
+        "전세보증금 반환보증 보증료 지원"
+      ],
+      "central_business_name": "전세보증금 반환보증 보증료 지원",
+      "central_local_transfer_amount_won": 7980000000,
+      "local_transfer_line_count": 2,
+      "keyword": "전세보증금 반환보증 보증료",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 47,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "일반회계",
+        "주택시장안정및주거복지향상",
+        "주택정책지원",
+        "청년월세지원"
+      ],
+      "central_business_name": "청년월세지원",
+      "central_local_transfer_amount_won": 129953000000,
+      "local_transfer_line_count": 2,
+      "keyword": "청년월세",
+      "keyword_strategy": "verified_override:청년월세",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 207,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "광역교통정책",
+        "대중교통지원(지역자율)",
+        "벽지노선지원(자율)"
+      ],
+      "central_business_name": "벽지노선지원(자율)",
+      "central_local_transfer_amount_won": 40298000000,
+      "local_transfer_line_count": 2,
+      "keyword": "벽지노선지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 11,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "광역교통정책",
+        "도시BRT(지특)",
+        "광역BRT 구축"
+      ],
+      "central_business_name": "광역BRT 구축",
+      "central_local_transfer_amount_won": 25347000000,
+      "local_transfer_line_count": 2,
+      "keyword": "광역BRT 구축",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "광역교통정책",
+        "도시형교통모델",
+        "도시형교통모델(세종)"
+      ],
+      "central_business_name": "도시형교통모델(세종)",
+      "central_local_transfer_amount_won": 7500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시형교통모델",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 13,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "광역교통정책",
+        "도시형교통모델",
+        "도시형교통모델(제주)"
+      ],
+      "central_business_name": "도시형교통모델(제주)",
+      "central_local_transfer_amount_won": 100000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시형교통모델",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 13,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "광역교통정책",
+        "도시형교통모델",
+        "도시형교통모델(지역자율)"
+      ],
+      "central_business_name": "도시형교통모델(지역자율)",
+      "central_local_transfer_amount_won": 37619000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시형교통모델",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 13,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "광역교통정책",
+        "환승체계구축(지특)",
+        "환승센터구축지원"
+      ],
+      "central_business_name": "환승센터구축지원",
+      "central_local_transfer_amount_won": 2840000000,
+      "local_transfer_line_count": 2,
+      "keyword": "환승센터구축지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "광역철도건설",
+        "광역철도건설지원",
+        "대구도시철도영천연장"
+      ],
+      "central_business_name": "대구도시철도영천연장",
+      "central_local_transfer_amount_won": 1831000000,
+      "local_transfer_line_count": 2,
+      "keyword": "대구도시철도영천연장",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "국도건설",
+        "제주 구국도 건설",
+        "광령-도평우회도로건설"
+      ],
+      "central_business_name": "광령-도평우회도로건설",
+      "central_local_transfer_amount_won": 15883000000,
+      "local_transfer_line_count": 2,
+      "keyword": "광령-도평우회도로건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "국도건설",
+        "제주 구국도 건설",
+        "제주 구국도 건설지원"
+      ],
+      "central_business_name": "제주 구국도 건설지원",
+      "central_local_transfer_amount_won": 4900000000,
+      "local_transfer_line_count": 2,
+      "keyword": "제주 구국도 건설지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "국도건설",
+        "제주 구국도 건설",
+        "제주일주도로우회도로(서귀포여중-삼성여고)"
+      ],
+      "central_business_name": "제주일주도로우회도로(서귀포여중-삼성여고)",
+      "central_local_transfer_amount_won": 500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "제주일주도로우회도로",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "국도건설",
+        "제주 구국도 건설",
+        "중산간도로(귀덕리-상가리)"
+      ],
+      "central_business_name": "중산간도로(귀덕리-상가리)",
+      "central_local_transfer_amount_won": 1300000000,
+      "local_transfer_line_count": 2,
+      "keyword": "중산간도로",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 4,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "국도건설",
+        "제주 구국도 건설",
+        "중산간도로(봉개동-와산리)"
+      ],
+      "central_business_name": "중산간도로(봉개동-와산리)",
+      "central_local_transfer_amount_won": 2000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "중산간도로",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 4,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "국도건설",
+        "제주 구국도 건설",
+        "중산간도로(와산-선흘)선형개량사업"
+      ],
+      "central_business_name": "중산간도로(와산-선흘)선형개량사업",
+      "central_local_transfer_amount_won": 174000000,
+      "local_transfer_line_count": 2,
+      "keyword": "중산간도로 선형개량사업",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "국토교통행정지원",
+        "제주 도로관리단 지원",
+        "제주 도로관리단 지원"
+      ],
+      "central_business_name": "제주 도로관리단 지원",
+      "central_local_transfer_amount_won": 4326000000,
+      "local_transfer_line_count": 2,
+      "keyword": "제주 도로관리단",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "대중교통육성",
+        "대중교통체계구축",
+        "버스공영차고지 지원(자율)"
+      ],
+      "central_business_name": "버스공영차고지 지원(자율)",
+      "central_local_transfer_amount_won": 28819000000,
+      "local_transfer_line_count": 2,
+      "keyword": "버스공영차고지",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 17,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도로관리",
+        "제주 구국도 유지관리",
+        "제주구국도공무원부담금"
+      ],
+      "central_business_name": "제주구국도공무원부담금",
+      "central_local_transfer_amount_won": 8000000,
+      "local_transfer_line_count": 2,
+      "keyword": "제주구국도공무원부담금",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도로관리",
+        "제주 구국도 유지관리",
+        "제주구국도유지관리"
+      ],
+      "central_business_name": "제주구국도유지관리",
+      "central_local_transfer_amount_won": 35500000000,
+      "local_transfer_line_count": 4,
+      "keyword": "제주구국도유지관리",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 6,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "도시개발",
+        "장기미집행공원지방채이자지원"
+      ],
+      "central_business_name": "장기미집행공원지방채이자지원",
+      "central_local_transfer_amount_won": 18972000000,
+      "local_transfer_line_count": 2,
+      "keyword": "장기미집행공원지방채이자지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 2,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "도시개발",
+        "장기미집행공원지방채이자지원(제주)"
+      ],
+      "central_business_name": "장기미집행공원지방채이자지원(제주)",
+      "central_local_transfer_amount_won": 6706000000,
+      "local_transfer_line_count": 2,
+      "keyword": "장기미집행공원지방채이자지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 2,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "도시재생",
+        "도시재생사업"
+      ],
+      "central_business_name": "도시재생사업",
+      "central_local_transfer_amount_won": 98332000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시재생사업",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 94,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "도시재생",
+        "도시재생사업(자율)"
+      ],
+      "central_business_name": "도시재생사업(자율)",
+      "central_local_transfer_amount_won": 341138000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시재생사업",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 94,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "도시재생",
+        "도시재생사업(제주)"
+      ],
+      "central_business_name": "도시재생사업(제주)",
+      "central_local_transfer_amount_won": 16375000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시재생사업",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 94,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "도시활력증진지역개발",
+        "도시활력증진지역개발"
+      ],
+      "central_business_name": "도시활력증진지역개발",
+      "central_local_transfer_amount_won": 78050000000,
+      "local_transfer_line_count": 4,
+      "keyword": "도시활력증진지역개발",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 5,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "수소도시기반구축(자율)",
+        "수소도시지원(자율)"
+      ],
+      "central_business_name": "수소도시지원(자율)",
+      "central_local_transfer_amount_won": 46020000000,
+      "local_transfer_line_count": 2,
+      "keyword": "수소도시지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 3,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "스마트시티지원(자율)",
+        "스마트시티확산사업(자율)"
+      ],
+      "central_business_name": "스마트시티확산사업(자율)",
+      "central_local_transfer_amount_won": 19800000000,
+      "local_transfer_line_count": 2,
+      "keyword": "스마트시티",
+      "keyword_strategy": "verified_override:스마트시티",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 8,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "도시정책",
+        "스마트시티지원(지원)",
+        "스마트시티확산사업(지원)"
+      ],
+      "central_business_name": "스마트시티확산사업(지원)",
+      "central_local_transfer_amount_won": 18500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "스마트시티",
+      "keyword_strategy": "verified_override:스마트시티",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 8,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "산업단지개발및지원",
+        "산업단지지원(자율)",
+        "노후공단 재정비지원(자율)"
+      ],
+      "central_business_name": "노후공단 재정비지원(자율)",
+      "central_local_transfer_amount_won": 16436000000,
+      "local_transfer_line_count": 2,
+      "keyword": "노후공단 재정비지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "산업단지개발및지원",
+        "산업단지지원(지원)",
+        "무안항공특화 산업단지 지원사업"
+      ],
+      "central_business_name": "무안항공특화 산업단지 지원사업",
+      "central_local_transfer_amount_won": 2000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "무안항공특화 산업단지 지원사업",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "산업단지개발및지원",
+        "산업단지지원(지원)",
+        "부처연계형노후산단개발"
+      ],
+      "central_business_name": "부처연계형노후산단개발",
+      "central_local_transfer_amount_won": 27764000000,
+      "local_transfer_line_count": 2,
+      "keyword": "부처연계형노후산단개발",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "자동차및교통정책",
+        "첨단미래형자동차활성화",
+        "충청권 자율주행 모빌리티 고도화 사업"
+      ],
+      "central_business_name": "충청권 자율주행 모빌리티 고도화 사업",
+      "central_local_transfer_amount_won": 1530000000,
+      "local_transfer_line_count": 4,
+      "keyword": "충청권 자율주행 모빌리티 고도화",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "주택시장안정및주거복지향상",
+        "주거환경개선지원",
+        "재정비촉진사업지원"
+      ],
+      "central_business_name": "재정비촉진사업지원",
+      "central_local_transfer_amount_won": 3831000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재정비촉진사업지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 2,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지역개발",
+        "개발제한구역지원",
+        "개발제한구역관리"
+      ],
+      "central_business_name": "개발제한구역관리",
+      "central_local_transfer_amount_won": 66322000000,
+      "local_transfer_line_count": 4,
+      "keyword": "개발제한구역관리",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 24,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지역개발",
+        "성장촉진지역개발",
+        "성장촉진지역개발"
+      ],
+      "central_business_name": "성장촉진지역개발",
+      "central_local_transfer_amount_won": 194777000000,
+      "local_transfer_line_count": 2,
+      "keyword": "성장촉진지역개발",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 22,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지역개발",
+        "지역발전투자협약",
+        "민관협력 지역상생협약(자율)"
+      ],
+      "central_business_name": "민관협력 지역상생협약(자율)",
+      "central_local_transfer_amount_won": 23939000000,
+      "local_transfer_line_count": 2,
+      "keyword": "민관협력 지역상생협약",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 11,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지역개발",
+        "초광역 개발권 시범사업 지원",
+        "해안및내륙권발전사업지원(자율)"
+      ],
+      "central_business_name": "해안및내륙권발전사업지원(자율)",
+      "central_local_transfer_amount_won": 68308000000,
+      "local_transfer_line_count": 2,
+      "keyword": "해안및내륙권발전사업지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지역개발",
+        "투자선도지구 지원",
+        "투자선도지구기반시설지원"
+      ],
+      "central_business_name": "투자선도지구기반시설지원",
+      "central_local_transfer_amount_won": 200000000,
+      "local_transfer_line_count": 2,
+      "keyword": "투자선도지구기반시설지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지자체도로건설지원",
+        "광역도로",
+        "광주하남-장성삼계광역도로"
+      ],
+      "central_business_name": "광주하남-장성삼계광역도로",
+      "central_local_transfer_amount_won": 8040000000,
+      "local_transfer_line_count": 2,
+      "keyword": "광주하남-장성삼계광역도로",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지자체도로건설지원",
+        "광역도로",
+        "조야-동명광역도로"
+      ],
+      "central_business_name": "조야-동명광역도로",
+      "central_local_transfer_amount_won": 30000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "조야-동명광역도로",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지자체도로건설지원",
+        "광역도로",
+        "초정-화명광역도로건설"
+      ],
+      "central_business_name": "초정-화명광역도로건설",
+      "central_local_transfer_amount_won": 1800000000,
+      "local_transfer_line_count": 2,
+      "keyword": "초정-화명광역도로건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지자체도로건설지원",
+        "국가지원지방도건설",
+        "국가지원지방도 건설"
+      ],
+      "central_business_name": "국가지원지방도 건설",
+      "central_local_transfer_amount_won": 285716000000,
+      "local_transfer_line_count": 2,
+      "keyword": "국가지원지방도 건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지자체도로건설지원",
+        "혼잡도로",
+        "대도시권교통혼잡도로지원"
+      ],
+      "central_business_name": "대도시권교통혼잡도로지원",
+      "central_local_transfer_amount_won": 9000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "대도시권교통혼잡도로지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "지역균형발전특별회계",
+        "지자체도로건설지원",
+        "혼잡도로",
+        "혼잡도로 건설"
+      ],
+      "central_business_name": "혼잡도로 건설",
+      "central_local_transfer_amount_won": 134641000000,
+      "local_transfer_line_count": 2,
+      "keyword": "혼잡도로 건설",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "혁신도시건설특별회계",
+        "지역개발",
+        "혁신도시",
+        "혁신도시 건설지원"
+      ],
+      "central_business_name": "혁신도시 건설지원",
+      "central_local_transfer_amount_won": 3652000000,
+      "local_transfer_line_count": 2,
+      "keyword": "혁신도시 건설지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "국토교통부",
+        "혁신도시건설특별회계",
+        "지역개발",
+        "혁신도시",
+        "혁신도시정주여건개선및활성화지원"
+      ],
+      "central_business_name": "혁신도시정주여건개선및활성화지원",
+      "central_local_transfer_amount_won": 3959000000,
+      "local_transfer_line_count": 4,
+      "keyword": "혁신도시정주여건개선및활성화지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "에너지및자원사업특별회계",
+        "에너지공급체계구축",
+        "가스수급안정",
+        "도시가스 공급배관 건설지원"
+      ],
+      "central_business_name": "도시가스 공급배관 건설지원",
+      "central_local_transfer_amount_won": 140000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "도시가스 공급배관 건설지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "에너지및자원사업특별회계",
+        "에너지공급체계구축",
+        "광산지역진흥",
+        "폐광대책비"
+      ],
+      "central_business_name": "폐광대책비",
+      "central_local_transfer_amount_won": 2000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "폐광대책비",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "에너지및자원사업특별회계",
+        "에너지자원정책",
+        "가스안전관리",
+        "LPG용기사용가구 시설개선"
+      ],
+      "central_business_name": "LPG용기사용가구 시설개선",
+      "central_local_transfer_amount_won": 3466000000,
+      "local_transfer_line_count": 2,
+      "keyword": "LPG용기사용가구 시설개선",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 4,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "일반회계",
+        "신산업진흥",
+        "산업융합및창의산업진흥",
+        "글로벌부산디자인페어 개최"
+      ],
+      "central_business_name": "글로벌부산디자인페어 개최",
+      "central_local_transfer_amount_won": 600000000,
+      "local_transfer_line_count": 2,
+      "keyword": "글로벌부산디자인페어 개최",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "일반회계",
+        "중견기업육성",
+        "유통물류기반조성(일반)",
+        "지역상생형 유통생태계 구축"
+      ],
+      "central_business_name": "지역상생형 유통생태계 구축",
+      "central_local_transfer_amount_won": 50000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역상생형 유통생태계 구축",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 2,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "일반회계",
+        "지역경제활성화",
+        "지역환경개선",
+        "순직산업전사위령탑성역화사업"
+      ],
+      "central_business_name": "순직산업전사위령탑성역화사업",
+      "central_local_transfer_amount_won": 3500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "순직산업전사위령탑성역화사업",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "경제자유구역사업추진",
+        "경제자유구역지원",
+        "구역청투자유치지원"
+      ],
+      "central_business_name": "구역청투자유치지원",
+      "central_local_transfer_amount_won": 3100000000,
+      "local_transfer_line_count": 2,
+      "keyword": "구역청투자유치지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "경제자유구역사업추진",
+        "경제자유구역지원",
+        "기타 기반시설 지원"
+      ],
+      "central_business_name": "기타 기반시설 지원",
+      "central_local_transfer_amount_won": 27159000000,
+      "local_transfer_line_count": 2,
+      "keyword": "기타 기반시설",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "경제자유구역사업추진",
+        "경제자유구역지원",
+        "인천경제자유구역전시컨벤션센터건립(BTL)"
+      ],
+      "central_business_name": "인천경제자유구역전시컨벤션센터건립(BTL)",
+      "central_local_transfer_amount_won": 5376000000,
+      "local_transfer_line_count": 2,
+      "keyword": "인천경제자유구역전시컨벤션센터건립",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "경제자유구역사업추진",
+        "경제자유구역지원",
+        "주요기반시설지원"
+      ],
+      "central_business_name": "주요기반시설지원",
+      "central_local_transfer_amount_won": 14453000000,
+      "local_transfer_line_count": 2,
+      "keyword": "주요기반시설지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "에너지공급체계구축",
+        "가스수급안정",
+        "마을단위 LPG 소형 저장탱크 보급(세종)"
+      ],
+      "central_business_name": "마을단위 LPG 소형 저장탱크 보급(세종)",
+      "central_local_transfer_amount_won": 250000000,
+      "local_transfer_line_count": 2,
+      "keyword": "마을단위 LPG 소형 저장탱크 보급",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "에너지공급체계구축",
+        "가스수급안정",
+        "마을단위 LPG 소형 저장탱크 보급(자율)"
+      ],
+      "central_business_name": "마을단위 LPG 소형 저장탱크 보급(자율)",
+      "central_local_transfer_amount_won": 6250000000,
+      "local_transfer_line_count": 2,
+      "keyword": "마을단위 LPG 소형 저장탱크 보급",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "에너지공급체계구축",
+        "가스수급안정",
+        "마을단위 LPG 소형 저장탱크 보급(제주)"
+      ],
+      "central_business_name": "마을단위 LPG 소형 저장탱크 보급(제주)",
+      "central_local_transfer_amount_won": 500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "마을단위 LPG 소형 저장탱크 보급",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "에너지공급체계구축",
+        "가스수급안정",
+        "읍면단위(중규모) LPG배관망구축(자율)"
+      ],
+      "central_business_name": "읍면단위(중규모) LPG배관망구축(자율)",
+      "central_local_transfer_amount_won": 51522000000,
+      "local_transfer_line_count": 2,
+      "keyword": "읍면단위 LPG배관망구축",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "에너지공급체계구축",
+        "가스수급안정",
+        "읍면단위(중규모) LPG배관망구축(제주)"
+      ],
+      "central_business_name": "읍면단위(중규모) LPG배관망구축(제주)",
+      "central_local_transfer_amount_won": 9289000000,
+      "local_transfer_line_count": 2,
+      "keyword": "읍면단위 LPG배관망구축",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "외국인투자유치활성화",
+        "외국인투자유치활성화",
+        "외국교육연구기관 등 유치지원"
+      ],
+      "central_business_name": "외국교육연구기관 등 유치지원",
+      "central_local_transfer_amount_won": 4500000000,
+      "local_transfer_line_count": 2,
+      "keyword": "외국교육연구기관 등 유치지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "외국인투자유치활성화",
+        "외국인투자유치활성화",
+        "투자유치기반조성"
+      ],
+      "central_business_name": "투자유치기반조성",
+      "central_local_transfer_amount_won": 124455000000,
+      "local_transfer_line_count": 4,
+      "keyword": "투자유치기반조성",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 1,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "주력산업진흥",
+        "섬유패션생활용품산업육성",
+        "생활산업경쟁력강화"
+      ],
+      "central_business_name": "생활산업경쟁력강화",
+      "central_local_transfer_amount_won": 2200000000,
+      "local_transfer_line_count": 2,
+      "keyword": "생활산업경쟁력강화",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "지역경제활성화",
+        "기업입지환경개선",
+        "산업단지환경조성"
+      ],
+      "central_business_name": "산업단지환경조성",
+      "central_local_transfer_amount_won": 2000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "산업단지환경조성",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 3,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "지역경제활성화",
+        "지역산업경쟁력강화",
+        "지방주도형투자일자리지원(세종)"
+      ],
+      "central_business_name": "지방주도형투자일자리지원(세종)",
+      "central_local_transfer_amount_won": 240000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지방주도형투자일자리지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "지역경제활성화",
+        "지역산업경쟁력강화",
+        "지방주도형투자일자리지원(자율)"
+      ],
+      "central_business_name": "지방주도형투자일자리지원(자율)",
+      "central_local_transfer_amount_won": 3602000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지방주도형투자일자리지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "지역경제활성화",
+        "지역산업경쟁력강화",
+        "지방주도형투자일자리지원(제주)"
+      ],
+      "central_business_name": "지방주도형투자일자리지원(제주)",
+      "central_local_transfer_amount_won": 330000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지방주도형투자일자리지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "지역경제활성화",
+        "지역산업경쟁력강화",
+        "지역균형발전지원"
+      ],
+      "central_business_name": "지역균형발전지원",
+      "central_local_transfer_amount_won": 1554000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역균형발전지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "지역경제활성화",
+        "지역투자유치활성화",
+        "지역투자촉진"
+      ],
+      "central_business_name": "지역투자촉진",
+      "central_local_transfer_amount_won": 250283000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역투자촉진",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 10,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "산업통상부",
+        "지역균형발전특별회계",
+        "지역경제활성화",
+        "지역투자유치활성화",
+        "지역투자촉진(세종)"
+      ],
+      "central_business_name": "지역투자촉진(세종)",
+      "central_local_transfer_amount_won": 5026000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역투자촉진",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 10,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "민주화지원및과거사정리",
+        "과거사관련업무지원단운영",
+        "과거사관련사업지원"
+      ],
+      "central_business_name": "과거사관련사업지원",
+      "central_local_transfer_amount_won": 7433000000,
+      "local_transfer_line_count": 2,
+      "keyword": "과거사관련사업지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "민주화지원및과거사정리",
+        "과거사관련업무지원단운영",
+        "과거사관련업무지원단운영"
+      ],
+      "central_business_name": "과거사관련업무지원단운영",
+      "central_local_transfer_amount_won": 90000000,
+      "local_transfer_line_count": 2,
+      "keyword": "과거사관련업무지원단운영",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "민주화지원및과거사정리",
+        "과거사관련업무지원단운영",
+        "제주4.3 진상규명 및 명예회복 지원"
+      ],
+      "central_business_name": "제주4.3 진상규명 및 명예회복 지원",
+      "central_local_transfer_amount_won": 7013000000,
+      "local_transfer_line_count": 4,
+      "keyword": "제주4.3 진상규명 및 명예회복",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "민주화지원및과거사정리",
+        "국가폭력 트라우마 치유센터 조성",
+        "국립 국가폭력 트라우마 치유센터 조성"
+      ],
+      "central_business_name": "국립 국가폭력 트라우마 치유센터 조성",
+      "central_local_transfer_amount_won": 600000000,
+      "local_transfer_line_count": 2,
+      "keyword": "국립 국가폭력 트라우마 치유센터 조성",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "민주화지원및과거사정리",
+        "민주화운동기념사업지원",
+        "민주화운동기념사업지원"
+      ],
+      "central_business_name": "민주화운동기념사업지원",
+      "central_local_transfer_amount_won": 14089000000,
+      "local_transfer_line_count": 4,
+      "keyword": "민주화운동기념사업지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "민주화지원및과거사정리",
+        "여수,순천 10.19사건위원회 지원",
+        "여수·순천10·19위원회 지원"
+      ],
+      "central_business_name": "여수·순천10·19위원회 지원",
+      "central_local_transfer_amount_won": 1611000000,
+      "local_transfer_line_count": 4,
+      "keyword": "여수 순천10 19위원회",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "안전관리",
+        "비상시대비능력강화",
+        "동원자원관리"
+      ],
+      "central_business_name": "동원자원관리",
+      "central_local_transfer_amount_won": 133000000,
+      "local_transfer_line_count": 2,
+      "keyword": "동원자원관리",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 8,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "안전관리",
+        "비상시대비능력강화",
+        "민방위교육훈련및시설장비확충"
+      ],
+      "central_business_name": "민방위교육훈련및시설장비확충",
+      "central_local_transfer_amount_won": 9386000000,
+      "local_transfer_line_count": 4,
+      "keyword": "민방위교육훈련및시설장비확충",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "안전관리",
+        "생활안전개선 추진",
+        "국민안전의식선진화"
+      ],
+      "central_business_name": "국민안전의식선진화",
+      "central_local_transfer_amount_won": 370000000,
+      "local_transfer_line_count": 2,
+      "keyword": "국민안전의식선진화",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "안전관리",
+        "생활안전개선 추진",
+        "지역안전개선컨설팅"
+      ],
+      "central_business_name": "지역안전개선컨설팅",
+      "central_local_transfer_amount_won": 552500000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역안전개선컨설팅",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "안전관리",
+        "안전점검 및 재난안전산업 활성화",
+        "재난안전 드론 상황실 연계 및 역량강화"
+      ],
+      "central_business_name": "재난안전 드론 상황실 연계 및 역량강화",
+      "central_local_transfer_amount_won": 1485000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재난안전 드론 상황실 연계 및 역량강화",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 3,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "안전관리",
+        "안전점검 및 재난안전산업 활성화",
+        "재난안전산업활성화"
+      ],
+      "central_business_name": "재난안전산업활성화",
+      "central_local_transfer_amount_won": 243000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재난안전산업활성화",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "이북5도",
+        "이북도민관련지원",
+        "이북도민관련단체및행사지원"
+      ],
+      "central_business_name": "이북도민관련단체및행사지원",
+      "central_local_transfer_amount_won": 117000000,
+      "local_transfer_line_count": 2,
+      "keyword": "이북도민관련단체및행사지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난경감활성화",
+        "국가재난대응종합훈련"
+      ],
+      "central_business_name": "국가재난대응종합훈련",
+      "central_local_transfer_amount_won": 980000000,
+      "local_transfer_line_count": 2,
+      "keyword": "국가재난대응종합훈련",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 27,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난경감활성화",
+        "침수우려 하상도로 자동차단 시설(보조)"
+      ],
+      "central_business_name": "침수우려 하상도로 자동차단 시설(보조)",
+      "central_local_transfer_amount_won": 6000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "침수우려 하상도로 자동차단 시설",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난관리인프라구축",
+        "7·15참사피해자지원단 운영지원"
+      ],
+      "central_business_name": "7·15참사피해자지원단 운영지원",
+      "central_local_transfer_amount_won": 60000000,
+      "local_transfer_line_count": 2,
+      "keyword": "7 15참사피해자지원단 운영지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난관리인프라구축",
+        "지진대비인프라구축"
+      ],
+      "central_business_name": "지진대비인프라구축",
+      "central_local_transfer_amount_won": 2071000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지진대비인프라구축",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난관리지원",
+        "10.29참사피해자지원단 운영지원"
+      ],
+      "central_business_name": "10.29참사피해자지원단 운영지원",
+      "central_local_transfer_amount_won": 200000000,
+      "local_transfer_line_count": 2,
+      "keyword": "10.29참사피해자지원단 운영지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난복구지원",
+        "재난관리자원 관리체계 구축 및 민관협력 지원"
+      ],
+      "central_business_name": "재난관리자원 관리체계 구축 및 민관협력 지원",
+      "central_local_transfer_amount_won": 2803500000,
+      "local_transfer_line_count": 2,
+      "keyword": "재난관리자원 관리체계 구축 및 민관협력",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난복구지원",
+        "재난구호지원"
+      ],
+      "central_business_name": "재난구호지원",
+      "central_local_transfer_amount_won": 1200000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재난구호지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 7,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난복구지원",
+        "재난대책비(보조)"
+      ],
+      "central_business_name": "재난대책비(보조)",
+      "central_local_transfer_amount_won": 1009940000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재난대책비",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 51,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "재난관리",
+        "재난복구지원",
+        "재난심리회복지원"
+      ],
+      "central_business_name": "재난심리회복지원",
+      "central_local_transfer_amount_won": 891000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재난심리회복지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 10,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "지방교부세",
+        "보통교부세",
+        "보통교부세"
+      ],
+      "central_business_name": "보통교부세",
+      "central_local_transfer_amount_won": 61698352000000,
+      "local_transfer_line_count": 2,
+      "keyword": "보통교부세",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "지방교부세",
+        "부동산교부세",
+        "부동산교부세"
+      ],
+      "central_business_name": "부동산교부세",
+      "central_local_transfer_amount_won": 4698208000000,
+      "local_transfer_line_count": 2,
+      "keyword": "부동산교부세",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "지방교부세",
+        "소방안전교부세",
+        "소방안전교부세"
+      ],
+      "central_business_name": "소방안전교부세",
+      "central_local_transfer_amount_won": 1050277000000,
+      "local_transfer_line_count": 2,
+      "keyword": "소방안전교부세",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 2,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "지방교부세",
+        "재난특별교부세",
+        "재난안전관리특별교부세"
+      ],
+      "central_business_name": "재난안전관리특별교부세",
+      "central_local_transfer_amount_won": 954058000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재난안전관리특별교부세",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "지방교부세",
+        "특별교부세",
+        "국가지방협력특별교부세"
+      ],
+      "central_business_name": "국가지방협력특별교부세",
+      "central_local_transfer_amount_won": 190811000000,
+      "local_transfer_line_count": 2,
+      "keyword": "국가지방협력특별교부세",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "지방교부세",
+        "특별교부세",
+        "지역현안특별교부세"
+      ],
+      "central_business_name": "지역현안특별교부세",
+      "central_local_transfer_amount_won": 763247000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역현안특별교부세",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "일반회계",
+        "지방자치분권",
+        "지방자치단체경쟁력지원",
+        "지자체경쟁력지원"
+      ],
+      "central_business_name": "지자체경쟁력지원",
+      "central_local_transfer_amount_won": 2000000000,
+      "local_transfer_line_count": 4,
+      "keyword": "지자체경쟁력지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "안전관리",
+        "재난예방지원",
+        "산불지역 마을단위 복구·재생"
+      ],
+      "central_business_name": "산불지역 마을단위 복구·재생",
+      "central_local_transfer_amount_won": 12000000000,
+      "local_transfer_line_count": 2,
+      "keyword": "산불지역 마을단위 복구 재생",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "안전관리",
+        "재난예방지원",
+        "우수유출저감시설설치(보조)"
+      ],
+      "central_business_name": "우수유출저감시설설치(보조)",
+      "central_local_transfer_amount_won": 39967000000,
+      "local_transfer_line_count": 2,
+      "keyword": "우수유출저감시설설치",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "안전관리",
+        "재난예방지원",
+        "재해위험지역정비(보조)"
+      ],
+      "central_business_name": "재해위험지역정비(보조)",
+      "central_local_transfer_amount_won": 1062592000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재해위험지역",
+      "keyword_strategy": "verified_override:재해위험지역",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 120,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "안전관리",
+        "재난예방지원",
+        "재해위험지역정비(세종)"
+      ],
+      "central_business_name": "재해위험지역정비(세종)",
+      "central_local_transfer_amount_won": 5800000000,
+      "local_transfer_line_count": 2,
+      "keyword": "재해위험지역",
+      "keyword_strategy": "verified_override:재해위험지역",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 120,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "일자리지원",
+        "지역일자리창출",
+        "마을기업육성사업"
+      ],
+      "central_business_name": "마을기업육성사업",
+      "central_local_transfer_amount_won": 4650000000,
+      "local_transfer_line_count": 2,
+      "keyword": "마을기업육성사업",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 9,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "일자리지원",
+        "지역일자리창출",
+        "지역사회 활성화 기반조성"
+      ],
+      "central_business_name": "지역사회 활성화 기반조성",
+      "central_local_transfer_amount_won": 1700000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역사회 활성화 기반조성",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 6,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "정부혁신조직",
+        "주민참여 지역문제 해결 확산",
+        "지역사회 자생적 창조역량 강화"
+      ],
+      "central_business_name": "지역사회 자생적 창조역량 강화",
+      "central_local_transfer_amount_won": 11950000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역사회 자생적 창조역량 강화",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지방자치분권",
+        "자원봉사활성화지원",
+        "자원봉사활성화지원"
+      ],
+      "central_business_name": "자원봉사활성화지원",
+      "central_local_transfer_amount_won": 14745000000,
+      "local_transfer_line_count": 4,
+      "keyword": "자원봉사활성화지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 15,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지방자치분권",
+        "자원봉사활성화지원(제주)",
+        "자원봉사활성화지원(제주)"
+      ],
+      "central_business_name": "자원봉사활성화지원(제주)",
+      "central_local_transfer_amount_won": 27000000,
+      "local_transfer_line_count": 2,
+      "keyword": "자원봉사활성화지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 15,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지방자치분권",
+        "지자체자율통합지원",
+        "지방자치단체자율통합지원금"
+      ],
+      "central_business_name": "지방자치단체자율통합지원금",
+      "central_local_transfer_amount_won": 7795000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지방자치단체자율통합지원금",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지방재정경제",
+        "지역경제지원",
+        "지역사랑상품권 발행지원"
+      ],
+      "central_business_name": "지역사랑상품권 발행지원",
+      "central_local_transfer_amount_won": 1149400000000,
+      "local_transfer_line_count": 2,
+      "keyword": "지역사랑상품권",
+      "keyword_strategy": "verified_override:지역사랑상품권",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 79,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지방재정경제",
+        "지역경제지원",
+        "착한가격업소 활성화 지원(세종)"
+      ],
+      "central_business_name": "착한가격업소 활성화 지원(세종)",
+      "central_local_transfer_amount_won": 26000000,
+      "local_transfer_line_count": 2,
+      "keyword": "착한가격업소 활성화",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 112,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지방재정경제",
+        "지역경제지원",
+        "착한가격업소 활성화 지원(자율)"
+      ],
+      "central_business_name": "착한가격업소 활성화 지원(자율)",
+      "central_local_transfer_amount_won": 4715000000,
+      "local_transfer_line_count": 2,
+      "keyword": "착한가격업소 활성화",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 112,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지방재정경제",
+        "지역경제지원",
+        "착한가격업소 활성화 지원(제주)"
+      ],
+      "central_business_name": "착한가격업소 활성화 지원(제주)",
+      "central_local_transfer_amount_won": 164000000,
+      "local_transfer_line_count": 2,
+      "keyword": "착한가격업소 활성화",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 112,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "광역경제권추진지원",
+        "지역발전활성화"
+      ],
+      "central_business_name": "지역발전활성화",
+      "central_local_transfer_amount_won": 6475000000,
+      "local_transfer_line_count": 4,
+      "keyword": "지역발전활성화",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "서해5도종합발전지원",
+        "서해5도종합발전지원(자율)"
+      ],
+      "central_business_name": "서해5도종합발전지원(자율)",
+      "central_local_transfer_amount_won": 10707000000,
+      "local_transfer_line_count": 2,
+      "keyword": "서해5도종합발전지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "섬 발전 협력사업 추진",
+        "섬 발전 협력사업 추진"
+      ],
+      "central_business_name": "섬 발전 협력사업 추진",
+      "central_local_transfer_amount_won": 3233000000,
+      "local_transfer_line_count": 2,
+      "keyword": "섬 발전 협력사업",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "섬 발전 협력사업 추진",
+        "섬 발전 협력사업 추진(자율)"
+      ],
+      "central_business_name": "섬 발전 협력사업 추진(자율)",
+      "central_local_transfer_amount_won": 11581000000,
+      "local_transfer_line_count": 2,
+      "keyword": "섬 발전 협력사업",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "접경권발전지원",
+        "접경권발전지원(자율)"
+      ],
+      "central_business_name": "접경권발전지원(자율)",
+      "central_local_transfer_amount_won": 53271000000,
+      "local_transfer_line_count": 2,
+      "keyword": "접경권발전지원",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "주한미군공여구역주변지역등지원",
+        "주한미군공여구역주변지역등지원"
+      ],
+      "central_business_name": "주한미군공여구역주변지역등지원",
+      "central_local_transfer_amount_won": 83942000000,
+      "local_transfer_line_count": 2,
+      "keyword": "주한미군공여구역주변지역등지원",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 2,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "지역공동체기반조성및역량강화",
+        "활력 복합시설 건립 지원"
+      ],
+      "central_business_name": "활력 복합시설 건립 지원",
+      "central_local_transfer_amount_won": 11761000000,
+      "local_transfer_line_count": 4,
+      "keyword": "활력 복합시설 건립",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 0,
+      "collection_status": "no_positive_national_reflection_rows"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "특수상황지역개발",
+        "특수상황지역개발"
+      ],
+      "central_business_name": "특수상황지역개발",
+      "central_local_transfer_amount_won": 199449000000,
+      "local_transfer_line_count": 2,
+      "keyword": "특수상황지역개발",
+      "keyword_strategy": "normalized_full_title",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 44,
+      "collection_status": "keyword_candidates_found"
+    },
+    {
+      "central_business_key": [
+        "2026",
+        "행정안전부",
+        "지역균형발전특별회계",
+        "지역발전",
+        "특수상황지역개발(제주)",
+        "특수상황지역개발(제주)"
+      ],
+      "central_business_name": "특수상황지역개발(제주)",
+      "central_local_transfer_amount_won": 2837000000,
+      "local_transfer_line_count": 2,
+      "keyword": "특수상황지역개발",
+      "keyword_strategy": "normalized_without_parenthetical_qualifier",
+      "keyword_skip_reason": null,
+      "candidate_row_count": 44,
+      "collection_status": "keyword_candidates_found"
+    }
+  ],
+  "complete": true,
+  "positive_national_reflection_only": true,
+  "normalized_row_count": 2271,
+  "matched_business_count": 63,
+  "national_reflection_sum_won": 13038000691958.0,
+  "fetches": [
+    {
+      "keyword": "10.29참사피해자지원단 운영지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/ac57f4bfd8f79980.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "7 15참사피해자지원단 운영지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/94e83558d1033475.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "LPG용기사용가구 시설개선",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/be88864c2fae3432.json",
+      "raw_row_count": 4,
+      "page_count": 1
+    },
+    {
+      "keyword": "개발제한구역관리",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/35673f9f3caa4618.json",
+      "raw_row_count": 32,
+      "page_count": 1
+    },
+    {
+      "keyword": "건설및지하안전관리",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9f694986f3e631e7.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "건축문화진흥",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/0332aef38bb55479.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "과거사관련사업지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/6e7eecd361dc01ad.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "과거사관련업무지원단운영",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/c7b62d65cc5d584c.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "광령-도평우회도로건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/1337397cb91f36c0.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "광역BRT 구축",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/312bd07edc98e897.json",
+      "raw_row_count": 1,
+      "page_count": 1
+    },
+    {
+      "keyword": "광역버스 공공성 강화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/d3ae3f5a6f5fed84.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "광주도시철도2호선건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/a6f9a2c540c0a5ff.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "광주하남-장성삼계광역도로",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f425c6a65fbb429f.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "교통약자 이동편의 증진",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/eafdbb72ab7f5dea.json",
+      "raw_row_count": 39,
+      "page_count": 1
+    },
+    {
+      "keyword": "구역청투자유치지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/2bc7e37613d0a43f.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "국가재난대응종합훈련",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9b2eb0499c2e45df.json",
+      "raw_row_count": 32,
+      "page_count": 1
+    },
+    {
+      "keyword": "국가지방협력특별교부세",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/8c34c4c5173b3a4c.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "국가지원지방도 건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/31f9c06915956ed1.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "국립 국가폭력 트라우마 치유센터 조성",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/e191f9060d314787.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "국민안전의식선진화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/508aa0d1b69f20ed.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "글로벌부산디자인페어 개최",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f1257428f7cbdf58.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "기타 기반시설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f46aa809ce98bbfe.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "김포 도시철도 전동차 증차 한시지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/2aa0f98e4eb64eb7.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "노후공단 재정비지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/68a21f9be0109dbc.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "대구경북신공항건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/ac82b08ddef23150.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "대구도시철도엑스코선건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f3f08c6acc5157b9.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "대구도시철도영천연장",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9d6ef5aca5311658.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "대도시권교통혼잡도로지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/875302b9a2ee4112.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "대전도시철도2호선건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/01c25d1582407e47.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "대중교통비 환급",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/b9ff5e0fcf864753.json",
+      "raw_row_count": 112,
+      "page_count": 1
+    },
+    {
+      "keyword": "도봉산-옥정복선전철",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/3cc92dbefae9cf60.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "도시가스 공급배관 건설지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/c83a86c4bca1195b.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "도시재생사업",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5d64fdd221d2276d.json",
+      "raw_row_count": 313,
+      "page_count": 1
+    },
+    {
+      "keyword": "도시철도 노후시설 개선지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/63856c9bb4b37b24.json",
+      "raw_row_count": 1,
+      "page_count": 1
+    },
+    {
+      "keyword": "도시철도노후차량개선지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/31dcf69812907d40.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "도시형교통모델",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/8a08e4fd60623a0c.json",
+      "raw_row_count": 13,
+      "page_count": 1
+    },
+    {
+      "keyword": "도시활력증진지역개발",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5f7b3567bbe45b0f.json",
+      "raw_row_count": 5,
+      "page_count": 1
+    },
+    {
+      "keyword": "도심항공교통산업활성화지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/eafbc4d6bbf7fa77.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "동북선경전철건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/c77840575ad173f2.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "동원자원관리",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/684a9280bd4ac535.json",
+      "raw_row_count": 9,
+      "page_count": 1
+    },
+    {
+      "keyword": "마을기업육성사업",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/ac49e339e01ec9a0.json",
+      "raw_row_count": 12,
+      "page_count": 1
+    },
+    {
+      "keyword": "마을단위 LPG 소형 저장탱크 보급",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/ff0a6a7efd45b43a.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "무안항공특화 산업단지 지원사업",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/143bac58b0481101.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "민관협력 지역상생협약",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/3ad87c5c5b705741.json",
+      "raw_row_count": 11,
+      "page_count": 1
+    },
+    {
+      "keyword": "민방위교육훈련및시설장비확충",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/533b81c5e08c0bd8.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "민자도로운영지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/70c35ad35d477af5.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "민주화운동기념사업지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/051e11dc933bff50.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "버스공영차고지",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/a2d43d6722c61d35.json",
+      "raw_row_count": 42,
+      "page_count": 1
+    },
+    {
+      "keyword": "벽지노선지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f7077715035f3646.json",
+      "raw_row_count": 11,
+      "page_count": 1
+    },
+    {
+      "keyword": "보통교부세",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/10ea39ed33869881.json",
+      "raw_row_count": 1,
+      "page_count": 1
+    },
+    {
+      "keyword": "부동산교부세",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/7ba162e3d6e5ea27.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "부산 사상-하단 도시철도 건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/52109411fe19348e.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "부산도시철도하단-녹산선건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5c1cae98d95c9d9a.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "부처연계형노후산단개발",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/d130b391397e3336.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "산불지역 마을단위 복구 재생",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/4d56c777a5c6dca6.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "산업단지환경조성",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/edbf8e4c62095bfa.json",
+      "raw_row_count": 7,
+      "page_count": 1
+    },
+    {
+      "keyword": "생활산업경쟁력강화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/185f30f63f159fb5.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "서울 도시철도 전동차 증차 한시지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/b94b8908b8f6ca0e.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "서울도시철도 9호선 건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5228d38d1cd14f7c.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "서울도시철도9호선4단계연장",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/884dc7610bc979d5.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "서울지하철7호선청라연장",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/6a59e980df7e2c21.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "서해5도종합발전지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f0566027838e6ef6.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "섬 발전 협력사업",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/1a1f0e01008515bd.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "성장촉진지역개발",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/7acf899a0ff15265.json",
+      "raw_row_count": 24,
+      "page_count": 1
+    },
+    {
+      "keyword": "소방안전교부세",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/08b45bee7c80bfae.json",
+      "raw_row_count": 7,
+      "page_count": 1
+    },
+    {
+      "keyword": "수소 대중교통체계 구축",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/3eca08d597889735.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "수소도시지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/fd3393b11f06d660.json",
+      "raw_row_count": 3,
+      "page_count": 1
+    },
+    {
+      "keyword": "순직산업전사위령탑성역화사업",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/cd204e6da8e89e7b.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "스마트공동물류센터 건립지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/035dbf3f061a75f7.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "스마트시티",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9cf9fd55b451029f.json",
+      "raw_row_count": 68,
+      "page_count": 1
+    },
+    {
+      "keyword": "양산도시철도 건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/632c6832d09acfec.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "여수 순천10 19위원회",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f7e1760b2711cd64.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "옥정-포천철도건설사업",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/18b4c7de97076fff.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "외국교육연구기관 등 유치지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/655a9b79ebabf4cc.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "우수유출저감시설설치",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/4e5135309fde21e5.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "우이신설선 연장선",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/b72d2cc9d671151e.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "울산도시철도 1호선건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/02ed54fb653d4f46.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "읍면단위 LPG배관망구축",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5a3eb628f56c0271.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "이북도민관련단체및행사지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/56b0e6bbb73ae86c.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "인천경제자유구역전시컨벤션센터건립",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/189463db490dd5ce.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "인천서구거점도-경기김포약암리광역도로",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5fb05369318f0ca4.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "자원봉사활성화지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/c571a1bc9d2cd0a6.json",
+      "raw_row_count": 22,
+      "page_count": 1
+    },
+    {
+      "keyword": "자율자동차 상용화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/8c8b79c0709d6031.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "장기미집행공원지방채이자지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/d9c35d6187020072.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "재난관리자원 관리체계 구축 및 민관협력",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/8ae390986c9819f4.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "재난구호지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/eab4e70869c7624e.json",
+      "raw_row_count": 12,
+      "page_count": 1
+    },
+    {
+      "keyword": "재난대책비",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/a1cd651b8c00f020.json",
+      "raw_row_count": 59,
+      "page_count": 1
+    },
+    {
+      "keyword": "재난심리회복지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9a2d42b358b65536.json",
+      "raw_row_count": 11,
+      "page_count": 1
+    },
+    {
+      "keyword": "재난안전 드론 상황실 연계 및 역량강화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/a6eb1a828a5a42b6.json",
+      "raw_row_count": 3,
+      "page_count": 1
+    },
+    {
+      "keyword": "재난안전관리특별교부세",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/bf89f21b46902cfb.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "재난안전산업활성화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/02180e54f625d570.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "재정비촉진사업지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/562feb5eb9798f58.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "재해위험지역",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/de15720677e205ad.json",
+      "raw_row_count": 151,
+      "page_count": 1
+    },
+    {
+      "keyword": "전세보증금 반환보증 보증료",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/89f46d85fcf27e60.json",
+      "raw_row_count": 50,
+      "page_count": 1
+    },
+    {
+      "keyword": "접경권발전지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/f7e80a36a323cb3a.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "제주 구국도 건설지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/263dbacc6184dfa4.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "제주 도로관리단",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/38ca07c316a279f5.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "제주4.3 진상규명 및 명예회복",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/df5c0bae6c798790.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "제주구국도공무원부담금",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5eb7029f49d629d2.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "제주구국도유지관리",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/1605c2c56bd6f2db.json",
+      "raw_row_count": 6,
+      "page_count": 1
+    },
+    {
+      "keyword": "제주일주도로우회도로",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/1af648d0f1631e3e.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "조야-동명광역도로",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/b958b4031fdf72c7.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "주거급여",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/6610138e576370ea.json",
+      "raw_row_count": 297,
+      "page_count": 1
+    },
+    {
+      "keyword": "주요기반시설지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/8cfbadf771f65556.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "주택공시가격조사",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/bcafb4fa0b8f3599.json",
+      "raw_row_count": 5,
+      "page_count": 1
+    },
+    {
+      "keyword": "주한미군공여구역주변지역등지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/db760ca8083aa014.json",
+      "raw_row_count": 3,
+      "page_count": 1
+    },
+    {
+      "keyword": "중산간도로",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/dd61ca7925ccdfd6.json",
+      "raw_row_count": 4,
+      "page_count": 1
+    },
+    {
+      "keyword": "중산간도로 선형개량사업",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/cfaedd62bc2ea6a8.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지방자치단체자율통합지원금",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/97e8b979ebb8ab6f.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지방주도형투자일자리지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/2546de59c8996538.json",
+      "raw_row_count": 1,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역균형발전지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/93aeee12749da7a9.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역발전활성화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/84aea8c1030deb05.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역사랑상품권",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5825a0e2693eb834.json",
+      "raw_row_count": 130,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역사회 자생적 창조역량 강화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/ed93c0dfa1830fc2.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역사회 활성화 기반조성",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/152ccb8051135493.json",
+      "raw_row_count": 9,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역상생형 유통생태계 구축",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/30de69583542c7e1.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역안전개선컨설팅",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/967db033375d53db.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역투자촉진",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/3be4ada87ec3832b.json",
+      "raw_row_count": 12,
+      "page_count": 1
+    },
+    {
+      "keyword": "지역현안특별교부세",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/a3e1c7199a17b39c.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지자체경쟁력지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/a7911badb714ab7f.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지적재조사",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5f30aaa817864fc5.json",
+      "raw_row_count": 447,
+      "page_count": 1
+    },
+    {
+      "keyword": "지진대비인프라구축",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9a51888dcf24e50a.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "지하시설물 전산화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/08b7caf9131385d7.json",
+      "raw_row_count": 27,
+      "page_count": 1
+    },
+    {
+      "keyword": "착한가격업소 활성화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/0a71e0fd25cd33a1.json",
+      "raw_row_count": 134,
+      "page_count": 1
+    },
+    {
+      "keyword": "첨단도로교통체계",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/12e2cd719f70af0e.json",
+      "raw_row_count": 1,
+      "page_count": 1
+    },
+    {
+      "keyword": "청년월세",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/04cb81836f62fe7b.json",
+      "raw_row_count": 234,
+      "page_count": 1
+    },
+    {
+      "keyword": "초정-화명광역도로건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/da590fe697b17b04.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "충청권 자율주행 모빌리티 고도화",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/0aa954ab242b1404.json",
+      "raw_row_count": 1,
+      "page_count": 1
+    },
+    {
+      "keyword": "침수우려 하상도로 자동차단 시설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9e059e6ba6394f61.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "택시산업지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/9cde514d1c02ed39.json",
+      "raw_row_count": 2,
+      "page_count": 1
+    },
+    {
+      "keyword": "투자선도지구기반시설지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/e938327836092a89.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "투자유치기반조성",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/5165918da1ae3c46.json",
+      "raw_row_count": 5,
+      "page_count": 1
+    },
+    {
+      "keyword": "특수상황지역개발",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/3a3ac307f75f0ddd.json",
+      "raw_row_count": 49,
+      "page_count": 1
+    },
+    {
+      "keyword": "폐광대책비",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/96f1f2ab8a8622ba.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "해안및내륙권발전사업지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/ae8165952f30add0.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "혁신도시 건설지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/04d6251e491b391f.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "혁신도시정주여건개선및활성화지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/794b4d4bb436657c.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "혼잡도로 건설",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/0b159ab3d99fca54.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "환승센터구축지원",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/e1e8e2df83c9ff02.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    },
+    {
+      "keyword": "활력 복합시설 건립",
+      "source": "network",
+      "cache_path": "data/raw/lofin/candidate_cache/2026/20260630/3b022861371dd3f1.json",
+      "raw_row_count": 0,
+      "page_count": 1
+    }
+  ],
+  "output": "data/normalized/lofin_local_transfer_candidates_2026.json"
+}

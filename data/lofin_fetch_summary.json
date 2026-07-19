@@ -1,0 +1,66 @@
+{
+  "hits": [
+    {
+      "svc": "QWGJK",
+      "params": {
+        "fyr": 2026,
+        "exe_ymd": "20260701",
+        "wa_laf_cd": "1100000",
+        "pSize": 5
+      },
+      "n": 5,
+      "meta": {
+        "payload_type": "dict",
+        "list_key": "QWGJK",
+        "list_total_count": 30879,
+        "RESULT": {
+          "CODE": "INFO-000",
+          "MESSAGE": "정상 처리되었습니다."
+        }
+      }
+    },
+    {
+      "svc": "QWGJK",
+      "params": {
+        "fyr": 2026,
+        "exe_ymd": "20260618",
+        "wa_laf_cd": "1100000",
+        "pSize": 5
+      },
+      "n": 5,
+      "meta": {
+        "payload_type": "dict",
+        "list_key": "QWGJK",
+        "list_total_count": 30767,
+        "RESULT": {
+          "CODE": "INFO-000",
+          "MESSAGE": "정상 처리되었습니다."
+        }
+      }
+    },
+    {
+      "svc": "AIDFA",
+      "params": {
+        "fyr": 2026,
+        "wa_laf_cd": "1100000",
+        "pSize": 5
+      },
+      "n": 5,
+      "meta": {
+        "payload_type": "dict",
+        "list_key": "AIDFA",
+        "list_total_count": 1015,
+        "RESULT": {
+          "CODE": "INFO-000",
+          "MESSAGE": "정상 처리되었습니다."
+        }
+      }
+    }
+  ],
+  "qwgjk_rows": 5000,
+  "aidfa_rows": 1015,
+  "qwgjk_api_total": 30879,
+  "aidfa_api_total": 1015,
+  "api_total": 30879,
+  "complete": false
+}

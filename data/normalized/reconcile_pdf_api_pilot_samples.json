@@ -1,0 +1,351 @@
+[
+  {
+    "pdf": {
+      "ministry": "행정안전부",
+      "raw_title": "과표양성화를 위한 시가표준액 조사",
+      "clean_title": "과표양성화를 위한 시가표준액 조사",
+      "code_hint": "1337-300",
+      "code_type": "detail",
+      "implementer": "한국지방세연구원",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "extractor": "kordoc_chunks",
+      "source_pdf": "/Users/seohoseong/Koreabudget100/data/parser_ab/samples/mois_p798-812.pdf",
+      "page_start": 3,
+      "page_end": 12,
+      "anchor_chunk_id": "c0023",
+      "anchor_chunk_ids": [
+        "c0023"
+      ],
+      "source_chunk_start": "c0023",
+      "source_chunk_end": "c0108",
+      "snippet": "### (9) 과표양성화를 위한 시가표준액 조사 (1337-300) ### □ 사업 코드 정보 구분 회계 소관 실국(기관) 계정 분야 부문 코드 일반회계 행정안전부 지방재정경제실 010 013 명칭 일반·지방행정 지방행정·재정지원 구분 | 프로그램 | 단위사업 | 세부사업 --- | --- | --- | --- 코드 | 1300 | 1337 | 300 명칭 | 지방재정경제 | 과표양성화를 위한 시가표준액 조사 | 과표양성화를 위한 시가표준액 조사 □ 사업 성격 신규 계속 완료 예비타당성실시여부 총"
+    },
+    "status": "matched",
+    "confidence": "high",
+    "method": "exact_norm",
+    "score": 100.0,
+    "api_match": {
+      "office_name": "행정안전부",
+      "detail_business_name": "과표양성화를위한시가표준액조사",
+      "program_name": "지방재정경제",
+      "unit_business_name": "과표양성화를위한시가표준액조사",
+      "account_name": "일반회계",
+      "field_name": "일반·지방행정",
+      "section_name": "지방행정·재정지원",
+      "congress_amt": 3297000000.0,
+      "year": 2026
+    },
+    "top3": [
+      {
+        "score": 100.0,
+        "reason": "exact_norm",
+        "office_name": "행정안전부",
+        "detail_business_name": "과표양성화를위한시가표준액조사",
+        "congress_amt": 3297000000.0
+      }
+    ],
+    "enrichment": {
+      "canonical_name": "과표양성화를위한시가표준액조사",
+      "canonical_amount": 3297000000.0,
+      "pdf_exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "pdf_implementer": "한국지방세연구원",
+      "pdf_code_hint": "1337-300",
+      "pdf_code_type": "detail",
+      "amount_source": "openfiscal",
+      "name_source": "openfiscal"
+    },
+    "lofin_reflections": [],
+    "lofin_hit_count": 0
+  },
+  {
+    "pdf": {
+      "ministry": "행정안전부",
+      "raw_title": "지방자주재원 확충을 위한 정책추진",
+      "clean_title": "지방자주재원 확충을 위한 정책추진",
+      "code_hint": "1338-300",
+      "code_type": "detail",
+      "implementer": "한국지방세연구원",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "extractor": "kordoc_chunks",
+      "source_pdf": "/Users/seohoseong/Koreabudget100/data/parser_ab/samples/mois_p798-812.pdf",
+      "page_start": 12,
+      "page_end": 15,
+      "anchor_chunk_id": "c0109",
+      "anchor_chunk_ids": [
+        "c0109"
+      ],
+      "source_chunk_start": "c0109",
+      "source_chunk_end": "c0159",
+      "snippet": "### (10) 지방자주재원 확충을 위한 정책추진 (1338-300) ### □ 사업 코드 정보 구분 회계 소관 실국(기관) 계정 분야 부문 코드 일반회계 행정안전부 지방재정경제실지방세제국 010 013 명칭 일반‧지방행정 지방행정‧재정지원 구분 | 프로그램 | 단위사업 | 세부사업 --- | --- | --- | --- 코드 | 1300 | 1338 | 300 명칭 | 지방재정경제 | 지방자주재원확충을위한정책추진 | 지방자주재원확충을위한정책추진 □ 사업 성격 (공통요구자료 Ⅱ-1 작성유의사항 4"
+    },
+    "status": "matched",
+    "confidence": "high",
+    "method": "exact_norm",
+    "score": 100.0,
+    "api_match": {
+      "office_name": "행정안전부",
+      "detail_business_name": "지방자주재원확충을위한정책추진",
+      "program_name": "지방재정경제",
+      "unit_business_name": "지방자주재원확충을위한정책추진",
+      "account_name": "일반회계",
+      "field_name": "일반·지방행정",
+      "section_name": "지방행정·재정지원",
+      "congress_amt": 1042000000.0,
+      "year": 2026
+    },
+    "top3": [
+      {
+        "score": 100.0,
+        "reason": "exact_norm",
+        "office_name": "행정안전부",
+        "detail_business_name": "지방자주재원확충을위한정책추진",
+        "congress_amt": 1042000000.0
+      }
+    ],
+    "enrichment": {
+      "canonical_name": "지방자주재원확충을위한정책추진",
+      "canonical_amount": 1042000000.0,
+      "pdf_exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "pdf_implementer": "한국지방세연구원",
+      "pdf_code_hint": "1338-300",
+      "pdf_code_type": "detail",
+      "amount_source": "openfiscal",
+      "name_source": "openfiscal"
+    },
+    "lofin_reflections": [],
+    "lofin_hit_count": 0
+  },
+  {
+    "pdf": {
+      "ministry": "국토교통부",
+      "raw_title": "철도특별사법경찰대 인건비",
+      "clean_title": "철도특별사법경찰대 인건비",
+      "code_hint": "7002-105",
+      "code_type": "detail",
+      "implementer": "철도특별사법경찰대",
+      "exec_paths": [
+        "직접"
+      ],
+      "extractor": "kordoc_chunks",
+      "source_pdf": "/Users/seohoseong/Koreabudget100/data/parser_ab/samples/molit_p148-162.pdf",
+      "page_start": 3,
+      "page_end": 7,
+      "anchor_chunk_id": "c0018",
+      "anchor_chunk_ids": [
+        "c0018"
+      ],
+      "source_chunk_start": "c0018",
+      "source_chunk_end": "c0050",
+      "snippet": "## (5) 철도특별사법경찰대 인건비 (7002-105) ## □ 사업 코드 정보 구분 회계 소관 실국(기관) 계정 분야 부문 코드 일반 국토교통부 철도특별사법경찰대 120 126 명칭 교통및물류 물류등기타 구분 | 프로그램 | 단위사업 | 세부사업 --- | --- | --- | --- 코드 | 7000 | 7002 | 105 명칭 | 국토교통행정지원 | 소속기관인건비 | 철도특별사법경찰대 인건비 □ 사업 성격 (공통요구자료 Ⅱ-1 작성유의사항 4. 참조, 해당하는 사항에 “○” 표시) 신규 계"
+    },
+    "status": "matched",
+    "confidence": "high",
+    "method": "exact_norm",
+    "score": 100.0,
+    "api_match": {
+      "office_name": "국토교통부",
+      "detail_business_name": "철도특별사법경찰대 인건비",
+      "program_name": "국토교통행정지원",
+      "unit_business_name": "소속기관인건비",
+      "account_name": "일반회계",
+      "field_name": "교통및물류",
+      "section_name": "물류등기타",
+      "congress_amt": 36920000000.0,
+      "year": 2026
+    },
+    "top3": [
+      {
+        "score": 100.0,
+        "reason": "exact_norm",
+        "office_name": "국토교통부",
+        "detail_business_name": "철도특별사법경찰대 인건비",
+        "congress_amt": 36920000000.0
+      },
+      {
+        "score": 83.75,
+        "reason": "contains_norm",
+        "office_name": "국토교통부",
+        "detail_business_name": "인건비",
+        "congress_amt": 9194000000.0
+      },
+      {
+        "score": 64.25,
+        "reason": "token_overlap+implementer",
+        "office_name": "국토교통부",
+        "detail_business_name": "철도특별사법경찰대 기본경비",
+        "congress_amt": 931000000.0
+      }
+    ],
+    "enrichment": {
+      "canonical_name": "철도특별사법경찰대 인건비",
+      "canonical_amount": 36920000000.0,
+      "pdf_exec_paths": [
+        "직접"
+      ],
+      "pdf_implementer": "철도특별사법경찰대",
+      "pdf_code_hint": "7002-105",
+      "pdf_code_type": "detail",
+      "amount_source": "openfiscal",
+      "name_source": "openfiscal"
+    },
+    "lofin_reflections": [],
+    "lofin_hit_count": 0
+  },
+  {
+    "pdf": {
+      "ministry": "국토교통부",
+      "raw_title": "지방항공청 등 인건비",
+      "clean_title": "지방항공청 등 인건비",
+      "code_hint": "7002-106",
+      "code_type": "detail",
+      "implementer": "국토교통부",
+      "exec_paths": [
+        "직접"
+      ],
+      "extractor": "kordoc_chunks",
+      "source_pdf": "/Users/seohoseong/Koreabudget100/data/parser_ab/samples/molit_p148-162.pdf",
+      "page_start": 7,
+      "page_end": 11,
+      "anchor_chunk_id": "c0051",
+      "anchor_chunk_ids": [
+        "c0051"
+      ],
+      "source_chunk_start": "c0051",
+      "source_chunk_end": "c0093",
+      "snippet": "## (6) 지방항공청 등 인건비 (7002-106) ## □ 사업 코드 정보 구분 회계 소관 실국(기관) 계정 분야 부문 코드 일반회계 국토교통부 기획조정실 120 126 명칭 교통및물류 물류등기타 구분 | 프로그램 | 단위사업 | 세부사업 --- | --- | --- | --- 코드 | 7000 | 7002 | 106 명칭 | 국토교통행정지원 | 소속기관인건비 | 지방항공청 등 인건비 □ 사업 성격 (공통요구자료 Ⅱ-1 작성유의사항 4. 참조, 해당하는 사항에 “○” 표시) 신규 계속 완료 예"
+    },
+    "status": "matched",
+    "confidence": "high",
+    "method": "exact_norm",
+    "score": 100.0,
+    "api_match": {
+      "office_name": "국토교통부",
+      "detail_business_name": "지방항공청 등 인건비",
+      "program_name": "국토교통행정지원",
+      "unit_business_name": "소속기관인건비",
+      "account_name": "일반회계",
+      "field_name": "교통및물류",
+      "section_name": "물류등기타",
+      "congress_amt": 45115000000.0,
+      "year": 2026
+    },
+    "top3": [
+      {
+        "score": 100.0,
+        "reason": "exact_norm",
+        "office_name": "국토교통부",
+        "detail_business_name": "지방항공청 등 인건비",
+        "congress_amt": 45115000000.0
+      },
+      {
+        "score": 85.0,
+        "reason": "contains_norm",
+        "office_name": "국토교통부",
+        "detail_business_name": "인건비",
+        "congress_amt": 9194000000.0
+      }
+    ],
+    "enrichment": {
+      "canonical_name": "지방항공청 등 인건비",
+      "canonical_amount": 45115000000.0,
+      "pdf_exec_paths": [
+        "직접"
+      ],
+      "pdf_implementer": "국토교통부",
+      "pdf_code_hint": "7002-106",
+      "pdf_code_type": "detail",
+      "amount_source": "openfiscal",
+      "name_source": "openfiscal"
+    },
+    "lofin_reflections": [],
+    "lofin_hit_count": 0
+  },
+  {
+    "pdf": {
+      "ministry": "국토교통부",
+      "raw_title": "본부기본경비(총액)",
+      "clean_title": "본부기본경비(총액)",
+      "code_hint": "7011-201",
+      "code_type": "detail",
+      "implementer": null,
+      "exec_paths": [
+        "직접"
+      ],
+      "extractor": "kordoc_chunks",
+      "source_pdf": "/Users/seohoseong/Koreabudget100/data/parser_ab/samples/molit_p148-162.pdf",
+      "page_start": 11,
+      "page_end": 15,
+      "anchor_chunk_id": "c0094",
+      "anchor_chunk_ids": [
+        "c0094"
+      ],
+      "source_chunk_start": "c0094",
+      "source_chunk_end": "c0135",
+      "snippet": "## (7) 본부기본경비(총액)(7011-201) ## □ 사업 코드 정보 구분 회계 소관 실국(기관) 계정 분야 부문 코드 일반회계 국토교통부 운영지원과 120 126 명칭 교통및물류 물류등기타 구분 | 프로그램 | 단위사업 | 세부사업 --- | --- | --- | --- 코드 | 7000 | 7011 | 201 명칭 | 국토교통행정지원 | 본부기본경비 | 본부기본경비(총액) □ 사업 성격 (공통요구자료 Ⅱ-1 작성유의사항 4. 참조, 해당하는 사항에 “○” 표시) 신규 계속 완료 예비타당성"
+    },
+    "status": "matched",
+    "confidence": "high",
+    "method": "exact_norm",
+    "score": 100.0,
+    "api_match": {
+      "office_name": "국토교통부",
+      "detail_business_name": "본부 기본경비(총액)",
+      "program_name": "국토교통행정지원",
+      "unit_business_name": "본부기본경비",
+      "account_name": "일반회계",
+      "field_name": "교통및물류",
+      "section_name": "물류등기타",
+      "congress_amt": 7400000000.0,
+      "year": 2026
+    },
+    "top3": [
+      {
+        "score": 100.0,
+        "reason": "exact_norm",
+        "office_name": "국토교통부",
+        "detail_business_name": "본부 기본경비(총액)",
+        "congress_amt": 7400000000.0
+      },
+      {
+        "score": 87.5,
+        "reason": "contains_norm",
+        "office_name": "국토교통부",
+        "detail_business_name": "기본경비",
+        "congress_amt": 1831000000.0
+      },
+      {
+        "score": 75.0,
+        "reason": "char_bigram",
+        "office_name": "국토교통부",
+        "detail_business_name": "본부 기본경비(비총액)",
+        "congress_amt": 18979000000.0
+      }
+    ],
+    "enrichment": {
+      "canonical_name": "본부 기본경비(총액)",
+      "canonical_amount": 7400000000.0,
+      "pdf_exec_paths": [
+        "직접"
+      ],
+      "pdf_implementer": null,
+      "pdf_code_hint": "7011-201",
+      "pdf_code_type": "detail",
+      "amount_source": "openfiscal",
+      "name_source": "openfiscal"
+    },
+    "lofin_reflections": [],
+    "lofin_hit_count": 0
+  }
+]

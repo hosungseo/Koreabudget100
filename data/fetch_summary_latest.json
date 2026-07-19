@@ -1,0 +1,60 @@
+{
+  "year": 2026,
+  "service": "ExpenditureBudgetAdd2",
+  "endpoint": "https://www.openfiscaldata.go.kr/openApi/preview/ExpenditureBudgetAdd2",
+  "ministries": [
+    {
+      "ministry": "행정안전부",
+      "rows": 3312,
+      "api_total": 3312,
+      "congress_sum_won": 76905548000000.0,
+      "sample": [
+        "한국지방행정연구원정책개발연구등지원",
+        "한국지방행정연구원정책개발연구등지원",
+        "지자체조직 및 인사관리 효율화",
+        "지자체조직 및 인사관리 효율화",
+        "지자체조직 및 인사관리 효율화"
+      ],
+      "pages": 4
+    },
+    {
+      "ministry": "국토교통부",
+      "rows": 3770,
+      "api_total": 3770,
+      "congress_sum_won": 45018494000000.0,
+      "sample": [
+        "주거급여지원",
+        "주거급여지원",
+        "주거급여지원",
+        "주거급여지원",
+        "주거급여지원"
+      ],
+      "pages": 4
+    },
+    {
+      "ministry": "산업통상부",
+      "rows": 2268,
+      "api_total": 2268,
+      "congress_sum_won": 11622629000000.0,
+      "sample": [
+        "전략물자수출입통제기반구축",
+        "대한상사중재원지원",
+        "무역보험기금출연",
+        "전시산업경쟁력강화지원사업",
+        "관세피해업종 이차보전 지원"
+      ],
+      "pages": 3
+    },
+    {
+      "ministry": "산업통상자원부",
+      "rows": 0,
+      "api_total": 0,
+      "congress_sum_won": 0,
+      "sample": [],
+      "pages": 1
+    }
+  ],
+  "total_lines": 9350,
+  "total_details": 1401,
+  "total_amount_won": 133546671000000.0
+}

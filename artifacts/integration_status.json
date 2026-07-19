@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "complete": true,
+  "scope": "three-ministry pilot",
+  "canonical_summary": {
+    "year": 2026,
+    "scope": "three-ministry pilot",
+    "pilot_ministries": [
+      "행정안전부",
+      "국토교통부",
+      "산업통상부"
+    ],
+    "api_line_count": 9350,
+    "canonical_business_count": 1401,
+    "total_amount_won": 133546671000000.0,
+    "pdf_card_count": 790,
+    "pdf_matched_card_count": 712,
+    "pdf_status_counts": {
+      "matched": 712,
+      "ambiguous": 21,
+      "unmatched": 57
+    },
+    "pdf_matched_business_count": 710,
+    "local_transfer_candidate_count": 163,
+    "lofin_matched_business_count": 63,
+    "lofin_row_count": 2271,
+    "pdf_coverage": {
+      "행정안전부": {
+        "status": "parsed",
+        "source_pdf_count": 1,
+        "card_count": 285
+      },
+      "국토교통부": {
+        "status": "parsed",
+        "source_pdf_count": 3,
+        "card_count": 505
+      },
+      "산업통상부": {
+        "status": "api_only",
+        "source_pdf_count": 0,
+        "card_count": 0,
+        "reason": "official attachment download returns server errors; one official viewer volume is also incomplete, so no partial PDF enrichment is published",
+        "official_page": "https://www.motir.go.kr/kor/article/ATCL3f70bb6cf/48/view"
+      }
+    },
+    "sources": {
+      "api": "ExpenditureBudgetAdd2",
+      "pdf_reconcile": "reconcile_pdf_api_full.json",
+      "lofin": "lofin_local_transfer_candidates_2026.json"
+    }
+  },
+  "limitations": [
+    "산업통상부는 공식 첨부 서버 장애로 PDF 설명 레이어 없이 API 정본만 제공",
+    "LOFIN 연결은 keyword_candidate이며 광역·기초 반영액은 비가산적",
+    "전국 전 부처 덤프가 아니라 3개 부처 파일럿 범위"
+  ]
+}

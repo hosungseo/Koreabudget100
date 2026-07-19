@@ -1,0 +1,24 @@
+{
+  "year": 2026,
+  "scope": "three-ministry pilot",
+  "workflow_count": 1401,
+  "coverage_counts": {
+    "api_only": 691,
+    "structured_facts": 418,
+    "documented_flow": 292
+  },
+  "pdf_context_business_count": 710,
+  "explicit_procedure_business_count": 292,
+  "api_only_business_count": 691,
+  "node_count": 11853,
+  "edge_count": 7585,
+  "evidence_section_count": 4248,
+  "lofin_candidate_row_count": 2271,
+  "phase_model": "G0-G6 presentation taxonomy; not a source assertion",
+  "default_business_id": "kb-33f7c48956c96891",
+  "sources": {
+    "openfiscal": "ExpenditureBudgetAdd2",
+    "pdf": "matched ministry budget explainer Kordoc chunks",
+    "lofin": "QWGJK keyword_candidate"
+  }
+}

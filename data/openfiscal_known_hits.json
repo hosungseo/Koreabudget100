@@ -1,0 +1,15 @@
+[
+  {
+    "name": "ExpendituresSettlement",
+    "params": [
+      "Key",
+      "Type",
+      "pIndex",
+      "pSize",
+      "FSCL_YY"
+    ],
+    "status": "OK",
+    "code": 201,
+    "body": "\"{\\\"RESULT\\\":{\\\"CODE\\\":\\\"INFO-200\\\",\\\"MESSAGE\\\":\\\"해당하는 데이터가 없습니다.\\\"}}\""
+  }
+]

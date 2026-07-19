@@ -1,0 +1,31 @@
+# secrets
+.env
+.env.*
+secrets/
+*.pem
+*.key
+
+# python/os
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+
+# external source mirror (kept locally as its own git checkout)
+vendor/
+
+# data dumps (large / regenerable)
+data/raw/
+*.zip
+
+# legacy and parser comparison outputs (not used by the 2026 release)
+data/parser_ab/
+data/fetch_summary_2022.json
+data/normalized/detail_business_2022_*.json
+data/normalized/detail_business_2026_pilots.json
+data/normalized/detail_business_pilots_latest.json
+data/normalized/detail_business_tree_*.json
+data/normalized/lofin_detail_business_pilot.json
+data/normalized/lofin_qwgjk_keyword_matches.json
+artifacts/detail_business_structure_2022.html

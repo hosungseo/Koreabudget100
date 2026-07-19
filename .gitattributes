@@ -1,0 +1,6 @@
+artifacts/*.html linguist-generated=true
+data/normalized/*.json linguist-generated=true
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.pdf binary

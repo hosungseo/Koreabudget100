@@ -1,0 +1,8842 @@
+{
+  "total_pdf_cards": 790,
+  "status_counts": {
+    "matched": 712,
+    "ambiguous": 21,
+    "unmatched": 57
+  },
+  "confidence_counts": {
+    "high": 706,
+    "low": 21,
+    "medium": 6,
+    "none": 57
+  },
+  "method_counts": {
+    "exact_norm": 684,
+    "token_overlap": 10,
+    "contains_norm": 26,
+    "char_bigram": 5,
+    "token_overlap+implementer": 1,
+    "aggregate_heading": 7
+  },
+  "match_rate_matched_only": 0.901,
+  "match_rate_incl_ambiguous": 0.928,
+  "rows_brief": [
+    {
+      "pdf": "대변인실(총액)",
+      "api": "대변인실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대변인실",
+      "api": "대변인실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국민안전방송운영 및 재난정책홍보",
+      "api": "국민안전방송운영및재난정책홍보",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기획조정실(총액)",
+      "api": "기획조정실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기관운영및예산지원관리(총액)",
+      "api": "기관운영및예산지원관리(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기획조정실",
+      "api": "기획조정실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기관운영및예산지원관리",
+      "api": "기관운영및예산지원관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "UN거버넌스센터지원(ODA)",
+      "api": "UN거버넌스센터지원(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정안전부정보화(정보화)",
+      "api": "행정안전부정보화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정책연구개발",
+      "api": "정책연구개발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "성과관리 및 행정효율성제고",
+      "api": "성과관리및행정효율성제고",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "고객만족관리 및 이미지제고",
+      "api": "고객만족관리및이미지제고",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정한류네트워크구축운영",
+      "api": "행정한류네트워크구축운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "의정관실(총액)",
+      "api": "의정관실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "의정관실",
+      "api": "의정관실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국경일등정부행사",
+      "api": "국경일등정부행사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부포상",
+      "api": "정부포상",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전직대통령 및 유족 연금",
+      "api": "전직대통령및유족연금",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가상징선양",
+      "api": "국가상징선양",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전직대통령 및 유족 예우",
+      "api": "전직대통령및유족예우",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "감사관실(총액)",
+      "api": "감사관실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "감사관실",
+      "api": "감사관실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인사기획관실(총액)",
+      "api": "인사기획관실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인사기획관실",
+      "api": "인사기획관실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(본부)",
+      "api": "인건비(본부)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기관운영(총액)",
+      "api": "기관운영(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기관운영",
+      "api": "기관운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재외주재관 지원",
+      "api": "재외주재관지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "세종청사 이전 지원",
+      "api": "세종청사 이전 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부혁신조직실(총액)",
+      "api": "정부혁신조직실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부혁신조직실",
+      "api": "정부혁신조직실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부조직진단관리",
+      "api": "정부조직진단관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "책임운영기관제운영",
+      "api": "책임운영기관제운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부기능분류시스템운영(정보화)",
+      "api": "정부기능분류시스템운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자문서소통시스템(정보화)",
+      "api": "전자문서소통시스템(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지식기반의행정구축(정보화)",
+      "api": "지식기반의행정구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정생산성향상지원",
+      "api": "행정생산성향상지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부혁신 국제네트워크 강화 및 대외신인도 제고",
+      "api": "정부혁신국제네트워크강화및대외신인도제고",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민원제도 및 서비스 개선",
+      "api": "민원제도및서비스개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부혁신추진 및 확산",
+      "api": "정부혁신추진 및 확산",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "온라인 청원 시스템(정보화)",
+      "api": "온라인 청원 시스템(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정보공개활성화(정보화)",
+      "api": "정보공개활성화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자정부국(총액)",
+      "api": "전자정부국(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자정부국",
+      "api": "전자정부국",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지능형전자정부재설계 및 정책연구(정보화)",
+      "api": "지능형전자정부재설계및정책연구(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지능형 서비스 확대 및 운영(정보화)",
+      "api": "지능형 서비스 확대 및 운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자증명서 발급유통(정보화)",
+      "api": "전자증명서 발급유통(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가위임사무종합정보시스템운영(정보화)",
+      "api": "국가위임사무종합정보시스템운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "차세대 지방행정공통시스템 구축(정보화)",
+      "api": "차세대 지방행정공통시스템 구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정보보호인프라확충(정보화)",
+      "api": "정보보호인프라확충(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자정부 성과평가(정보화)",
+      "api": "전자정부 성과평가(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "첨단정보기술을활용한공공서비스촉진(정보화)",
+      "api": "첨단정보기술을활용한공공서비스촉진(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공자원 개방공유 관리시스템 운영(정보화)",
+      "api": "공공자원 개방공유 관리시스템 운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자정부분야 국제 교류협력(정보화, ODA)",
+      "api": null,
+      "score": 61.25,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자정부국가간협력강화(정보화, ODA)",
+      "api": "전자정부국가간협력강화(정보화,ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자정부글로벌아카데미운영(정보화)",
+      "api": "전자정부글로벌아카데미운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자정부대외협력활동강화(정보화)",
+      "api": "전자정부대외협력활동강화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정보자원관리지원(정보화)",
+      "api": "정보자원관리지원(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털서비스 개방(정보화)",
+      "api": "디지털서비스 개방(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "범정부 인공지능 공통기반 구현(정보화)",
+      "api": "범정부 인공지능 공통기반 구현(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공부문 AI 서비스 지원",
+      "api": "공공부문 AI 서비스 지원(정보화)",
+      "score": 91.79,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트워크센터구축및운영(정보화)",
+      "api": "스마트워크센터구축및운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정기관 정보통신서비스 이용환경 고도화(정보화)",
+      "api": "행정기관정보통신서비스이용환경고도화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트폰 기반의 모바일 전자정부 구축(정보화)",
+      "api": "스마트폰기반의모바일전자정부구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정정보화지원및관리조정(정보화)",
+      "api": "행정정보화지원및관리조정(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공데이터개방및이용활성화지원(정보화)",
+      "api": "공공데이터개방및이용활성화지원(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "데이터기반행정활성화(정보화)",
+      "api": "데이터기반행정활성화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정정보공동이용(정보화)",
+      "api": "행정정보공동이용(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공부문 마이데이터 시스템 구축(정보화)",
+      "api": "공공부문 마이데이터 시스템 구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정서비스통합포털운영(정보화)",
+      "api": "행정서비스통합포털운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "차관보실(총액)",
+      "api": "차관보실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "차관보실",
+      "api": "차관보실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "불우소외계층격려",
+      "api": "불우소외계층격려",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "한국지방행정연구원 정책개발연구 등 지원",
+      "api": "한국지방행정연구원정책개발연구등지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지자체조직및인사관리효율화",
+      "api": "지자체조직 및 인사관리 효율화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주민등록번호변경위원회 운영",
+      "api": "주민등록번호변경위원회 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주민등록제도개선및운영",
+      "api": "주민등록제도개선및운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방분권균형발전홍보지원",
+      "api": "지방분권 균형발전 홍보지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주민직접참여형 자치입법플랫폼 구축(정보화)",
+      "api": "주민직접참여형 자치입법플랫폼 구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공직선거관리 및 지방의회 역량강화",
+      "api": "공직선거관리및지방의회역량강화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자원봉사1365시스템운영(정보화)",
+      "api": "자원봉사1365시스템운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주민등록정보센터 및 전산망운영",
+      "api": "주민등록정보센터및전산망운영(정보화)",
+      "score": 92.35,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "표준지방인사정보시스템운영(정보화)",
+      "api": "표준지방인사정보시스템운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지자체경쟁력지원",
+      "api": "지자체경쟁력지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비영리민간단체지원",
+      "api": "비영리민간단체지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "새마을운동지원",
+      "api": "새마을운동지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "맞춤형 새마을운동 지원사업(ODA)",
+      "api": "맞춤형 새마을운동 지원사업(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행복한 선진시민사회 구현",
+      "api": "행복한선진시민사회구현",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지속가능한 지역사회 구축",
+      "api": "지속가능한 지역사회 구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국민통합위원회 운영",
+      "api": "국민통합위원회 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도로명 및 건물번호 활용",
+      "api": "도로명및건물번호활용",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "한국섬진흥원 지원",
+      "api": "한국섬진흥원 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역금융활성화",
+      "api": "지역금융활성화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공무원단체건전육성",
+      "api": "공무원단체건전육성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방재정경제실(총액)",
+      "api": "지방재정경제실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방재정경제실",
+      "api": "지방재정경제실",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지자체재정분석 및 재정제도 개선",
+      "api": "지자체재정분석및재정제도개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방재정 정보화(정보화)",
+      "api": "지방재정 정보화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방세정보화추진(정보화)",
+      "api": "지방세정보화추진(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "차세대지방세외수입정보시스템구축(정보화)",
+      "api": "차세대지방세외수입정보시스템구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방회계결산제도연구개선",
+      "api": "지방회계결산제도연구개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방공기업경영평가",
+      "api": "지방공기업경영평가",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과표양성화를 위한 시가표준액 조사",
+      "api": "과표양성화를위한시가표준액조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자주재원 확충을 위한 정책추진",
+      "api": "지방자주재원확충을위한정책추진",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역경제활성화",
+      "api": "지역경제활성화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "보통교부세",
+      "api": "보통교부세",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역현안특별교부세",
+      "api": "지역현안특별교부세",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가지방협력특별교부세",
+      "api": "국가지방협력특별교부세",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부동산교부세",
+      "api": "부동산교부세",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전관리 특별교부세",
+      "api": "재난안전관리특별교부세",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "소방안전교부세",
+      "api": "소방안전교부세",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 2
+    },
+    {
+      "pdf": "재난안전상황실기본경비(총액)",
+      "api": "재난안전상황실기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전상황실기본경비",
+      "api": "재난안전상황실기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "중앙안전상황실운영",
+      "api": "중앙안전상황실운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "안전감찰관실기본경비(총액)",
+      "api": "안전감찰관실기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "안전감찰관실기본경비",
+      "api": "안전감찰관실기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "안전정책실기본경비(총액)",
+      "api": "안전정책실기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "안전정책실기본경비",
+      "api": "안전정책실기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전산업활성화",
+      "api": "재난안전산업활성화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전사업평가",
+      "api": "재난안전사업평가",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전 드론 상황실 연계 및 역량강화",
+      "api": "재난안전 드론 상황실 연계 및 역량강화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 3
+    },
+    {
+      "pdf": "국민안전산업펀드 조성",
+      "api": "국민안전산업펀드조성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국민안전의식선진화",
+      "api": "국민안전의식선진화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "4.16재단지원",
+      "api": "4.16재단지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역안전개선 컨설팅",
+      "api": "지역안전개선컨설팅",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "안전사고 대책 및 재난현장 종사자 지원",
+      "api": "안전사고대책및재난현장종사자지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "승강기안전관리개선",
+      "api": "승강기안전관리개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시 지역 강풍피해 방지역량 강화기술 개발(R&D)",
+      "api": "도시지역강풍피해방지역량강화기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전연구개발사업공동전문기관기획평가관리비(R&D)",
+      "api": "재난안전연구개발사업 공동전문기관기획평가관리(R&D)",
+      "score": 75.2,
+      "status": "matched",
+      "method": "char_bigram",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "드론·SAR및디지털트윈연계급경사지위험성분석기술개발(R&D)",
+      "api": "드론·SAR및디지털트윈연계급경사지위험성분석기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제4기 단층정보를 활용한 국가지진위험지도 및 설계기준 고도화(R&D)",
+      "api": "제4기단층정보를활용한국가지진위험지도및설계기준고도화(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전 중점기술 로드맵 연계형 기술개발(R&D)",
+      "api": "재난안전중점기술로드맵연계형기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전산업 우수 기술개발 지원(R&D)",
+      "api": "재난안전산업우수기술개발지원(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난 및 안전관리 연구개발(R&D)",
+      "api": "재난및안전관리연구개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전 부처협력 기술개발(R&D)",
+      "api": "재난안전부처협력기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난피해 복구 역량 강화 기술개발(R&D)",
+      "api": "재난피해 복구 역량 강화 기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전산업 기술사업화지원(R&D)",
+      "api": "재난안전산업 기술사업화지원(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전산업 진흥시설 조성 지원(R&D)",
+      "api": "재난안전산업 진흥시설 조성 지원(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가재난관리정보시스템구축(정보화)",
+      "api": "국가재난관리정보시스템구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전통신망 구축 운영(정보화)",
+      "api": "재난안전통신망 구축 운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난행정정보화(정보화)",
+      "api": "재난행정정보화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "긴급신고전화통합체계구축･운영(정보화)",
+      "api": "긴급신고전화통합체계구축ㆍ운영(정보화)",
+      "score": 72.5,
+      "status": "matched",
+      "method": "token_overlap",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전 AI 관제체계 및 데이터 구축(정보화)",
+      "api": "재난안전 AI 관제체계 및 데이터 구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난관리실 기본경비(총액)",
+      "api": "재난관리실기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난관리실 기본경비",
+      "api": "재난관리실기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "중앙재난안전대책본부 운영",
+      "api": "중앙재난안전대책본부운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난관리평가지원",
+      "api": "재난관리평가지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난관리전문인력양성",
+      "api": "재난관리전문인력양성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난관리 국제협력",
+      "api": "재난관리국제협력",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지진대비인프라 구축",
+      "api": "지진대비인프라구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "개도국 재난관리 역량강화",
+      "api": "개도국재난관리역량강화(ODA)",
+      "score": 91.79,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "7·15참사피해자지원단 운영지원",
+      "api": "7·15참사피해자지원단 운영지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자연재해저감 역량강화",
+      "api": "자연재해저감 역량강화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가재난대응종합훈련",
+      "api": "국가재난대응종합훈련",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 27
+    },
+    {
+      "pdf": "침수우려 하상도로 자동차단시설",
+      "api": "침수우려 하상도로 자동차단 시설(보조)",
+      "score": 93.12,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난관리자원 관리체계 구축 및 민관협력 지원",
+      "api": "재난관리자원 관리체계 구축 및 민관협력 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "위기관리 매뉴얼 관리시스템 구축",
+      "api": "위기관리 매뉴얼 관리시스템 구축(정보화)",
+      "score": 92.35,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "사회재난실(총액)",
+      "api": "사회재난실(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "사회재난실기본경비",
+      "api": "사회재난실기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "집중안전점검 및 정부합동안전점검 운영",
+      "api": null,
+      "score": 62.0,
+      "status": "ambiguous",
+      "method": "token_overlap+implementer",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "사회재난교육훈련 및 역량지원강화",
+      "api": "사회재난교육훈련및역량지원강화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "사회재난 대비·대응체계 구축",
+      "api": "사회재난 대비·대응체계 구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난원인조사 및 미래대형복합재난대비",
+      "api": "재난원인조사및미래대형복합재난대비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "10.29참사피해자지원단 운영지원",
+      "api": "10.29참사피해자지원단 운영지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난대책비(보조)",
+      "api": "재난대책비(보조)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 51
+    },
+    {
+      "pdf": "재난구호지원",
+      "api": "재난구호지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 7
+    },
+    {
+      "pdf": "풍수해·지진재해보험",
+      "api": "풍수해·지진재해보험",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난심리회복지원",
+      "api": "재난심리회복지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 10
+    },
+    {
+      "pdf": "재난안전의무보험 종합정보시스템 구축·운영(정보화)",
+      "api": "재난안전의무보험 종합정보시스템 구축운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "경북·경남·울산 초대형산불 피해지원 및 재건위원회 운영",
+      "api": "경북·경남·울산 초대형산불 피해지원 및 재건위원회 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비상대비정책국기본경비(총액)",
+      "api": "비상대비정책국기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비상대비정책국기본경비",
+      "api": "비상대비정책국기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비상대비훈련",
+      "api": "비상대비훈련",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "동원자원관리",
+      "api": "동원자원관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 8
+    },
+    {
+      "pdf": "B-1정부노후시설정비",
+      "api": "B-1정부노후시설정비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민방위교육훈련 및 시설장비확충",
+      "api": "민방위교육훈련및시설장비확충",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비상대비담당자 선발",
+      "api": "비상대비담당자선발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비상대비정보화(정보화)",
+      "api": "비상대비정보화(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(지방자치인재개발원)",
+      "api": "인건비(지방자치인재개발원)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자치인재개발원기본경비(총액)",
+      "api": "지방자치인재개발원기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자치인재개발원기본경비",
+      "api": "지방자치인재개발원기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자치인재개발원 교육환경개선유지",
+      "api": "지방자치인재개발원교육환경개선유지",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자치인재개발원교육운영",
+      "api": "지방자치인재개발원교육운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "외국지방공무원교육운영(ODA)",
+      "api": "외국지방공무원교육운영(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자치인재개발원사이버교육센터운영(정보화)",
+      "api": "지방자치인재개발원사이버교육센터운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자치인재개발원전산운영(정보화)",
+      "api": "지방자치인재개발원전산운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방자치인재개발원수입대체경비",
+      "api": "지방자치인재개발원수입대체경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(기록)",
+      "api": "인건비(기록)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기록원기본경비(총액)",
+      "api": "기록원기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기록원기본경비",
+      "api": "기록원기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가기록물정리",
+      "api": "국가기록물정리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기록물보존복원",
+      "api": "기록물보존복원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가기록서비스정보화추진(정보화)",
+      "api": "국가기록서비스정보화추진(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전자기록관리체계구축(정보화)",
+      "api": "전자기록관리체계구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기록관리정책및교육",
+      "api": "기록관리정책및교육",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기록정보서비스",
+      "api": "기록정보서비스",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기록관보존시설관리",
+      "api": "기록관보존시설관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가기록관리활용기술연구개발(R&D)",
+      "api": "국가기록관리 활용기술 연구개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(청사)",
+      "api": "인건비(청사)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "청사기본경비(총액)",
+      "api": "청사기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "청사기본경비",
+      "api": "청사기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "청사시설유지보수",
+      "api": "청사시설유지보수",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부청사 노후시설등정비",
+      "api": "정부청사노후시설등정비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "청사시설관리 및 위탁",
+      "api": "청사시설관리 및 위탁",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트정부청사관리체계구축(정보화)",
+      "api": "스마트정부청사관리체계구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공무원통근버스운행",
+      "api": "공무원통근버스운행",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(이북)",
+      "api": "인건비(이북)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이북5도기본경비(총액)",
+      "api": "이북5도기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이북5도기본경비",
+      "api": "이북5도기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "북한이탈주민 및 이북도민 지원",
+      "api": "북한이탈주민 및 이북도민 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이북5도청사시설개보수",
+      "api": "이북5도청사시설개보수",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이북도민관련단체및행사지원",
+      "api": "이북도민관련단체및행사지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전연구원인건비(R&D)",
+      "api": "재난안전연구원인건비(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전연구원기본경비(총액)(R&D)",
+      "api": "재난안전연구원기본경비(총액)(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전연구원기본경비(R&D)",
+      "api": "재난안전연구원기본경비(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전관리업무지원기술개발(R&D)",
+      "api": "재난안전관리업무지원기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전연구개발사업관리(R&D)",
+      "api": "재난안전연구개발사업관리(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전 신기술 해외보급(ODA)",
+      "api": "재난안전신기술해외보급(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전연구원운영",
+      "api": "재난안전연구원운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전정책서비스",
+      "api": "재난안전정책서비스",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "잠재 재난요소 조사·평가",
+      "api": "잠재재난요소조사평가",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국립재난안전연구원전산운영",
+      "api": "국립재난안전연구원전산운영(정보화)",
+      "score": 92.19,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(대통령기록관)",
+      "api": "인건비(대통령기록관)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대통령기록관기본경비(총액)",
+      "api": "대통령기록관기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대통령기록관기본경비",
+      "api": "대통령기록관기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대통령기록관리체계구축(정보화)",
+      "api": "대통령기록관리체계구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대통령기록관리",
+      "api": "대통령기록관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(국과수)",
+      "api": "인건비(국과수)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국과수기본경비(총액)",
+      "api": "국과수기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국과수기본경비",
+      "api": "국과수기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과학수사감정지원",
+      "api": "과학수사감정지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과학수사감정장비현대화",
+      "api": "과학수사감정장비현대화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과학수사정보화시스템구축(정보화)",
+      "api": "과학수사정보화시스템구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "중장기과학수사감정기법연구개발(R&D)",
+      "api": "중장기과학수사감정기법연구개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(국가정보자원관리원)",
+      "api": "인건비(국가정보자원관리원)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가정보자원관리원운영(정보화)",
+      "api": "국가정보자원관리원운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "범정부 신규도입 전산장비 통합구축(정보화)",
+      "api": "범정부신규도입전산장비통합구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "중앙행정기관 등 노후장비 통합구축(정보화)",
+      "api": "중앙행정기관 등 노후장비 통합구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가정보자원관리원 공주센터 신축(정보화)",
+      "api": "국가정보자원관리원 공주센터 신축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가정보자원관리원대구센터신축(정보화)",
+      "api": "국가정보자원관리원대구센터신축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가정보통신망 구축 및 운영",
+      "api": "국가정보통신망 구축 및 운영(정보화)",
+      "score": 92.0,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가재난안전교육원인건비",
+      "api": "국가재난안전교육원인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가재난안전교육원기본경비(총액)",
+      "api": "국가재난안전교육원기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가재난안전교육원기본경비",
+      "api": "국가재난안전교육원기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재난안전교육원운영",
+      "api": "재난안전교육원운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과거사관련업무지원단 운영",
+      "api": "과거사관련업무지원단운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과거사관련사업지원",
+      "api": "과거사관련사업지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주4.3진상규명 및 명예회복 지원",
+      "api": "제주4.3 진상규명 및 명예회복 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "한국전쟁전후 민간인희생자 전국단위 위령시설 조성",
+      "api": "한국전쟁전후민간인희생자전국단위위령시설조성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주4·3피해보상(보상금 등)",
+      "api": "제주4.3피해보상(보상금등)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대일항쟁기강제동원조사지원 및 운영",
+      "api": "대일항쟁기강제동원조사지원 및 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대일항쟁기강제동원조사지원 및 운영(보상금)",
+      "api": "대일항쟁기강제동원조사지원 및 운영(보상금)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부마민주항쟁명예회복지원",
+      "api": "부마민주항쟁명예회복지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인건비(부마민주항쟁위)",
+      "api": "인건비(부마민주항쟁위)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민주화운동기념사업회지원",
+      "api": "민주화운동기념사업회지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민주화운동기념사업지원",
+      "api": "민주화운동기념사업지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국립국가폭력트라우마치유센터 조성",
+      "api": "국립 국가폭력 트라우마 치유센터 조성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "여수․순천 10․19위원회 지원",
+      "api": "여수·순천10·19위원회 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "진실화해위원회 청산 운영",
+      "api": "진실화해위원회 청산 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "특수상황지역개발",
+      "api": "특수상황지역개발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 44
+    },
+    {
+      "pdf": "접경권발전지원(자율)",
+      "api": "접경권발전지원(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서해 5도 종합발전 지원(자율)",
+      "api": "서해5도종합발전지원(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "섬 발전 협력사업 추진(자율)",
+      "api": "섬 발전 협력사업 추진(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역사회 활성화 기반조성",
+      "api": "지역사회 활성화 기반조성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 6
+    },
+    {
+      "pdf": "지방자치단체 자율통합지원금",
+      "api": "지방자치단체자율통합지원금",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방시대위원회운영",
+      "api": "지방시대위원회운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자원봉사활성화지원",
+      "api": "자원봉사활성화지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 15
+    },
+    {
+      "pdf": "지역발전활성화",
+      "api": "지역발전활성화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주한미군 공여구역주변지역 등 지원",
+      "api": "주한미군공여구역주변지역등지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 2
+    },
+    {
+      "pdf": "활력 복합시설 건립 지원",
+      "api": "활력 복합시설 건립 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "섬 발전 협력사업 추진",
+      "api": "섬 발전 협력사업 추진",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방소멸대응기금 출연금",
+      "api": "지방소멸대응기금 출연금",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역사회 자생적 창조역량 강화",
+      "api": "지역사회 자생적 창조역량 강화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "마을기업육성사업",
+      "api": "마을기업육성사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 9
+    },
+    {
+      "pdf": "자원봉사활성화지원(제주)",
+      "api": "자원봉사활성화지원(제주)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 15
+    },
+    {
+      "pdf": "특수상황지역개발(제주)",
+      "api": "특수상황지역개발(제주)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 44
+    },
+    {
+      "pdf": "착한가격업소 활성화 지원(자율)",
+      "api": "착한가격업소 활성화 지원(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 112
+    },
+    {
+      "pdf": "지역사랑상품권 발행지원",
+      "api": "지역사랑상품권 발행지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 79
+    },
+    {
+      "pdf": "착한가격업소 활성화 지원(제주)",
+      "api": "착한가격업소 활성화 지원(제주)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 112
+    },
+    {
+      "pdf": "착한가격업소 활성화 지원(세종)",
+      "api": "착한가격업소 활성화 지원(세종)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 112
+    },
+    {
+      "pdf": "지역맞춤형재난안전문제해결기술개발지원(2단계)(R&D)",
+      "api": null,
+      "score": 50.62,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재해위험지역정비(보조)",
+      "api": "재해위험지역정비(보조)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 120
+    },
+    {
+      "pdf": "우수유출저감시설설치사업(보조)",
+      "api": null,
+      "score": 54.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재해위험지역정비(세종)",
+      "api": "재해위험지역정비(세종)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 120
+    },
+    {
+      "pdf": "산불지역 마을단위 복구·재생",
+      "api": "산불지역 마을단위 복구·재생",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토지리정보원 인건비",
+      "api": "인건비",
+      "score": 84.5,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토지리정보원 기본경비",
+      "api": "기본경비",
+      "score": 85.45,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "본부인건비",
+      "api": "본부인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방국토관리청 인건비",
+      "api": "지방국토관리청인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도특별사법경찰대 인건비",
+      "api": "철도특별사법경찰대 인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지방항공청 등 인건비",
+      "api": "지방항공청 등 인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "본부기본경비(총액)",
+      "api": "본부 기본경비(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "본부기본경비(비총액)",
+      "api": "본부 기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "중앙토지수용위원회 기본경비",
+      "api": "중앙토지수용위원회기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울지방항공청 기본경비",
+      "api": "서울지방항공청기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부산지방항공청 기본경비",
+      "api": "부산지방항공청기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주지방항공청 기본경비(총액)",
+      "api": "제주지방항공청기본경비",
+      "score": 92.69,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공철도사고조사위원회 기본경비",
+      "api": "항공철도사고조사위원회기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통인재개발원 기본경비",
+      "api": "국토교통인재개발원기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도특별사법경찰대 기본경비",
+      "api": "철도특별사법경찰대 기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대도시권광역교통위원회 기본경비",
+      "api": "대도시권광역교통위원회기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "중앙토지수용위원회 기본경비(비총액)",
+      "api": "중앙토지수용위원회기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울지방항공청 기본경비 비총액",
+      "api": "서울지방항공청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부산지방항공청 기본경비(비총액)",
+      "api": "부산지방항공청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주지방항공청 기본경비(비총액)",
+      "api": "제주지방항공청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공철도사고조사위원회 기본경비(비총액)",
+      "api": "항공철도사고조사위원회기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통인재개발원 기본경비(비총액)",
+      "api": "국토교통인재개발원기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도특별사법경찰대 기본경비(비총액)",
+      "api": "철도특별사법경찰대 기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대도시권광역교통위원회 기본경비(비총액)",
+      "api": "대도시권광역교통위원회기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울지방국토관리청 기본경비",
+      "api": "서울지방국토관리청기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "원주지방국토관리청 기본경비",
+      "api": "원주지방국토관리청기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대전지방국토관리청 기본경비",
+      "api": "대전지방국토관리청기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "익산지방국토관리청 기본경비",
+      "api": "익산지방국토관리청기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부산지방국토관리청 기본경비",
+      "api": "부산지방국토관리청기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울지방국토관리청 기본경비(비총액)",
+      "api": "서울지방국토관리청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "원주지방국토관리청 기본경비(비총액)",
+      "api": "원주지방국토관리청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대전지방국토관리청 기본경비(비총액)",
+      "api": "대전지방국토관리청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "익산지방국토관리청 기본경비(비총액)",
+      "api": "익산지방국토관리청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부산지방국토관리청 기본경비(비총액)",
+      "api": "부산지방국토관리청기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공교통본부 인건비",
+      "api": "항공교통본부 인건비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공교통본부 기본경비",
+      "api": "항공교통본부 기본경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공교통본부 기본경비(비총액)",
+      "api": "항공교통본부 기본경비(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "AI응용제품 신속상용화 지원사업(국토·교통)",
+      "api": "AI응용제품 신속상용화 지원사업(국토·교통)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정책연구개발사업",
+      "api": "정책연구개발사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통인재개발원수입대체경비",
+      "api": "국토교통인재개발원수입대체경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통역량교육사업",
+      "api": "국토교통역량교육사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국유재산 실태조사",
+      "api": "국유재산실태조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "소속기관전산운영경비",
+      "api": "소속기관전산운영경비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정소송수행변호사선임",
+      "api": "행정소송수행변호사선임",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정책홍보기획연구운영",
+      "api": "정책홍보기획연구운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민원콜센터 및 제도운영",
+      "api": "민원콜센터 및 제도 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통 혁신펀드",
+      "api": "국토교통 혁신펀드",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통 창업 및 기업지원",
+      "api": "국토교통 창업 및 기업 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기타국제기구분담금(ODA)",
+      "api": "기타국제기구분담금(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제협력",
+      "api": "국제협력",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제교통포럼 분담금(ODA)",
+      "api": "국제교통포럼분담금",
+      "score": 91.25,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "UNESCAP 분담금(ODA)",
+      "api": "UN ESCAP 분담금(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제항공회담 및 노선개발",
+      "api": "국제항공회담및노선개발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광역교통 국제협력",
+      "api": "광역교통 국제협력",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행정능률향상 및 능력개발",
+      "api": "행정능률향상 및 능력개발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토발전전시관 운영",
+      "api": "국토발전전시관 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "소속기관 직원숙소 임차",
+      "api": "소속기관 직원 숙소 임차",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "사회복무요원지원",
+      "api": "사회복무요원 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주 도로관리단 지원",
+      "api": "제주 도로관리단 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "해안권및내륙권발전발전지원",
+      "api": "해안권및내륙권발전발전지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "시화방조제 관리지원",
+      "api": "시화방조제 관리지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토정책종합연구",
+      "api": "국토정책 종합연구",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역개발사업 평가운영",
+      "api": "지역개발사업평가운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기후변화대응산단 조성지원",
+      "api": "기후변화대응산단조성지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "성장촉진지역개발",
+      "api": "성장촉진지역개발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 22
+    },
+    {
+      "pdf": "민관협력 지역상생협약(자율)",
+      "api": "민관협력 지역상생협약(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 11
+    },
+    {
+      "pdf": "해안및내륙권발전사업지원",
+      "api": "해안및내륙권발전사업지원(자율)",
+      "score": 92.86,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "투자선도지구 기반시설지원",
+      "api": "투자선도지구기반시설지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기업혁신파크선도사업",
+      "api": "기업혁신파크선도사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "노후공단 재정비지원",
+      "api": "노후공단 재정비지원(자율)",
+      "score": 92.27,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 1
+    },
+    {
+      "pdf": "산업단지 개발지원",
+      "api": "산업단지 개발지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부처연계형 노후산단개발",
+      "api": "부처연계형노후산단개발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "캠퍼스 혁신파크 조성",
+      "api": "캠퍼스 혁신파크조성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "산업단지 진입도로 지원(제주)",
+      "api": null,
+      "score": 64.0,
+      "status": "ambiguous",
+      "method": "char_bigram",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "산업단지 진입도로 지원",
+      "api": null,
+      "score": 90.71,
+      "status": "ambiguous",
+      "method": "aggregate_heading",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "산업단지 진입도로 지원(세종)",
+      "api": null,
+      "score": 64.0,
+      "status": "ambiguous",
+      "method": "aggregate_heading",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "조경산업활성화지원",
+      "api": "조경산업활성화지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "AI 시티 조성확산",
+      "api": "AI 시티 조성확산",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시정책 종합연구",
+      "api": "도시정책 종합연구",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "유엔해비타트 개도국 도시지원(ODA)",
+      "api": "유엔해비타트 개도국 도시지원(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트시티 기반구축",
+      "api": "스마트시티 기반구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 8
+    },
+    {
+      "pdf": "스마트시티확산사업",
+      "api": "스마트시티확산사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트시티산업육성",
+      "api": "스마트시티산업육성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "토지이용규제개선",
+      "api": "토지이용규제개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "개발제한구역관리",
+      "api": "개발제한구역관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 24
+    },
+    {
+      "pdf": "장기미집행공원지방채이자지원",
+      "api": "장기미집행공원지방채이자지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 2
+    },
+    {
+      "pdf": "장기미집행공원지방채이자지원(제주)",
+      "api": "장기미집행공원지방채이자지원(제주)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 2
+    },
+    {
+      "pdf": "스마트시티확산사업(자율)",
+      "api": "스마트시티확산사업(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 8
+    },
+    {
+      "pdf": "스마트시티확산사업(지원)",
+      "api": "스마트시티확산사업(지원)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 8
+    },
+    {
+      "pdf": "기반시설부담금 환급 및 수수료지원",
+      "api": "기반시설부담금환급및수수료지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시재생사업",
+      "api": "도시재생사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 94
+    },
+    {
+      "pdf": "도시활력증진지역개발",
+      "api": "도시활력증진지역개발",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 5
+    },
+    {
+      "pdf": "도시활력증진지역개발(지원)",
+      "api": "도시활력증진지역개발(지원)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시재생사업(제주)",
+      "api": "도시재생사업(제주)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 94
+    },
+    {
+      "pdf": "수소도시지원(자율)",
+      "api": "수소도시지원(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 3
+    },
+    {
+      "pdf": "수소도시지원(지원)",
+      "api": "수소도시지원(지원)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시재생사업(자율)",
+      "api": "도시재생사업(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 94
+    },
+    {
+      "pdf": "건축정책종합연구",
+      "api": "건축정책종합연구",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건축문화진흥",
+      "api": "건축문화진흥",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시건축박물관운영",
+      "api": "도시건축박물관운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건축안전",
+      "api": "건축안전",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제로에너지건축 신산업 육성",
+      "api": "제로에너지건축신산업육성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가건축정책위원회 운영지원",
+      "api": "국가건축정책위원회 운영 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "그린리모델링 활성화",
+      "api": "그린리모델링 활성화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토공간정보 인력양성",
+      "api": "국토공간정보 인력양성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토공간정보정책지원",
+      "api": "국토공간정보정책지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가공간정보 품질관리 수준평가 시행",
+      "api": "국가공간정보 품질관리 수준평가 시행",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지적관리",
+      "api": "지적관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지적재조사",
+      "api": "지적재조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 227
+    },
+    {
+      "pdf": "스마트 생활소음 실증평가 및 층간소음 체험센터 구축",
+      "api": "스마트 생활소음 실증평가 및 층간소음 체험센터 구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주택및주거동향조사",
+      "api": "주택및주거동향조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공동주택관리 분쟁조정센터 운영지원",
+      "api": "공동주택관리 분쟁조정센터 운영지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "하자심사분쟁조정위원회 업무위탁",
+      "api": "하자심사분쟁조정위원회 업무위탁",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주택청약 시장관리",
+      "api": "주택청약 시장관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "임대차분쟁조정위원회 운영",
+      "api": "임대차분쟁조정위원회 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주거급여지원",
+      "api": "주거급여지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 269
+    },
+    {
+      "pdf": "청년월세 지원",
+      "api": "청년월세지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 207
+    },
+    {
+      "pdf": "전세보증금반환보증 보증료지원",
+      "api": "전세보증금 반환보증 보증료 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 47
+    },
+    {
+      "pdf": "부동산종합정보체계 운영관리",
+      "api": "부동산종합정보체계 운영관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주택공시가격조사",
+      "api": "주택공시가격조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 4
+    },
+    {
+      "pdf": "부동산서비스산업 육성",
+      "api": "부동산 서비스산업 육성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부동산투자회사 감독 및 검사지원",
+      "api": "부동산투자회사 감독 및 검사지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지가조사",
+      "api": "지가조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부동산거래조사",
+      "api": "부동산거래조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "감정평가 타당성조사",
+      "api": "감정평가타당성조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "개발부담금 징수 및 관리",
+      "api": "개발부담금 징수 및 관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공재개발재건축사업지원",
+      "api": "공공재개발재건축사업지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정비사업지원업무수행",
+      "api": "정비사업지원업무수행",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재정비촉진사업지원",
+      "api": "재정비촉진사업지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 2
+    },
+    {
+      "pdf": "골재자원조사 및 관리",
+      "api": "골재자원조사및관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설기계제작결함시정사업",
+      "api": "건설기계제작결함시정사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기계설비산업발전지원",
+      "api": "기계설비산업발전지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설기능인등급제사업",
+      "api": "건설기능인등급제사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설기계임대료체납신고센터운영",
+      "api": "건설기계임대료체납신고센터운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "해외인프라시장개척",
+      "api": "해외인프라시장개척",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제개발협력사업지원(ODA)",
+      "api": "국제개발협력사업 지원(ODA)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설기계 사고조사 및 예방지원",
+      "api": "건설기계 사고조사 및 예방지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토안전관리원출연",
+      "api": "국토안전관리원출연",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공사비산정기준관리운영",
+      "api": "공사비산정기준관리운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설교통신기술지정",
+      "api": "건설교통신기술지정",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설공사품질시험",
+      "api": "건설공사품질시험",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가건설기준센터운영",
+      "api": "국가건설기준센터운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설기술제도선진화",
+      "api": "건설기술제도선진화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설기술인교육관리감독전문화",
+      "api": "건설기술인교육관리감독전문화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "노후기반시설관리",
+      "api": "노후기반시설관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설및지하안전관리",
+      "api": "건설및지하안전관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트건설지원센터운영",
+      "api": "스마트건설지원센터운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설공사사후평가지원센터운영",
+      "api": "건설공사사후평가지원센터운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가교통안전기본계획 수립",
+      "api": "국가교통안전기본계획수립",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "운수종사자 운전적격성검사 인프라확충",
+      "api": "운수종사자운전적격성검사인프라확충",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "교통사고예방지원",
+      "api": "교통사고예방지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "교통안전공단출연",
+      "api": "교통안전공단출연",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트주차정보시스템 운영 및 개선사업",
+      "api": null,
+      "score": 60.0,
+      "status": "ambiguous",
+      "method": "char_bigram",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가교통조사",
+      "api": "국가교통조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "교통정책종합연구",
+      "api": "교통정책 종합연구",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대중교통체계구축지원",
+      "api": "대중교통체계 구축지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "택시산업지원",
+      "api": "택시산업지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 1
+    },
+    {
+      "pdf": "버스운전인력양성지원",
+      "api": "버스운전인력양성지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수소 대중교통체계 구축지원",
+      "api": "수소 대중교통체계 구축 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "교통약자이동편의증진",
+      "api": "교통약자 이동편의 증진",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 16
+    },
+    {
+      "pdf": "벽지노선지원(지역자율)",
+      "api": null,
+      "score": 54.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시형교통모델(지역자율)",
+      "api": "도시형교통모델(지역자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 13
+    },
+    {
+      "pdf": "도시형교통모델(제주)",
+      "api": "도시형교통모델(제주)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 13
+    },
+    {
+      "pdf": "도시형교통모델(세종)",
+      "api": "도시형교통모델(세종)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 13
+    },
+    {
+      "pdf": "버스공영차고지 지원(자율)",
+      "api": "버스공영차고지 지원(자율)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 17
+    },
+    {
+      "pdf": "화물자동차 안전운임제 운영비",
+      "api": "화물자동차 안전운임제 운영비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "군위탁 컨테이너 화물자동차 관리비",
+      "api": "군위탁컨테이너화물자동차관리비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "물류산업지원",
+      "api": "물류산업지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트공동물류센터 건립지원",
+      "api": "스마트공동물류센터 건립지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트물류센터 조성지원",
+      "api": "스마트물류센터조성지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "친환경물류지원",
+      "api": "친환경물류지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인천공항 해안경계보강사업비 대납금상환",
+      "api": "인천공항 해안경계보강사업비 대납금상환",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민간 중소형 드론개발 및 군 실증 협업 사업",
+      "api": "민간중소형드론개발및군실증협업사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "무안항공특화 산업단지 지원 사업",
+      "api": "무안항공특화 산업단지 지원사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "청·관사 관리",
+      "api": null,
+      "score": 60.0,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인천국제공항 상주 정부기관 지원",
+      "api": "인천국제공항 상주 정부기관 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공산업발전지원",
+      "api": "항공산업발전지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "드론 종합인프라 구축 및 운영",
+      "api": "드론 종합 인프라 구축 및 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "드론 안전 및 활성화 지원",
+      "api": "드론 안전 및 활성화 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국립항공박물관 운영",
+      "api": "국립항공박물관운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공기사고조사 및 장비유지",
+      "api": "항공기사고조사및장비유지",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제항공안전활동지원",
+      "api": "국제항공안전활동지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공기검사",
+      "api": "항공기검사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공안전기술원출연",
+      "api": "항공안전기술원출연",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항행안전시설운영및구축",
+      "api": "항행안전시설운영및구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공안전교육훈련",
+      "api": "항공안전교육훈련",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공기안전인증 및 감독활동",
+      "api": "항공기안전인증및감독활동",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제항공안전표준화사업",
+      "api": "국제항공안전표준화사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공안전체계 구축 및 유지관리",
+      "api": "항공안전체계구축및유지관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "시스템기반항공안전감독시스템유지보수",
+      "api": "시스템기반항공안전감독시스템유지보수",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가항공안전정보 수집분석",
+      "api": "국가항공안전정보수집분석",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제항공 탄소상쇄감축제도 운영",
+      "api": "국제항공탄소상쇄감축제도운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "김포공항 시설개선",
+      "api": "김포공항 시설개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "무안공항 차세대 전력망 구축",
+      "api": "무안공항 차세대 전력망 구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공항개발조사",
+      "api": "공항개발조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "일반공항시설관리",
+      "api": "일반공항시설관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공장애표시등 안전관리",
+      "api": "항공장애표시등 안전관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "울릉도 소형공항 건설",
+      "api": "울릉도 소형공항 건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "흑산도 소형공항 건설",
+      "api": "흑산도 소형공항 건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주 제2공항 건설",
+      "api": "제주제2공항 건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "새만금신공항 건설",
+      "api": "새만금신공항건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "백령도 소형공항 건설",
+      "api": "백령도소형공항건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서산공항 건설",
+      "api": "서산공항건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공항소음대책",
+      "api": "공항소음대책",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주공항 시설개선",
+      "api": "제주공항 시설개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "청주국제공항 주기장 확충",
+      "api": "청주국제공항 주기장확충",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "AI 모빌리티 시범도시 조성",
+      "api": "AI모빌리티 시범도시 조성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "충청권 자율주행 모빌리티 고도화 사업",
+      "api": "충청권 자율주행 모빌리티 고도화 사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 1
+    },
+    {
+      "pdf": "수소전기차 내압용기검사소 구축",
+      "api": "수소전기차내압용기검사소구축사업",
+      "score": 93.12,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "첨단자동차검사연구센터운영",
+      "api": "첨단자동차검사연구센터운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자율자동차상용화",
+      "api": "자율자동차 상용화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자동차안전도강화",
+      "api": "자동차안전도강화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자동차 튜닝인증 기술지원",
+      "api": "자동차 튜닝인증 기술지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이륜자동차이동검사소 운영",
+      "api": "이륜자동차이동검사소운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도심항공교통산업활성화지원",
+      "api": "도심항공교통산업활성화지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "모빌리티활성화지원",
+      "api": "모빌리티활성화지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털도로 AI 신기술 지원사업",
+      "api": "디지털도로 AI 신기술 지원사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도로인프라 국가성능시험장 운영",
+      "api": "도로인프라국가성능시험장운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국제협력기구 지원 등",
+      "api": "국제협력기구지원등",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "고속도로조사",
+      "api": "고속도로조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "고속도로건설",
+      "api": null,
+      "score": 89.0,
+      "status": "ambiguous",
+      "method": "aggregate_heading",
+      "exec_paths": [
+        "직접",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수소충전소 구축",
+      "api": "수소충전소 구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "일반국도건설지원",
+      "api": "일반국도건설지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "일반국도건설",
+      "api": null,
+      "score": 91.25,
+      "status": "ambiguous",
+      "method": "aggregate_heading",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "시관내국도대체우회도로건설지원",
+      "api": "시관내국도대체우회도로건설지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "시관내국도대체우회도로건설",
+      "api": null,
+      "score": 93.0,
+      "status": "ambiguous",
+      "method": "aggregate_heading",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도로안전 및 환경개선(총액)",
+      "api": "도로안전 및 환경개선(총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도로안전 및 환경개선(비총액)",
+      "api": "도로안전 및 환경개선(비총액)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국도유지운영",
+      "api": "국도유지운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과적단속운영",
+      "api": "과적단속운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도로유지보수",
+      "api": "도로유지보수",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도로병목지점 개선",
+      "api": "도로병목지점 개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "첨단도로교통체계",
+      "api": "첨단도로교통체계",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 1
+    },
+    {
+      "pdf": "도로건설 및 관리 종합연구",
+      "api": "도로건설 및 관리 종합연구",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "위험도로개선",
+      "api": "위험도로개선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털 도로대장 구축",
+      "api": "디지털 도로대장 구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "편의시설조성",
+      "api": "편의시설조성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민자도로운영지원",
+      "api": "민자도로운영지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민자도로건설지원",
+      "api": "민자도로건설지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주구국도건설",
+      "api": null,
+      "score": 91.67,
+      "status": "ambiguous",
+      "method": "aggregate_heading",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제주구국도유지관리",
+      "api": "제주구국도유지관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 6
+    },
+    {
+      "pdf": "제주구국도공무원부담금",
+      "api": "제주구국도공무원부담금",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가지원지방도 건설",
+      "api": "국가지원지방도 건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가지원지방도건설지원",
+      "api": "국가지원지방도건설지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서해선-경부고속선 연결선",
+      "api": null,
+      "score": 62.86,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "일반철도시설 유지보수위탁",
+      "api": "일반철도시설유지보수위탁",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "일반철도안전 및 시설개량",
+      "api": "일반철도안전 및 시설개량",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "고속철도안전 및 시설개량",
+      "api": "고속철도안전및시설개량",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도교통관제시설 운영위탁",
+      "api": "철도교통관제시설운영위탁",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도사고조사",
+      "api": "철도사고조사",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도시설 위탁 및 관리",
+      "api": "철도시설위탁및관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도안전관리제도운영",
+      "api": "철도안전관리제도운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도치안관리",
+      "api": "철도치안관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "제2철도교통관제센터 건설",
+      "api": "제2철도교통관제센터건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도사후관리 및 지원",
+      "api": "철도사후관리및지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "일반철도안전 및 시스템개량",
+      "api": "일반철도안전 및 시스템개량",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도기본계획수립",
+      "api": "철도기본계획수립",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도산업발전지원",
+      "api": "철도산업발전지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도핵심인력양성",
+      "api": "철도핵심인력양성",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "PSO보상",
+      "api": "PSO보상",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "호남고속철도건설(광주-목포)",
+      "api": "호남고속철도건설(광주-목포)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "평택-오송 2복선화",
+      "api": "평택-오송 2복선화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "경부고속철도 2단계",
+      "api": "경부고속철도 2단계",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인천발 KTX",
+      "api": "인천발 KTX",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수원발 KTX",
+      "api": "수원발 KTX",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수색-광명 고속철도건설",
+      "api": "수색-광명 고속철도건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서해선 복선전철",
+      "api": "서해선복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이천-문경 철도건설",
+      "api": "이천-문경 철도건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "장항선개량 2단계",
+      "api": "장항선 개량 2단계",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도담-영천 복선전철",
+      "api": "도담-영천 복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "장항선(신창-대야) 복선전철",
+      "api": "장항선(신창-대야)복선전철화",
+      "score": 93.75,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "강릉-제진 철도건설",
+      "api": "강릉-제진철도건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "춘천-속초 철도건설",
+      "api": null,
+      "score": 65.0,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "월곶-판교 복선전철",
+      "api": "월곶-판교 복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "천안-청주공항 복선전철",
+      "api": "천안-청주공항 복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인덕원-동탄 복선전철",
+      "api": "인덕원-동탄 복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "여주-원주 복선전철",
+      "api": "여주-원주 복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수서-광주 복선전철",
+      "api": "수서-광주 복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대구산업선 철도건설",
+      "api": "대구산업선철도건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "석문산단인입철도",
+      "api": "석문산단인입철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "남부내륙철도",
+      "api": "남부내륙철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광주송정-순천 철도건설",
+      "api": null,
+      "score": 65.0,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "문경-김천 철도건설",
+      "api": "문경-김천철도",
+      "score": 91.25,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "충북선 고속화",
+      "api": "충북선 고속화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "호남선(가수원-논산) 고속화",
+      "api": "호남선(가수원-논산)고속화",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "새만금신항인입철도",
+      "api": "새만금신항인입철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수송차량구입",
+      "api": "수송차량구입",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민자철도운영지원",
+      "api": "민자철도운영지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울 도시철도 전동차 증차 한시지원",
+      "api": "서울 도시철도 전동차 증차 한시지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가철도공단관리비",
+      "api": "국가철도공단관리비",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "삼성-동탄 광역급행철도",
+      "api": "삼성-동탄광역급행철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "신분당선(광교-호매실)",
+      "api": "신분당선(광교-호매실)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수도권광역급행철도B노선",
+      "api": "수도권광역급행철도B노선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수도권광역급행철도 C노선",
+      "api": "수도권광역급행철도C노선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "용산-상봉 광역급행철도",
+      "api": "용산-상봉 광역급행철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "신안산선복선전철",
+      "api": "신안산선복선전철",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대장-홍대 광역철도",
+      "api": "대장-홍대 광역철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시철도 노후시설 개선지원",
+      "api": "도시철도 노후시설 개선지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 1
+    },
+    {
+      "pdf": "도시철도노후차량개선지원",
+      "api": "도시철도노후차량개선지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전환교통지원사업",
+      "api": "전환교통지원사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "태화강-송정 광역철도",
+      "api": "태화강-송정광역철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "신분당선(용산-강남)",
+      "api": "신분당선(용산-강남)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "충청권광역철도 1단계",
+      "api": "충청권광역철도 1단계",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대구권광역철도",
+      "api": "대구권광역철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대전-옥천광역철도",
+      "api": "대전-옥천광역철도",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "보성-임성리 철도건설",
+      "api": "보성-임성리철도건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "김포 도시철도 전동차 증차 한시지원",
+      "api": "김포 도시철도 전동차 증차 한시지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "인천 서구 거첨도-약암리간 광역도로",
+      "api": null,
+      "score": 56.36,
+      "status": "ambiguous",
+      "method": "char_bigram",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도봉산-옥정 광역철도",
+      "api": null,
+      "score": 52.5,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "옥정-포천 철도건설사업",
+      "api": "옥정-포천철도건설사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울도시철도 9호선 3단계 건설",
+      "api": "서울도시철도 9호선(3단계) 건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부산 사상-하단 도시철도 건설",
+      "api": "부산 사상-하단 도시철도 건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광주도시철도 2호선 건설",
+      "api": "광주도시철도2호선건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "양산도시철도 건설",
+      "api": "양산도시철도 건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 1
+    },
+    {
+      "pdf": "대전도시철도 2호선 건설",
+      "api": "대전도시철도2호선건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울지하철7호선 청라연장",
+      "api": "서울지하철7호선청라연장",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "서울도시철도 9호선 4단계 연장",
+      "api": "서울도시철도9호선4단계연장",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "우이신설선 연장선",
+      "api": "우이신설선 연장선",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대구 도시철도 엑스코선 건설",
+      "api": "대구도시철도엑스코선건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부산도시철도 하단-녹산선 건설",
+      "api": "부산도시철도하단-녹산선건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "울산도시철도(트램)1호선 건설",
+      "api": "울산도시철도(트램) 1호선건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "동북선 경전철 건설사업",
+      "api": "동북선경전철건설",
+      "score": 92.0,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광역버스 공공성 강화 지원",
+      "api": "광역버스 공공성 강화 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대중교통비 환급 지원",
+      "api": "대중교통비 환급 지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 104
+    },
+    {
+      "pdf": "초정-화명 광역도로",
+      "api": "초정-화명광역도로건설",
+      "score": 92.0,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "조야-동명 광역도로",
+      "api": "조야-동명광역도로",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광주하남-장성삼계 광역도로",
+      "api": "광주하남-장성삼계광역도로",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "혼잡도로사업",
+      "api": null,
+      "score": 57.14,
+      "status": "ambiguous",
+      "method": "aggregate_heading",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대구도시철도 영천연장",
+      "api": "대구도시철도영천연장",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광역BRT 구축",
+      "api": "광역BRT 구축",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 1
+    },
+    {
+      "pdf": "환승센터 구축지원",
+      "api": "환승센터구축지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광역교통개선대책평가용역",
+      "api": "광역교통개선대책평가용역",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가기본도 제작",
+      "api": "국가기본도제작",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가기준점관리",
+      "api": "국가기준점관리",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토조사 및 지명",
+      "api": "국토조사및지명",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토위성센터 및 국토관측위성 운영",
+      "api": "국토위성센터및국토관측위성운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "혁신도시 건설지원",
+      "api": "혁신도시 건설지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "혁신도시 정주여건 개선 및 활성화 지원",
+      "api": "혁신도시정주여건개선및활성화지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "용산공원조성 및 위해성 저감사업",
+      "api": "용산공원조성 및 위해성 저감사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "가덕도신공항건립 추진단 운영",
+      "api": "가덕도신공항건립 추진단 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "가덕도신공항 건설",
+      "api": "가덕도신공항건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "가덕도신공항 건설공단 설립·운영",
+      "api": "가덕도신공항 건설공단 설립·운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대구경북신공항건설",
+      "api": "대구경북신공항건설",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대구경북통합신공항건설추진단 운영",
+      "api": "대구경북통합신공항건설추진단 운영",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전세사기 피해방지 및 지원사업",
+      "api": "전세사기 피해방지 및 지원사업",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "12‧29 여객기사고 피해구제",
+      "api": "12.29여객기사고피해구제",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "12‧29 여객기사고 피해자지원",
+      "api": "12.29 여객기사고 피해자지원",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "재건축초과이익자본이전",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주택금융신용보증기금출연",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이차보전 지원",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기타민간예수금이자상환",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국공채이자상환",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "위탁수수료(주택)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기타경비(주택)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "분양주택(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "신도시리츠(출자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주택구입·전세자금(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국민임대(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공임대(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민간임대융자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행복주택(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "다가구매입임대(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전세임대(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "통합공공임대(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "다가구매입임대 출자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "전세·매입임대경상보조",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국민임대출자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "영구임대출자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "행복주택출자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "임대주택리츠출자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "통합공공임대출자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "노후 공공임대주택 리모델링 및 서비스 개선",
+      "api": null,
+      "score": 50.62,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "보조",
+        "출자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시재생사업지원",
+      "api": "도시재생사업",
+      "score": 91.25,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 94
+    },
+    {
+      "pdf": "도시재생지원(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "소규모주택정비사업",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "이차보전지원",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주택정비사업(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "노후산단재생지원(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시재생씨앗융자",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "위탁수수료",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기타경비(도시)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "복권기금전출(반환금)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "사학진흥기금예탁",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "융자"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공자금관리기금(총괄계정) 예탁",
+      "api": null,
+      "score": 65.0,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공자금관리기금(융자계정) 예수원금상환",
+      "api": null,
+      "score": 65.0,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공자금관리기금(총괄계정) 예수이자상환",
+      "api": null,
+      "score": 100.0,
+      "status": "ambiguous",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공자금관리기금(융자계정) 예수이자상환",
+      "api": null,
+      "score": 65.0,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도시계정 전출",
+      "api": null,
+      "score": 54.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "통화금융기관예치",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "통화금융기관예치금(주택)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비통화금융기관예치",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비통화금융기관예치금(주택)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기타여유자금운용(주택)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기타민간예수금원금상환",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국공채원금상환",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "의무보험전산망",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "피해자지원",
+      "api": "12.29 여객기사고 피해자지원",
+      "score": 85.36,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정부보장사업",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "생활지원 및 학자금(융자)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국립교통재활병원",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자동차손해배상진흥원",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기금운영비(자동차기금)",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공공자금관리기금(총괄계정) 예탁",
+      "api": null,
+      "score": 65.0,
+      "status": "ambiguous",
+      "method": "token_overlap",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "통화금융기관예치",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비통화금융기관예치",
+      "api": null,
+      "score": 0.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통과학기술 신진연구자 지원사업(R&D)",
+      "api": "국토교통과학기술신진연구자지원사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역단위 재난위험도 AI시뮬레이션기반 재난안전관리 기술개발(R&D)",
+      "api": "지역단위재난위험도AI시뮬레이션기반재난안전관리기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설전주기 안전혁신기술 개발사업(R&D)",
+      "api": "건설 전주기 안전혁신 기술개발 사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "액체수소 저장탱크 및 적하역시스템기술개발(R&D)",
+      "api": "액체수소저장탱크및적하역시스템기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "초연결지능도시 핵심기반 기술개발(R&D)",
+      "api": "초연결지능도시핵심기반기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털트윈 국토정보보안 기술개발(R&D)",
+      "api": "디지털트윈국토정보보안기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공동주택건설 생산성 혁신을 위한 다용도-건설작업 로봇설계 및 통합관리기술개발(R&D)",
+      "api": "공동주택건설생산성혁신을위한다용도-건설작업로봇설계및통합관리기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "초고층복합시설 복합재난관리 디지털 플랫폼 기술개발(R&D)",
+      "api": "초고층 복합시설 복합재난관리 디지털플랫폼 기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "200m급 목구조 대공간건축물 건설 기술개발(R&D)",
+      "api": "200m급목구조대공간건축물건설기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "운전자 페달 오조작방지 및 평가기술개발(R&D)",
+      "api": "운전자페달오조작방지및평가기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자율주행 글로벌 혁신클러스터 연구개발사업(R&D)",
+      "api": "자율주행글로벌혁신클러스터연구개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "워킹쓰루 교통결제시스템표준 및 서비스 실용화 기술개발사업(R&D)",
+      "api": "워킹쓰루교통결제시스템표준및서비스실용화기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털트윈기반 GTX환승안전 및 혁신기술 개발사업(R&D)",
+      "api": "디지털트윈기반GTX환승안전및혁신기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역특화형 자율주행서비스모델 및 실증기술개발(R&D)",
+      "api": "지역특화형자율주행서비스모델및실증기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "고속철도 자갈궤도구간 사전제작형 급속개량콘크리트 궤도 및 시공장비 개발(R&D)",
+      "api": "고속철도자갈궤도구간사전제작형급속개량콘크리트궤도및시공장비개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트철도물류 혁신기술개발(R&D)",
+      "api": "스마트철도물류혁신기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도차량차륜 자동검사시스템 기술개발(R&D)",
+      "api": "철도차량차륜자동검사시스템기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "초고속하이퍼 튜브아진공 핵심기술개발(R&D)",
+      "api": "초고속하이퍼튜브아진공핵심기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "빅데이터기반 철도 네트워크 설계 및 운영기술개발(R&D)",
+      "api": "빅데이터기반철도네트워크설계및운영기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공기 이탈방지용 긴급제동활주로 시스템(EMAS)개발(R&D)",
+      "api": "항공기이탈방지용긴급제동활주로시스템(EMAS)개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공항조류탐지 및 한국형 조류관리 핵심기술개발(R&D)",
+      "api": "공항조류탐지및한국형조류관리핵심기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "과적단속 효율화를 위한 화물차중량정보 플랫폼 구축 및 실증기술개발 사업(R&D)",
+      "api": "과적단속효율화를위한화물차중량정보플랫폼구축및실증기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털도로기반 클라우드형 AI-ITS센터플랫폼 운영관리 기술개발사업(R&D)",
+      "api": "디지털도로기반클라우드형AI-ITS센터플랫폼운영관리기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통기술사업화를 위한 이어달리기 사업(R&D)",
+      "api": "국토교통기술사업화를위한이어달리기사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통 DNA플러스 융합기술대학원 육성사업(R&D)",
+      "api": "국토교통DNA플러스융합기술대학원육성사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "성과확산형 국토교통 국제협력연구 개발사업(R&D)",
+      "api": "성과확산형국토교통국제협력연구개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "협력거점형 국토교통국제협력 연구개발사업(R&D)",
+      "api": "협력거점형국토교통국제협력연구개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통연구기획(R&D)",
+      "api": "국토교통연구기획(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통연구개발 운영지원 사업(R&D)",
+      "api": "국토교통연구개발운영지원사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통과학기술진흥원 기획평가 관리비(일반)(R&D)",
+      "api": "국토교통과학기술진흥원기획평가관리비(일반)(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건축물화재확산방지 및 피난성능향상 기술개발(R&D)",
+      "api": "건축물화재확산방지및피난성능향상기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트+빌딩핵심기술개발(R&D)",
+      "api": "스마트+빌딩핵심기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "고층형 ZEB 3등급 공동주택 핵심기술개발(R&D)",
+      "api": "고층형ZEB3등급공동주택핵심기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "리튬기반 배터리 제조소 및 저장·취급 시설 안전을 위한 기술 개발(R&D)",
+      "api": "리튬기반배터리제조소및저장취급시설안전을위한기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "비전통오일 생산플랜트건설 핵심기술개발사업(R&D)",
+      "api": "비전통오일생산플랜트건설핵심기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공동주택의 고층·단지화 및 생산성제고를 위한 OSC 고도화기술개발(R&D)",
+      "api": "공동주택의고층·단지화및생산성제고를위한OSC고도화기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건축물해체기술고도화 및 건축폐기물 자원화 기술개발(R&D)",
+      "api": "건축물해체기술고도화및건축폐기물자원화기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토정보고도화를 위한 입체격자체계적용 및 활용기술개발(R&D)",
+      "api": "국토정보고도화를위한입체격자체계적용및활용기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자율주행기술개발 혁신사업(R&D)",
+      "api": "자율주행기술개발혁신사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "고부가가치융복합 물류배송·인프라혁신 기술개발사업(R&D)",
+      "api": "고부가가치융복합물류배송인프라혁신기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "암호화사이버 위협대응기술 개발사업(R&D)",
+      "api": "암호화사이버위협대응기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "사용후 배터리안전관리 및 재제조유통순환 기술개발사업(R&D)",
+      "api": "사용후배터리안전관리및재제조유통순환기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "초고속하이퍼튜브 철도인프라 핵심기술 개발사업(R&D)",
+      "api": "초고속하이퍼튜브철도인프라핵심기술개발(R&D)",
+      "score": 73.04,
+      "status": "matched",
+      "method": "char_bigram",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통과학기술진흥원 기획평가 관리비(교특)(R&D)",
+      "api": "국토교통과학기술진흥원기획평가관리비(교특)(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "내구연한도래 노후디젤기관차 대체를 위한 친환경수소 전기기관차 기술개발(R&D)",
+      "api": "내구연한도래노후디젤기관차대체를위한친환경수소전기기관차기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "대심도장대터널(GTX등)의 재난대응복합 훈련장개발(R&D)",
+      "api": "대심도장대터널(GTX등)의재난대응복합훈련장개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도종사자의 인적오류분석·평가·예방기술개발(R&D)",
+      "api": "철도종사자의인적오류분석·평가·예방기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "수소전기동차 실증(R&D)",
+      "api": "수소전기동차실증(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "데이터기반철도시스템 안전평가·예측기술개발(R&D)",
+      "api": "데이터기반철도시스템안전평가·예측기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "정지궤도 공공복합통신 위성개발(R&D)",
+      "api": "정지궤도공공복합통신위성개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "민수용 GTF 엔진정비기술 및 인증체계개발(R&D)",
+      "api": "민수용GTF엔진정비기술및인증체계개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "한국형 위성항법시스템(KPS) 개발(R&D)",
+      "api": "한국형위성항법시스템(KPS)개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "AI진단기반 항공기로봇검사 및 정비기술개발(R&D)",
+      "api": "AI진단기반항공기로봇검사및정비기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "소형항공기 용수소연료 전지기반 추진시스템 인증체계개발(R&D)",
+      "api": "소형항공기용수소연료전지기반추진시스템인증체계개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "AI-XR기반 비행장원격관제 운용기술개발(R&D)",
+      "api": "AIXR기반비행장원격관제운용기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "도심지드론 운용위험도 예측 및 안전성평가 기술개발(R&D)",
+      "api": "도심지드론운용위험도예측및안전성평가기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "교통사고유발도로 노면위험요소 저감 기술개발(R&D)",
+      "api": "교통사고유발도로노면위험요소저감기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "초장대 K-지하고속도로 인프라안전 및 효율향상 기술개발(R&D)",
+      "api": "초장대K지하고속도로인프라안전및효율향상기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "내연기관차-전기차 전환안전성 검증기술개발 및 튜닝승인실증(R&D)",
+      "api": "내연기관차전기차전환안전성검증기술개발및튜닝승인실증(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지하공간활용도 시기반복합 플랜트 실증연구(R&D)",
+      "api": "지하공간 활용 도시기반 복합 플랜트 실증 연구(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털 국토정보 기술개발사업(R&D)",
+      "api": "디지털국토정보기술개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "공간지식추론 엔진기술개발(R&D)",
+      "api": "공간지식추론엔진기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "광역단위 노후건축물 디지털 안전워치 기술개발(R&D)",
+      "api": "광역단위노후건축물디지털안전워치기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "디지털기반 건축시공 및 안전감리 기술개발(R&D)",
+      "api": "디지털기반건축시공및안전감리기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "빅데이터기반 인공지능도시계획 기술개발(R&D)",
+      "api": "빅데이터기반인공지능도시계획기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통기술기반 주거생활환경문제 해결사업(R&D)",
+      "api": "국토교통기술기반주거생활환경문제해결사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건물에너지 소비데이터 통합관리기반 구축(R&D)",
+      "api": "건물에너지소비데이터통합관리기반구축(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "물류시설화재안전성 및 위험도관리 기술개발(R&D)",
+      "api": "물류시설화재안전성및위험도관리기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자동차전용도로 주행이 가능한 저상좌석버스 표준모델 개발(R&D)",
+      "api": "자동차전용도로주행이가능한저상좌석버스표준모델개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "스마트시티인프라 AIoT 핵심기술개발(R&D)",
+      "api": "스마트시티인프라AIoT핵심기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도차량 및 용품형식 승인기술 기준고도화 개발(R&D)",
+      "api": "철도차량및용품형식승인기술기준고도화개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "다목적 복수저고도 드론교통관리시스템 및 드론식별 기술개발(R&D)",
+      "api": "다목적복수저고도드론교통관리시스템및드론식별기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "한국형 도심항공교통(K-UAM) 안전운용체계 핵심기술개발(R&D)",
+      "api": null,
+      "score": 50.0,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "AI 데이터중심의 화물차운송안전향상 기술개발(R&D)",
+      "api": "AI데이터중심의화물차운송안전향상기술개발(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지역도심융합기술 연구개발사업(R&D)",
+      "api": "지역도심융합기술연구개발사업(R&D)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "철도정보시스템 구축 및 운영(정보화)",
+      "api": "철도정보시스템구축및운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "항공정보시스템운영(정보화)",
+      "api": "항공정보시스템운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "교통정보시스템구축및운영(정보화)",
+      "api": "교통정보시스템구축및운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "운전자격확인시스템 운영 및 유지보수",
+      "api": null,
+      "score": 52.5,
+      "status": "unmatched",
+      "method": "none",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "SOC안전정보시스템",
+      "api": "SOC안전정보시스템(정보화)",
+      "score": 91.54,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설사업정보시스템(정보화)",
+      "api": "건설사업정보시스템(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "기반시설통합관리시스템 구축",
+      "api": "기반시설통합관리시스템구축(정보화)",
+      "score": 92.19,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건축정보시스템 구축 및 운영(정보화)",
+      "api": "건축정보시스템구축및운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "건설산업정보시스템 구축 및 운영(정보화)",
+      "api": "건설산업정보시스템구축및운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "해외건설산업정보시스템 구축 및 운영",
+      "api": "해외건설산업정보시스템 구축 및 운영(정보화)",
+      "score": 92.63,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통행정정보시스템구축(정보화)",
+      "api": "국토교통행정정보시스템구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토교통정보보호체계구축및운영(정보화)",
+      "api": "국토교통 정보보호체계구축 및 운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가물류정보체계 구축 및 운영(정보화)",
+      "api": "국가물류정보체계구축및운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토이용정보체계 구축 및 운영(정보화)",
+      "api": "국토이용정보체계구축및운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "자동차전산망운영",
+      "api": "자동차전산망운영(정보화)",
+      "score": 90.91,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "토지종합정보시스템운영",
+      "api": "토지종합정보시스템운영(정보화)",
+      "score": 91.79,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "주택행정정보시스템운영",
+      "api": "주택행정정보시스템운영(정보화)",
+      "score": 91.79,
+      "status": "matched",
+      "method": "contains_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "부동산종합정보시스템운영(정보화)",
+      "api": "부동산종합정보시스템운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가공간정보 공동활용체계 구축 및 운영(정보화)",
+      "api": "국가공간정보 공동활용체계 구축 및 운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연",
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토공간정보기반조성(정보화)",
+      "api": "국토공간정보기반조성(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "위탁/출연"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "지하시설물 전산화(보조,정보화)",
+      "api": "지하시설물 전산화(보조, 정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "보조"
+      ],
+      "lofin_hits": 4
+    },
+    {
+      "pdf": "지상지하 공간정보 통합 관리체계 구축(정보화)",
+      "api": "지상지하 공간정보 통합관리체계 구축(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국토지형관리(정보화)",
+      "api": "국토지형관리(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "유가보조금관리시스템운영(정보화)",
+      "api": "유가보조금관리시스템운영(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    },
+    {
+      "pdf": "국가 건물에너지 통합관리시스템(정보화)",
+      "api": "국가 건물에너지 통합관리시스템(정보화)",
+      "score": 100.0,
+      "status": "matched",
+      "method": "exact_norm",
+      "exec_paths": [
+        "직접"
+      ],
+      "lofin_hits": 0
+    }
+  ],
+  "api_detail_count": 1401,
+  "lofin_seed_count": 2271,
+  "tag": "full"
+}
