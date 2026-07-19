@@ -592,7 +592,7 @@ HTML = r'''<!doctype html>
     </section>
   </main>
 
-  <footer><div class="footer-links"><a href="budget_flow_map.html?business=kb-ace0474d507615f7">전체 사업 탐색기</a><a href="../docs/budget_flow_methodology.md">방법론</a><a href="https://github.com/hosungseo/Koreabudget100">GitHub</a></div></footer>
+  <footer><div class="footer-links"><a href="budget_flow_map.html?business=kb-ace0474d507615f7">전체 사업 탐색기</a><a href="https://github.com/hosungseo/Koreabudget100/blob/main/docs/budget_flow_methodology.md">방법론</a><a href="https://github.com/hosungseo/Koreabudget100">GitHub</a></div></footer>
 
   <script id="reference-data" type="application/json">__PAYLOAD__</script>
   <script>
