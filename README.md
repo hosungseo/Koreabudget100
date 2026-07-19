@@ -1,6 +1,6 @@
 # Koreabudget100
 
-열린재정 Add2를 정본으로, 부처 사업설명 PDF와 지방재정365 QWGJK를 결합한 2026년 예산 세부사업 계층도와 **사업별 상세 업무 체계도**입니다.
+열린재정 Add2를 정본으로, 부처 사업설명 PDF와 지방재정365 QWGJK를 결합한 2026년 **세부사업 예산체계도**입니다. 돈의 출처부터 내역사업, 목·세목, 집행채널, 기관·지역, 수혜 근거까지 한 장에서 추적합니다.
 
 현재 완료 범위는 행정안전부·국토교통부·산업통상부 3개 부처입니다.
 
@@ -11,18 +11,23 @@
 - 133,546,671,000,000원
 - 790 PDF 사업카드
 - 2,271 LOFIN `keyword_candidate` 행
-- PDF에 명시된 절차를 가진 상세 체계도 292개
-- 목적·근거·시행구조 중심 체계도 418개
-- 예산·목세목만 표시하는 API-only 체계도 691개
+- 세부사업 예산체계도 1,401개
+- API 목·세목 합계 대사 완료 1,401개
+- PDF 내역사업을 추출한 예산체계도 45개
+- PDF 내역사업 합계까지 대사 완료 37개
+- LOFIN 지역 키워드 후보가 있는 사업 63개
 
 주요 결과 화면:
 
-- `artifacts/detailed_business_workflows.html` — 단계 × 수행주체 업무 체계도
+- `artifacts/budget_flow_map.html` — **주 화면: 세부사업별 돈의 구조도**
 - `artifacts/detail_business_structure.html` — 전체 예산 계층 탐색기
+- `artifacts/detailed_business_workflows.html` — PDF 명시 절차를 보는 보조 화면
 
 상세 완료 보고: `docs/project_status.md`
 
-체계도 생성 원칙: `docs/workflow_methodology.md`
+예산체계도 생성 원칙: `docs/budget_flow_methodology.md`
+
+업무 절차 보조 화면 원칙: `docs/workflow_methodology.md`
 
 ## 재생성
 
@@ -44,6 +49,7 @@ bash code/run_pipeline.sh --lofin-cache-only
 ```bash
 python3 code/verify_integrated_outputs.py --require-lofin
 python3 code/verify_workflow_outputs.py
+python3 code/verify_budget_flow_outputs.py
 ```
 
 ## 구조
@@ -58,6 +64,8 @@ python3 code/verify_workflow_outputs.py
 ## 해석 주의
 
 - 이름·계층·금액의 정본은 `ExpenditureBudgetAdd2`와 `Y_YY_DFN_KCUR_AMT`입니다.
+- 내역사업 배분과 목·세목 배분은 서로 다른 분해이므로 각각 총액과 대사합니다.
+- 내역사업↔세목 연결은 문서와 금액으로 직접 확인되는 구간만 표시하고 나머지는 추정하지 않습니다.
 - PDF는 확정 매칭된 설명만 붙이며, 보류·미매칭은 별도 보존합니다.
 - `documented_flow`만 PDF의 명시적 화살표·번호·추진계획 표를 절차 순서로 사용합니다. G0~G6은 화면 배치를 위한 분석 분류입니다.
 - LOFIN 결과는 키워드 후보입니다. 광역·기초 반영액은 중복될 수 있어 중앙예산 합계와 직접 대사하면 안 됩니다.

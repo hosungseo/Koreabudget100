@@ -9,7 +9,7 @@
 
 ## 1. 완료 결과
 
-열린재정 `ExpenditureBudgetAdd2`를 정본으로 삼아 1,401개 세부사업의 계층과 금액을 만들고, 부처 사업설명 PDF와 지방재정365 QWGJK 결과를 보강 정보로 붙였다.
+열린재정 `ExpenditureBudgetAdd2`를 정본으로 삼아 1,401개 세부사업의 계층과 금액을 만들고, 부처 사업설명 PDF와 지방재정365 QWGJK 결과를 보강 정보로 붙였다. 최종 주 화면은 업무 순서가 아니라 돈의 출처·내역·세목·채널·기관·수혜를 연결한 **예산체계도**다.
 
 | 항목 | 최종 결과 |
 |---|---:|
@@ -29,9 +29,14 @@
 | 열린재정 기반 `api_only` | 691개 사업 |
 | 업무 체계도 노드 / 연결 | 11,853 / 7,585 |
 | PDF 근거 섹션 | 4,248 |
+| 세부사업 예산체계도 | 1,401 |
+| API 목·세목 원 단위 대사 완료 | 1,401 |
+| PDF 내역사업 추출 / 총액 대사 완료 | 45 / 37 |
 
 최종 화면:
 
+- `artifacts/budget_flow_map.html` — 주 화면
+- `artifacts/budget_flow_map_2026.html`
 - `artifacts/detail_business_structure.html`
 - `artifacts/detail_business_structure_2026.html`
 - `artifacts/detailed_business_workflows.html`
@@ -43,8 +48,10 @@
 - `data/normalized/canonical_business_tree_2026_pilots.json`
 - `data/normalized/canonical_business_2026_pilots_summary.json`
 - `data/normalized/business_workflows_2026_pilots.json`
+- `data/normalized/budget_flow_maps_2026_pilots.json`
 - `artifacts/integration_status.json`
 - `artifacts/business_workflows_2026_pilots_summary.json`
+- `artifacts/budget_flow_maps_2026_pilots_summary.json`
 
 ## 2. 정본과 보강 레이어
 
@@ -52,6 +59,7 @@
 Open Fiscal ExpenditureBudgetAdd2
   └─ 정본: 연도 → 부처 → 회계 → 프로그램 → 단위사업 → 세부사업
        ├─ 금액·집행채널: Add2 세목 집계
+       ├─ 예산체계도: PDF 내역사업 ↔ Add2 목·세목 ↔ 집행채널
        ├─ PDF 보강: 확정 매칭된 설명·시행주체·집행방식·근거 페이지
        └─ LOFIN 보강: 지자체 이전 사업의 keyword_candidate 반영처
 ```
@@ -146,7 +154,27 @@ Open Fiscal ExpenditureBudgetAdd2
 
 ## 7. 구조도 HTML
 
-### 7.1 전체 예산 계층 탐색기
+### 7.1 세부사업별 예산체계도 — 주 화면
+
+`budget_flow_map.html`은 1,401개 사업 중 하나를 선택해 다음 돈의 구조를 한 장에 표시한다.
+
+```text
+재원·회계 → 세부사업·내역 → 목·세목 → 집행채널 → 기관·지역·수혜
+```
+
+- Add2 국회확정액과 목·세목 합계를 전 사업 원 단위 대사
+- PDF 산출근거에서 내역사업을 추출하되 총액과 별도 대사
+- 내역사업↔세목은 문서·지원율·금액으로 직접 확인되는 구간만 연결
+- 세목을 지방보조·민간위탁·민간보조·출연·용역·융자·출자·시설·인건비·운영·기타 채널로 분류
+- 실제 기관·지역이 확인되지 않으면 `미상`으로 표시
+- LOFIN 2,271행은 비가산 후보로만 표시
+- 사업 검색, 노드 연결 강조, 근거 페이지, 대사표, 모바일 세로 보기, A3 인쇄 지원
+
+기본 예시는 `지역사회 자생적 창조역량 강화` 237.53억원이다. PDF 내역사업 5개와 Add2 세목 8개가 각각 총액과 차이 0원으로 맞고, 자치단체경상보조 119.5억원은 보조율 50%가 명시된 16억원과 103.5억원의 합과 일치한다. `17개 광역시도`는 3억원 조사의 대상이지 보조 수령기관으로 만들지 않았다.
+
+세부 원칙은 `docs/budget_flow_methodology.md`에 기록했다.
+
+### 7.2 전체 예산 계층 탐색기
 
 `detail_business_structure.html`은 canonical tree를 입력으로 사용한다.
 
@@ -157,7 +185,7 @@ Open Fiscal ExpenditureBudgetAdd2
 - 내장 JSON의 `</script>` 종료 문자열 이스케이프
 - 잘못된 구 출처명 `TotalExpenditure1`과 금액 필드 표기 제거
 
-### 7.2 세부사업별 상세 업무 체계도
+### 7.3 세부사업별 업무 절차 보조 화면
 
 `detailed_business_workflows.html`은 1,401개 세부사업 중 하나를 선택해 **단계 행 × 수행주체 열**의 스윔레인으로 보여 준다. 단계 `G0~G6`은 서로 다른 사업을 같은 화면 문법으로 비교하기 위한 표현 분류이며, 원문이 주장한 법정 절차 단계가 아니다.
 
@@ -194,6 +222,7 @@ VERIFY_OK passes=6 skips=0 details=1401 lines=9350
 total_won=133546671000000 pdf_cards=790
 WORKFLOW_VERIFY_OK workflows=1401 documented=292 structured=418 api_only=691
 nodes=11853 edges=7585 evidence_sections=4248 lofin_candidates=2271
+BUDGET_FLOW_VERIFY_OK maps=1401 total=133546671000000 reference=kb-ace0474d507615f7
 PIPELINE_OK
 ```
 
@@ -209,10 +238,12 @@ PIPELINE_OK
 - 세 등급 합계, 예산 분해 합계, PDF/LOFIN 근거 상태와 비가산 규칙
 - 행안부·국토부 명시 절차 표본, LOFIN 후보 표본, 산업통상부 472개 API-only 회귀검사
 - 상세 HTML 내장 데이터, 검색·탭·노드 선택·근거 패널의 브라우저 실행 검사
+- 예산체계도 1,401개 목·세목·채널 합계, 기본 예시 5개 내역·8개 세목·4개 채널 회귀검사
+- 예산체계도 검색 전환, 연결선, 모바일 390px, 데스크톱 1,600px, 브라우저 콘솔 오류 검사
 
 ## 9. 완료 경계와 후속 확장
 
-이번 작업의 완료 경계는 **2026년 3개 부처 파일럿을 재현 가능한 통합 데이터, 전체 예산 계층 탐색기, 세부사업별 증거 기반 업무 체계도로 제공하는 것**이다. 이 범위에서 필요한 작업은 모두 끝났다.
+이번 작업의 완료 경계는 **2026년 3개 부처 파일럿을 재현 가능한 통합 데이터, 전체 예산 계층 탐색기, 세부사업별 증거 기반 예산체계도, 업무 절차 보조 화면으로 제공하는 것**이다. 이 범위에서 필요한 작업은 모두 끝났다.
 
 다음 항목은 결함이 아니라 별도 확장 단계다.
 
@@ -223,4 +254,4 @@ PIPELINE_OK
 
 ## 10. 한 줄 현황
 
-> **3부처 2026 파일럿 완료: 1,401개 세부사업을 292개 명시 절차형, 418개 구조화 사실형, 691개 API-only형 업무 체계도로 구성하고, Add2 133.55조원·PDF 790카드·LOFIN 후보 2,271행의 근거를 추적 가능하게 통합했다.**
+> **3부처 2026 파일럿 완료: 1,401개 세부사업의 국회확정액·내역사업·목세목·집행채널·기관지역·수혜 근거를 예산체계도로 연결하고, Add2 133.55조원·PDF 790카드·LOFIN 후보 2,271행을 추적 가능하게 통합했다.**

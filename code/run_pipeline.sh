@@ -55,32 +55,32 @@ export PYTHONHASHSEED=0
 export PYTHONDONTWRITEBYTECODE=1
 cd "$ROOT"
 
-printf '%s\n' '[1/8] Python source verification'
+printf '%s\n' '[1/9] Python source verification'
 bash "$CODE/check_py.sh"
 
 if ((WITH_EXTRACTION)); then
-  printf '%s\n' '[2/8] Full kordoc extraction (explicit opt-in)'
+  printf '%s\n' '[2/9] Full kordoc extraction (explicit opt-in)'
   /usr/bin/env python3 "$CODE/extract_with_kordoc.py" --all --chunks-only
 else
-  printf '%s\n' '[2/8] Reusing existing full kordoc chunks'
+  printf '%s\n' '[2/9] Reusing existing full kordoc chunks'
 fi
 
-printf '%s\n' '[3/8] Parse full PDF business cards'
+printf '%s\n' '[3/9] Parse full PDF business cards'
 /usr/bin/env python3 "$CODE/parse_pdfs_kordoc.py"
 
 if ((REFRESH_LOFIN)); then
-  printf '%s\n' '[4/8] Refresh selective LOFIN local-transfer candidates'
+  printf '%s\n' '[4/9] Refresh selective LOFIN local-transfer candidates'
   /usr/bin/env python3 "$CODE/fetch_lofin_local_transfer_candidates.py"
 elif ((LOFIN_CACHE_ONLY)); then
-  printf '%s\n' '[4/8] Rebuild selective LOFIN candidates from cache'
+  printf '%s\n' '[4/9] Rebuild selective LOFIN candidates from cache'
   /usr/bin/env python3 "$CODE/fetch_lofin_local_transfer_candidates.py" --cache-only
 elif [[ -f "$LOFIN" ]]; then
-  printf '%s\n' '[4/8] Reusing normalized selective LOFIN candidates'
+  printf '%s\n' '[4/9] Reusing normalized selective LOFIN candidates'
 else
-  printf '%s\n' '[4/8] LOFIN candidate file absent; canonical build will record no LOFIN source'
+  printf '%s\n' '[4/9] LOFIN candidate file absent; canonical build will record no LOFIN source'
 fi
 
-printf '%s\n' '[5/8] Reconcile PDF cards to the Add2 canonical hierarchy'
+printf '%s\n' '[5/9] Reconcile PDF cards to the Add2 canonical hierarchy'
 /usr/bin/env python3 "$CODE/reconcile_pdf_with_api.py" \
   --pdf-cards "$NORM/pdf_business_cards.json" \
   --api-details "$NORM/expbudgetadd2_2026_pilots_details.json" \
@@ -88,7 +88,7 @@ printf '%s\n' '[5/8] Reconcile PDF cards to the Add2 canonical hierarchy'
   --tag full \
   --quiet
 
-printf '%s\n' '[6/8] Build canonical dataset and enriched tree'
+printf '%s\n' '[6/9] Build canonical dataset and enriched tree'
 /usr/bin/env python3 "$CODE/build_canonical_dataset.py" \
   --api-details "$NORM/expbudgetadd2_2026_pilots_details.json" \
   --api-lines "$NORM/expbudgetadd2_2026_pilots_lines.json" \
@@ -96,17 +96,22 @@ printf '%s\n' '[6/8] Build canonical dataset and enriched tree'
   --lofin "$LOFIN" \
   --year 2026
 
-printf '%s\n' '[7/8] Build workflow graph and both standalone HTML views'
+printf '%s\n' '[7/9] Build workflow and budget-flow models'
 /usr/bin/env python3 "$CODE/build_business_workflows.py"
+/usr/bin/env python3 "$CODE/build_budget_flow_maps.py"
+
+printf '%s\n' '[8/9] Build three standalone HTML views'
 /usr/bin/env python3 "$CODE/build_structure_html.py"
 /usr/bin/env python3 "$CODE/build_workflow_html.py"
+/usr/bin/env python3 "$CODE/build_budget_flow_html.py"
 
-printf '%s\n' '[8/8] Offline integrated-output verification'
+printf '%s\n' '[9/9] Offline integrated-output verification'
 VERIFY_ARGS=()
 if [[ -f "$LOFIN" ]]; then
   VERIFY_ARGS+=(--require-lofin)
 fi
 /usr/bin/env python3 "$CODE/verify_integrated_outputs.py" "${VERIFY_ARGS[@]}"
 /usr/bin/env python3 "$CODE/verify_workflow_outputs.py"
+/usr/bin/env python3 "$CODE/verify_budget_flow_outputs.py"
 
 printf '%s\n' 'PIPELINE_OK'

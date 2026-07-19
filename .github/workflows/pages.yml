@@ -32,6 +32,7 @@ jobs:
         run: |
           mkdir -p _site/artifacts
           cp index.html _site/index.html
+          cp artifacts/budget_flow_map.html _site/artifacts/budget_flow_map.html
           cp artifacts/detailed_business_workflows.html _site/artifacts/detailed_business_workflows.html
           cp artifacts/detail_business_structure.html _site/artifacts/detail_business_structure.html
           touch _site/.nojekyll

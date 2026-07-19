@@ -1,0 +1,28 @@
+{
+  "api_reconciled_count": 1401,
+  "business_total_won": 133546671000000,
+  "channel_totals_won": {
+    "construction": 5344303304000,
+    "contribution": 15502212361000,
+    "equity": 1450556000000,
+    "internal": 1360159793000,
+    "loan": 85342000000,
+    "local_subsidy": 81027009261000,
+    "other": 23541846950000,
+    "personnel": 1065384450000,
+    "private_delegation": 803635568000,
+    "private_subsidy": 2693963592000,
+    "procurement": 672257721000
+  },
+  "default_business_id": "kb-ace0474d507615f7",
+  "lofin_candidate_business_count": 63,
+  "lofin_role": "non-additive keyword_candidate only",
+  "map_count": 1401,
+  "pdf_role": "documented allocation, implementer, subsidy rate and beneficiary context",
+  "pdf_subproject_count": 45,
+  "pdf_subproject_reconciled_count": 37,
+  "reference_business_title": "지역사회 자생적 창조역량 강화",
+  "scope": "three-ministry pilot",
+  "source_of_truth": "openfiscal_ExpenditureBudgetAdd2.Y_YY_DFN_KCUR_AMT",
+  "year": 2026
+}
